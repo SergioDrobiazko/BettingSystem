@@ -31,13 +31,6 @@ namespace BettingCompany.BettingSystem.Application
         public void Handle(Bet bet)
         {
             _betAgregator.AddBet(bet);
-
-            var anyBetTransitions = _betAgregator.TryGetBetTransition(out BetTransition betTransition);
-
-            if (anyBetTransitions)
-            {
-                _workersDirector.DelegateWork(betTransition);
-            }
         }
 
         public void SaveBets(IEnumerable<BetCalculated> bets)
