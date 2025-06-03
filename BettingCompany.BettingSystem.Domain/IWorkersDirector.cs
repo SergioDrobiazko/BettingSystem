@@ -8,6 +8,8 @@ namespace BettingCompany.BettingSystem.Domain
 {
     public interface IWorkersDirector
     {
-        void DelegateWork(IBetAgregator betAgregator);
+        void DelegateWork(BetTransition betTransition);
+
+        event EventHandler<BetCalculatedEventArgs> BetCalculated;
     }
 }

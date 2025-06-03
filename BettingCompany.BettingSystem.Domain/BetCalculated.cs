@@ -8,5 +8,6 @@ namespace BettingCompany.BettingSystem.Domain
 {
     public class BetCalculated
     {
+        public int Id { get; set; }
     }
 }

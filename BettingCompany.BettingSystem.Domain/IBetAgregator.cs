@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace BettingCompany.BettingSystem.Domain
 {
@@ -6,6 +7,8 @@ namespace BettingCompany.BettingSystem.Domain
     {
         void AddBet(Bet bet);
 
-        IEnumerable<BetTransitions> GetBetTransitions();
+        bool TryGetBetTransition(out BetTransition betTransition);
+
+        event EventHandler<BetTransitionFormedEventArgs> BetTransitionFormed;
     }
 }

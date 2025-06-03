@@ -1,4 +1,5 @@
-﻿using BettingCompany.BettingSystem.Domain;
+﻿using BettingCompany.BettingSystem.Application;
+using BettingCompany.BettingSystem.Domain;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -12,12 +13,9 @@ namespace BettingCompany.BettingSystem.Controllers
     [Route("[controller]")]
     public class AddBetController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
         private readonly ILogger<AddBetController> _logger;
+
+        private readonly IBetHandlingService _betHandlingService;
 
         public AddBetController(ILogger<AddBetController> logger)
         {
@@ -27,7 +25,7 @@ namespace BettingCompany.BettingSystem.Controllers
         [HttpPost]
         public void AddBet(Bet bet)
         {
-            throw new NotImplementedException();
+            _betHandlingService.Handle(bet);
         }
     }
 }

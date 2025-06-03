@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace BettingCompany.BettingSystem.Domain
 {
-    public class BetTransitions
+    public class BetTransition
     {
+        public BetTransition(Bet initialBet, Bet secondaryBet)
+        {
+            InitialBet = initialBet;
+            SecondaryBet = secondaryBet;
+        }
+
         public Bet InitialBet { get; private set; }
 
         public Bet SecondaryBet { get; private set; }

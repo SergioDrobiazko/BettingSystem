@@ -1,6 +1,6 @@
 ﻿namespace BettingCompany.BettingSystem.Domain
 {
-    public class BetDataSummary
+    public class BetSummary
     {
         public int TotalProcessed { get; private set; }
         public int TotalAmount { get; private set; }

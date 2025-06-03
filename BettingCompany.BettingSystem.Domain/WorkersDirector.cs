@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace BettingCompany.BettingSystem.Domain
 {
-    public class ChunkReadyEventArgs : EventArgs
+    public class BetCalculatedEventArgs : EventArgs
     {
-        public ConcurrentQueue<BetCalculated> BetsCalculated { get; init; }
+        public int BetCalculatedId { get; init; }
+        public int TotalCalculated { get; init; }
     }
 
     public class WorkersDirector : IWorkersDirector
@@ -23,24 +24,19 @@ namespace BettingCompany.BettingSystem.Domain
 
         private ConcurrentQueue<BetCalculated> betsCalculated = new ();
 
-        private int chunkSize = 1000;
+        public event EventHandler<BetCalculatedEventArgs> BetCalculated;
 
-        public event EventHandler<ChunkReadyEventArgs> ChunkReady;
-
-        public void DelegateWork(IBetAgregator betAgregator)
+        public void DelegateWork(BetTransition betTransition)
         {
             IWorker freeWorker = GetFreeWorker();
-            var betCalculatedTask = freeWorker.CalculateBet();
+            var betCalculatedTask = freeWorker.CalculateBet(betTransition);
 
             betCalculatedTask
                 .ContinueWith((betCalculated) =>
                 {
                     betsCalculated.Enqueue(betCalculated.Result);
-                    if(betsCalculated.Count > chunkSize)
-                    {
-                        ChunkReady?.Invoke(this, new ChunkReadyEventArgs { BetsCalculated = betsCalculated });
-                        betsCalculated = new ConcurrentQueue<BetCalculated>();
-                    }
+                    
+                    BetCalculated?.Invoke(this, new BetCalculatedEventArgs { BetCalculatedId = betCalculated.Result.Id, TotalCalculated = betsCalculated.Count });
                 });
         }
 
