@@ -10,7 +10,6 @@ namespace BettingCompany.BettingSystem.Domain
     public class BetCalculatedEventArgs : EventArgs
     {
         public int BetCalculatedId { get; init; }
-        public int TotalCalculated { get; init; }
     }
 
     public class WorkersDirector : IWorkersDirector
@@ -36,7 +35,7 @@ namespace BettingCompany.BettingSystem.Domain
                 {
                     betsCalculated.Enqueue(betCalculated.Result);
                     
-                    BetCalculated?.Invoke(this, new BetCalculatedEventArgs { BetCalculatedId = betCalculated.Result.Id, TotalCalculated = betsCalculated.Count });
+                    BetCalculated?.Invoke(this, new BetCalculatedEventArgs { BetCalculatedId = betCalculated.Result.Id });
                 });
         }
 

@@ -7,8 +7,6 @@ namespace BettingCompany.BettingSystem.Domain
     {
         void AddBet(Bet bet);
 
-        bool TryGetBetTransition(out BetTransition betTransition);
-
         event EventHandler<BetTransitionFormedEventArgs> BetTransitionFormed;
     }
 }

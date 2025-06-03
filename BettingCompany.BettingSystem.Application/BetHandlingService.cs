@@ -1,5 +1,6 @@
 ﻿using BettingCompany.BettingSystem.Domain;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 
 namespace BettingCompany.BettingSystem.Application
@@ -8,6 +9,8 @@ namespace BettingCompany.BettingSystem.Application
     {
         private readonly IBetAgregator _betAgregator;
         private readonly IWorkersDirector _workersDirector;
+
+        private ConcurrentQueue<BetCalculated> betsCalculated = new();
 
         public BetHandlingService(IBetAgregator betAgregator, IWorkersDirector workersDirector)
         {
@@ -20,12 +23,12 @@ namespace BettingCompany.BettingSystem.Application
 
         private void OnBetTransitionFormed(object sender, BetTransitionFormedEventArgs e)
         {
-            throw new NotImplementedException();
+            _workersDirector.DelegateWork(e.BetTransition);
         }
 
         private void OnBetCalculated(object sender, BetCalculatedEventArgs e)
         {
-            throw new NotImplementedException();
+            _workersDirector.
         }
 
         public void Handle(Bet bet)

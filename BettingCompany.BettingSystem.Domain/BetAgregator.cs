@@ -9,7 +9,7 @@ namespace BettingCompany.BettingSystem.Domain
 {
     public class BetTransitionFormedEventArgs : EventArgs 
     {
-
+        public BetTransition BetTransition { get; init; }
     }
 
     public class BetAgregator : IBetAgregator
@@ -27,6 +27,8 @@ namespace BettingCompany.BettingSystem.Domain
                 var registeredBet = registeredBets[bet.Id];
                 var betTransition = new BetTransition(registeredBet, bet);
                 betTransitions.Enqueue(betTransition);
+                betTransitions.TryDequeue(out BetTransition firstBetTransition);
+                BetTransitionFormed.Invoke(this, new BetTransitionFormedEventArgs { BetTransition = firstBetTransition });
             }
             else
             {
@@ -42,11 +44,6 @@ namespace BettingCompany.BettingSystem.Domain
         private bool IsRegistered(Bet bet)
         {
             return registeredBets.ContainsKey(bet.Id);
-        }
-
-        public bool TryGetBetTransition(out BetTransition betTransition)
-        {
-            return betTransitions.TryDequeue(out betTransition);
         }
     }
 }
