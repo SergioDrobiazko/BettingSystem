@@ -8,6 +8,18 @@ namespace BettingCompany.BettingSystem.Domain
 {
     public class Bet
     {
+        public Bet(int id, double amount, double odds, string client, string @event, string market, string selection, BetStatus status)
+        {
+            Id = id;
+            Amount = amount;
+            Odds = odds;
+            Client = client;
+            Event = @event;
+            Market = market;
+            Selection = selection;
+            Status = status;
+        }
+
         public int Id { get; private set; }
         public double Amount { get; private set; }
         public double Odds { get; private set; }
