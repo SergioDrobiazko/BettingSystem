@@ -12,7 +12,7 @@ namespace BettingCompany.BettingSystem.Application
     {
         public bool ShouldPersist(ConcurrentQueue<BetCalculated> betsCalculated)
         {
-            throw new NotImplementedException();
+            return betsCalculated.Count > 100;
         }
     }
 }
