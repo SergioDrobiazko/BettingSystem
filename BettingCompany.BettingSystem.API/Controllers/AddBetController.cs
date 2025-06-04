@@ -17,13 +17,14 @@ namespace BettingCompany.BettingSystem.Controllers
 
         private readonly IBetHandlingService _betHandlingService;
 
-        public AddBetController(ILogger<AddBetController> logger)
+        public AddBetController(ILogger<AddBetController> logger, IBetHandlingService betHandlingService)
         {
             _logger = logger;
+            _betHandlingService = betHandlingService;
         }
 
         [HttpPost]
-        public void AddBet(Bet bet)
+        public void AddBet([FromBody]Bet bet)
         {
             _betHandlingService.Handle(bet);
         }

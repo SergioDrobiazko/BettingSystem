@@ -20,16 +20,16 @@ namespace BettingCompany.BettingSystem.Domain
             Status = status;
         }
 
-        public int Id { get; private set; }
-        public double Amount { get; private set; }
-        public double Odds { get; private set; }
-        public string Client { get; private set; }
-        public string Event { get; private set; }
-        public string Market { get; private set; }
-        public string Selection { get; private set; }
-        public BetStatus Status { get; private set; }
+        public int Id { get; set; }
+        public double Amount { get; set; }
+        public double Odds { get; set; }
+        public string Client { get; set; }
+        public string Event { get; set; }
+        public string Market { get; set; }
+        public string Selection { get; set; }
+        public BetStatus Status { get; set; }
 
-        public DateTime ArrivedUTC { get; private set; }
+        public DateTime ArrivedUTC { get; set; }
 
         public void SetDateArrived(DateTime arrivedUTC)
         {
