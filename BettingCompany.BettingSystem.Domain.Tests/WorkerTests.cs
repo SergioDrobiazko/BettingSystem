@@ -22,5 +22,60 @@ namespace BettingCompany.BettingSystem.Domain.Tests
 
             Assert.True(betOutcome.IsMarkedForReview);
         }
+
+        [Fact]
+        public async Task CalculateBet_CorrectTransitionStatus_NotMarkedForReview()
+        {
+            var worker = new Worker();
+
+            var betArrivedFirst = new Bet(1, 100, 2.5, "Bob", "Lenox Luis vs Vitaly Klichko", "", "Klichko Wins", BetStatus.OPEN);
+            var betArrivedSecond = new Bet(1, 100, 2.5, "Bob", "Lenox Luis vs Vitaly Klichko", "", "Klichko Wins", BetStatus.WINNER);
+
+            var betTransition = new BetTransition(betArrivedFirst, betArrivedSecond);
+
+            var betOutcomeTask = worker.CalculateBet(betTransition);
+
+            var betOutcome = await betOutcomeTask;
+
+            Assert.False(betOutcome.IsMarkedForReview);
+        }
+
+        [Fact]
+        public async Task CalculateBet_ClientWin_CorrectProfit()
+        {
+            var worker = new Worker();
+
+            var betArrivedFirst = new Bet(1, 100, 2.5, "Bob", "Lenox Luis vs Vitaly Klichko", "", "Klichko Wins", BetStatus.OPEN);
+            var betArrivedSecond = new Bet(1, 100, 2.5, "Bob", "Lenox Luis vs Vitaly Klichko", "", "Klichko Wins", BetStatus.WINNER);
+
+            var betTransition = new BetTransition(betArrivedFirst, betArrivedSecond);
+
+            var betOutcomeTask = worker.CalculateBet(betTransition);
+
+            var betOutcome = await betOutcomeTask;
+
+            Assert.Equal(betOutcome.BetOutcome.Status, BetOutcomeStatus.Won);
+
+            Assert.Equal(250, betOutcome.BetOutcome.Amount);
+        }
+
+        [Fact]
+        public async Task CalculateBet_ClientLose_CorrectLoss()
+        {
+            var worker = new Worker();
+
+            var betArrivedFirst = new Bet(1, 100, 2.5, "Bob", "Lenox Luis vs Vitaly Klichko", "", "Lenox Wins", BetStatus.OPEN);
+            var betArrivedSecond = new Bet(1, 100, 2.5, "Bob", "Lenox Luis vs Vitaly Klichko", "", "Lenox Wins", BetStatus.LOSER);
+
+            var betTransition = new BetTransition(betArrivedFirst, betArrivedSecond);
+
+            var betOutcomeTask = worker.CalculateBet(betTransition);
+
+            var betOutcome = await betOutcomeTask;
+
+            Assert.Equal(betOutcome.BetOutcome.Status, BetOutcomeStatus.Lost);
+
+            Assert.Equal(100, betOutcome.BetOutcome.Amount);
+        }
     }
 }
