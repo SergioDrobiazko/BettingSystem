@@ -7,10 +7,6 @@ using System.Threading.Tasks;
 
 namespace BettingCompany.BettingSystem.Domain
 {
-    public class BetCalculatedEventArgs : EventArgs
-    {
-    }
-
     public class WorkersDirector : IWorkersDirector
     {
         public WorkersDirector(int maxWorkers)
