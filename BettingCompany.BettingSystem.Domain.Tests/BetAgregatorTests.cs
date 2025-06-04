@@ -10,7 +10,7 @@ namespace BettingCompany.BettingSystem.Domain.Tests
     public class BetAgregatorTests
     {
         [Fact]
-        public async Task AddBet_AddTwoBets_TransitionFormed()
+        public void AddBet_AddTwoBets_TransitionFormed()
         {
             var betArrivedFirst = new Bet(1, 100, 2.5, "Bob", "Lenox Luis vs Vitaly Klichko", "", "Klichko Wins", BetStatus.OPEN);
             var betArrivedSecond = new Bet(1, 100, 2.5, "Bob", "Lenox Luis vs Vitaly Klichko", "", "Klichko Wins", BetStatus.WINNER);
