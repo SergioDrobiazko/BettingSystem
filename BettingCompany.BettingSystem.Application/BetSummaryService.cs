@@ -11,7 +11,13 @@ namespace BettingCompany.BettingSystem.Application
     {
         public BetSummary GetSummary()
         {
-            throw new NotImplementedException();
+            // block storage
+
+            // get bets from storage 
+
+            // get bets from memory - 
+
+            // calculate statistics
         }
     }
 }

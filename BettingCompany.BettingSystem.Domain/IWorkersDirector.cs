@@ -10,6 +10,7 @@ namespace BettingCompany.BettingSystem.Domain
     {
         void DelegateWork(BetTransition betTransition);
         BetCalculated? FetchCalculatedBet();
+        BetCalculated[] CopyBetsCalculated();
 
         event EventHandler<BetCalculatedEventArgs> BetCalculated;
     }

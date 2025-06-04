@@ -45,6 +45,11 @@ namespace BettingCompany.BettingSystem.Domain
             return calculatedBet;
         }
 
+        public BetCalculated[] CopyBetsCalculated()
+        {
+            return betsCalculated.ToArray();
+        }
+
         /// <summary>
         /// 
         /// </summary>
