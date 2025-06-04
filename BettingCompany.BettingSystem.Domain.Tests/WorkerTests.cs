@@ -3,10 +3,10 @@ using Xunit;
 
 namespace BettingCompany.BettingSystem.Domain.Tests
 {
-    public class UnitTest1
+    public class WorkerTests
     {
         [Fact]
-        public void Test1()
+        public void CalculateBet_IncorrectTransitionStatus_MarkedForReview()
         {
 
         }

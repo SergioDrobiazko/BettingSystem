@@ -14,7 +14,7 @@ namespace BettingCompany.BettingSystem.Domain
         public string Client { get; private set; }
         public string Event { get; private set; }
         public string Market { get; private set; }
-        public string Selection { get; set; }
+        public string Selection { get; private set; }
         public BetStatus Status { get; private set; }
 
         public DateTime ArrivedUTC { get; private set; }
