@@ -18,6 +18,8 @@ namespace BettingCompany.BettingSystem.Application
             // get bets from memory - 
 
             // calculate statistics
+
+            //unblock storage
         }
     }
 }
