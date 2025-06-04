@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace BettingCompany.BettingSystem.Domain
 {
-    public class BetCalculated
+    public class BetOutcomeStatus
     {
-        public Bet Bet { get; set; }
-
-        public BetOutcome BetOutcome { get; private set; }
+        public const string Won = "Won";
+        public const string Lost = "Lost";
+        public const string Void = "Void";
     }
 }

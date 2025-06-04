@@ -16,5 +16,12 @@ namespace BettingCompany.BettingSystem.Domain
         public string Market { get; private set; }
         public string Selection { get; set; }
         public BetStatus Status { get; private set; }
+
+        public DateTime ArrivedUTC { get; private set; }
+
+        public void SetDateArrived(DateTime arrivedUTC)
+        {
+            ArrivedUTC = arrivedUTC;
+        }
     }
 }

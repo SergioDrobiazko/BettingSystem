@@ -10,6 +10,7 @@ namespace BettingCompany.BettingSystem.Application
         private readonly IBetAgregator _betAgregator;
         private readonly IWorkersDirector _workersDirector;
         private readonly IPersistancePolicy _persistancePolicy;
+        private readonly IDateTimeProvider _dateTimeProvider;
 
         private ConcurrentQueue<BetCalculated> betsCalculated = new();
 
@@ -43,6 +44,7 @@ namespace BettingCompany.BettingSystem.Application
 
         public void Handle(Bet bet)
         {
+            bet.SetDateArrived(_dateTimeProvider.GetUTCNow());
             _betAgregator.AddBet(bet);
         }
 
