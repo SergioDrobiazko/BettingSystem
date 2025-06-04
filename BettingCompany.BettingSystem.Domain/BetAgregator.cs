@@ -26,6 +26,7 @@ namespace BettingCompany.BettingSystem.Domain
             {
                 var registeredBet = registeredBets[bet.Id];
                 var betTransition = new BetTransition(registeredBet, bet);
+
                 betTransitions.Enqueue(betTransition);
                 betTransitions.TryDequeue(out BetTransition firstBetTransition);
                 BetTransitionFormed.Invoke(this, new BetTransitionFormedEventArgs { BetTransition = firstBetTransition });
