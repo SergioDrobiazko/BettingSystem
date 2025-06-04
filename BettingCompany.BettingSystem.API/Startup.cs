@@ -1,3 +1,5 @@
+using BettingCompany.BettingSystem.Application;
+using BettingCompany.BettingSystem.Domain;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +28,11 @@ namespace BettingCompany.BettingSystem
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<IBetHandlingService, BetHandlingService>();
+            services.AddSingleton<IBetAgregator, BetAgregator>();
+            services.AddSingleton<IWorkersDirector, WorkersDirector>(x => new WorkersDirector(100));
+            services.AddSingleton<IPersistancePolicy, PersistancePolicy>();
+            services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
