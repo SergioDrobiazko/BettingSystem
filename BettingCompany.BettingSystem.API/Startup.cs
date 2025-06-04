@@ -1,5 +1,6 @@
 using BettingCompany.BettingSystem.Application;
 using BettingCompany.BettingSystem.Domain;
+using BettingCompany.BettingSystem.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -33,6 +34,7 @@ namespace BettingCompany.BettingSystem
             services.AddSingleton<IWorkersDirector, WorkersDirector>(x => new WorkersDirector(100));
             services.AddSingleton<IPersistancePolicy, PersistancePolicy>();
             services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
+            services.AddSingleton<IBetRepository, BetRepository>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

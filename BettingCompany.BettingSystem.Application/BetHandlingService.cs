@@ -1,4 +1,5 @@
 ﻿using BettingCompany.BettingSystem.Domain;
+using BettingCompany.BettingSystem.Repository;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -12,9 +13,16 @@ namespace BettingCompany.BettingSystem.Application
         private readonly IPersistancePolicy _persistancePolicy;
         private readonly IDateTimeProvider _dateTimeProvider;
 
+        private readonly IBetRepository _betRepository;
+
         private ConcurrentQueue<BetCalculated> betsCalculated = new();
 
-        public BetHandlingService(IBetAgregator betAgregator, IWorkersDirector workersDirector, IPersistancePolicy persistancePolicy, IDateTimeProvider dateTimeProvider)
+        public BetHandlingService(
+            IBetAgregator betAgregator, 
+            IWorkersDirector workersDirector, 
+            IPersistancePolicy persistancePolicy, 
+            IDateTimeProvider dateTimeProvider, 
+            IBetRepository betRepository)
         {
             _betAgregator = betAgregator;
             _betAgregator.BetTransitionFormed += OnBetTransitionFormed;
@@ -23,6 +31,7 @@ namespace BettingCompany.BettingSystem.Application
             _workersDirector.BetCalculated += OnBetCalculated;
             _persistancePolicy = persistancePolicy;
             _dateTimeProvider = dateTimeProvider;
+            _betRepository = betRepository;
         }
 
         private void OnBetTransitionFormed(object sender, BetTransitionFormedEventArgs e)
