@@ -9,6 +9,7 @@ namespace BettingCompany.BettingSystem.Domain
     public interface IWorkersDirector
     {
         void DelegateWork(BetTransition betTransition);
+        BetCalculated? FetchCalculatedBet();
 
         event EventHandler<BetCalculatedEventArgs> BetCalculated;
     }

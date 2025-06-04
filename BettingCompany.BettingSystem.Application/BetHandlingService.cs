@@ -28,7 +28,11 @@ namespace BettingCompany.BettingSystem.Application
 
         private void OnBetCalculated(object sender, BetCalculatedEventArgs e)
         {
-            _workersDirector.
+            var calculatedBet = _workersDirector.FetchCalculatedBet();
+            if(calculatedBet != null)
+            {
+                betsCalculated.Enqueue(calculatedBet);
+            }
         }
 
         public void Handle(Bet bet)

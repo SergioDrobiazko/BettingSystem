@@ -39,6 +39,12 @@ namespace BettingCompany.BettingSystem.Domain
                 });
         }
 
+        public BetCalculated? FetchCalculatedBet()
+        {
+            var calculatedBet = betsCalculated.TryDequeue(out BetCalculated betCalculated) ? betCalculated : null;
+            return calculatedBet;
+        }
+
         /// <summary>
         /// 
         /// </summary>
