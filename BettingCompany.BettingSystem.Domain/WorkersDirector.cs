@@ -23,7 +23,7 @@ namespace BettingCompany.BettingSystem.Domain
         public void DelegateWork(BetTransition betTransition)
         {
             IWorker freeWorker = GetFreeWorker();
-            var betCalculatedTask = freeWorker.CalculateBet(betTransition);
+            var betCalculatedTask = freeWorker.CalculateBetAsync(betTransition);
 
             betCalculatedTask
                 .ContinueWith((betCalculated) =>

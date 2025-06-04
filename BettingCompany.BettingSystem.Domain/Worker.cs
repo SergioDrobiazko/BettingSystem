@@ -8,9 +8,21 @@ namespace BettingCompany.BettingSystem.Domain
 {
     public class Worker : IWorker
     {
-        public Task<BetCalculated> CalculateBet(BetTransition betTransition)
+        public async Task<BetCalculated> CalculateBetAsync(BetTransition betTransition)
         {
-            throw new NotImplementedException();
+            return await Task.Run(() => CalculateBet(betTransition));
+        }
+
+        private BetCalculated CalculateBet(BetTransition betTransition)
+        {
+            if (betTransition.IsValidStatusTransition() == false)
+            {
+                return BetCalculated.MarkedForReview(betTransition);
+            }
+
+            var betOutcome = betTransition.CalculateBetOutcome();
+
+            return new BetCalculated(betTransition, betOutcome);
         }
     }
 }

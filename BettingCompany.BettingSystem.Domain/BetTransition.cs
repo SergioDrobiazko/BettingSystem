@@ -29,5 +29,40 @@ namespace BettingCompany.BettingSystem.Domain
 
             return isValid;
         }
+
+        public BetOutcome CalculateBetOutcome()
+        {
+            BetOutcome betOutcome = default;
+
+            if(SecondaryBet.Status == BetStatus.WINNER)
+            {
+                betOutcome = CalculateWinOutcome();
+            }
+            else if(SecondaryBet.Status == BetStatus.LOSER)
+            {
+                betOutcome = CalculateLoseOutcome();
+            }
+            else if(SecondaryBet.Status == BetStatus.VOID)
+            {
+                betOutcome = CalculateVoidOutcome();
+            }
+
+            return betOutcome;
+        }
+
+        private BetOutcome CalculateVoidOutcome()
+        {
+            return BetOutcome.Void((decimal)SecondaryBet.Amount);
+        }
+
+        private BetOutcome CalculateLoseOutcome()
+        {
+            return BetOutcome.Lost((decimal)SecondaryBet.Amount);
+        }
+
+        private BetOutcome CalculateWinOutcome()
+        {
+            return BetOutcome.Won((decimal)SecondaryBet.Amount * (decimal)SecondaryBet.Odds);
+        }
     }
 }

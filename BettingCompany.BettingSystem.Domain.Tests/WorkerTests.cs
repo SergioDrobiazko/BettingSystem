@@ -16,7 +16,7 @@ namespace BettingCompany.BettingSystem.Domain.Tests
 
             var betTransition = new BetTransition(betArrivedFirst, betArrivedSecond);
 
-            var betOutcomeTask = worker.CalculateBet(betTransition);
+            var betOutcomeTask = worker.CalculateBetAsync(betTransition);
 
             var betOutcome = await betOutcomeTask;
 
@@ -33,7 +33,7 @@ namespace BettingCompany.BettingSystem.Domain.Tests
 
             var betTransition = new BetTransition(betArrivedFirst, betArrivedSecond);
 
-            var betOutcomeTask = worker.CalculateBet(betTransition);
+            var betOutcomeTask = worker.CalculateBetAsync(betTransition);
 
             var betOutcome = await betOutcomeTask;
 
@@ -50,7 +50,7 @@ namespace BettingCompany.BettingSystem.Domain.Tests
 
             var betTransition = new BetTransition(betArrivedFirst, betArrivedSecond);
 
-            var betOutcomeTask = worker.CalculateBet(betTransition);
+            var betOutcomeTask = worker.CalculateBetAsync(betTransition);
 
             var betOutcome = await betOutcomeTask;
 
@@ -69,7 +69,7 @@ namespace BettingCompany.BettingSystem.Domain.Tests
 
             var betTransition = new BetTransition(betArrivedFirst, betArrivedSecond);
 
-            var betOutcomeTask = worker.CalculateBet(betTransition);
+            var betOutcomeTask = worker.CalculateBetAsync(betTransition);
 
             var betOutcome = await betOutcomeTask;
 
@@ -88,7 +88,7 @@ namespace BettingCompany.BettingSystem.Domain.Tests
 
             var betTransition = new BetTransition(betArrivedFirst, betArrivedSecond);
 
-            var betOutcomeTask = worker.CalculateBet(betTransition);
+            var betOutcomeTask = worker.CalculateBetAsync(betTransition);
 
             var betOutcome = await betOutcomeTask;
 
