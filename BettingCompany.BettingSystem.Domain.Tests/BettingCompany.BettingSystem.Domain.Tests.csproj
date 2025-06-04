@@ -19,4 +19,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BettingCompany.BettingSystem.Domain\BettingCompany.BettingSystem.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
