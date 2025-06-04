@@ -1,4 +1,5 @@
 ﻿using BettingCompany.BettingSystem.Domain;
+using BettingCompany.BettingSystem.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,17 +10,32 @@ namespace BettingCompany.BettingSystem.Application
 {
     public class BetSummaryService : IBetSummaryService
     {
+        private readonly IBetRepository _betRepository;
+        private readonly IWorkersDirector _workersDirector;
+
+        public BetSummaryService(IBetRepository betRepository, IWorkersDirector workersDirector)
+        {
+            _betRepository = betRepository;
+            _workersDirector = workersDirector;
+        }
+
         public BetSummary GetSummary()
         {
-            // block storage
+            lock(StorageLock.Lock)
+            {
+                var betsFromStorage = _betRepository.Get();
 
-            // get bets from storage 
+                var betsInMemory = _workersDirector.CopyBetsCalculated();
 
-            // get bets from memory - 
+                BetSummary betSummary = CalculateBetSummary(betsFromStorage, betsInMemory);
 
-            // calculate statistics
+                return betSummary;
+            }
+        }
 
-            //unblock storage
+        private BetSummary CalculateBetSummary(IEnumerable<Bet> betsFromStorage, BetCalculated[] betsInMemory)
+        {
+            throw new NotImplementedException();
         }
     }
 }

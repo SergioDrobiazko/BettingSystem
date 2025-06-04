@@ -5,6 +5,11 @@ namespace BettingCompany.BettingSystem.Repository
 {
     public interface IBetRepository
     {
+        IEnumerable<Bet> Get()
+        {
+
+        }
+
         void Save(IEnumerable<Bet> bets);
     }
 }
