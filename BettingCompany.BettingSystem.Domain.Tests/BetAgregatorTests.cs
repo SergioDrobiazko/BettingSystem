@@ -38,14 +38,3 @@ namespace BettingCompany.BettingSystem.Domain.Tests
 
     }
 }
-
-{
-    "id": 1,
-  "amount": 100,
-  "odds":  2.5,
-  "client": "Bob",
-  "event": "Lenox Luis vs Vitaly Klichko",
-  "market": "string",
-  "selection": "Klichko Wins",
-  "status": 0
-}

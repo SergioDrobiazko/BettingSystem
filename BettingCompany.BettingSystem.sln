@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BettingCompany.BettingSyste
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BettingCompany.BettingSystem.Repository", "BettingCompany.BettingSystem.Repository\BettingCompany.BettingSystem.Repository.csproj", "{52050BFC-3868-409B-9E16-05C5D89E259C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BettingCompany.BettingSystem.Application.Tests", "BettingCompany.BettingSystem.Application.Tests\BettingCompany.BettingSystem.Application.Tests.csproj", "{938ECCFA-9DDC-4004-B6BD-9825DBB5F1F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{52050BFC-3868-409B-9E16-05C5D89E259C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52050BFC-3868-409B-9E16-05C5D89E259C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52050BFC-3868-409B-9E16-05C5D89E259C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{938ECCFA-9DDC-4004-B6BD-9825DBB5F1F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{938ECCFA-9DDC-4004-B6BD-9825DBB5F1F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{938ECCFA-9DDC-4004-B6BD-9825DBB5F1F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{938ECCFA-9DDC-4004-B6BD-9825DBB5F1F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

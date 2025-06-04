@@ -3,6 +3,7 @@ using BettingCompany.BettingSystem.Repository;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace BettingCompany.BettingSystem.Application
 {
@@ -63,6 +64,14 @@ namespace BettingCompany.BettingSystem.Application
                     _betRepository.Save(betsToSave);
                 }
             }
+        }
+
+        public async Task HandleAsync(Bet bet)
+        {
+            await Task.Run(() =>
+            {
+                Handle(bet);
+            });
         }
 
         public void Handle(Bet bet)
