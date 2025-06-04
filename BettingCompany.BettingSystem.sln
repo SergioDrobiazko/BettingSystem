@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BettingCompany.BettingSyste
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BettingCompany.BettingSystem.Domain", "BettingCompany.BettingSystem.Domain\BettingCompany.BettingSystem.Domain.csproj", "{ECE38816-7118-4259-B751-02D5C00CAECD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BettingCompany.BettingSystem.Domain.Tests", "BettingCompany.BettingSystem.Domain.Tests\BettingCompany.BettingSystem.Domain.Tests.csproj", "{94C649FE-0CFB-42D5-B469-2C7811114F74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BettingCompany.BettingSystem.Domain.Tests", "BettingCompany.BettingSystem.Domain.Tests\BettingCompany.BettingSystem.Domain.Tests.csproj", "{94C649FE-0CFB-42D5-B469-2C7811114F74}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BettingCompany.BettingSystem.API", "BettingCompany.BettingSystem.API\BettingCompany.BettingSystem.API.csproj", "{4731E0DD-F04A-43F9-BFF4-A60419C957E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BettingCompany.BettingSystem.Repository", "BettingCompany.BettingSystem.Repository\BettingCompany.BettingSystem.Repository.csproj", "{52050BFC-3868-409B-9E16-05C5D89E259C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{4731E0DD-F04A-43F9-BFF4-A60419C957E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4731E0DD-F04A-43F9-BFF4-A60419C957E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4731E0DD-F04A-43F9-BFF4-A60419C957E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52050BFC-3868-409B-9E16-05C5D89E259C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52050BFC-3868-409B-9E16-05C5D89E259C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52050BFC-3868-409B-9E16-05C5D89E259C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52050BFC-3868-409B-9E16-05C5D89E259C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

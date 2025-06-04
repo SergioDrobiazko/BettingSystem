@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BettingCompany.BettingSystem.Domain\BettingCompany.BettingSystem.Domain.csproj" />
+    <ProjectReference Include="..\BettingCompany.BettingSystem.Repository\BettingCompany.BettingSystem.Repository.csproj" />
   </ItemGroup>
 
 </Project>
