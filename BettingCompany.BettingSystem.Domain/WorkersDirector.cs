@@ -11,10 +11,13 @@ namespace BettingCompany.BettingSystem.Domain
     {
         public WorkersDirector(int maxWorkers)
         {
-            workers = new List<IWorker>(maxWorkers);
+            for(int i = 0; i < maxWorkers; ++i)
+            {
+                availableWorkers.Add(new Worker());
+            }
         }
 
-        private IList<IWorker> workers = new List<IWorker>();
+        private BlockingCollection<IWorker> availableWorkers = new BlockingCollection<IWorker>(new ConcurrentQueue<IWorker>());
 
         private ConcurrentQueue<BetCalculated> betsCalculated = new ();
 
@@ -31,6 +34,8 @@ namespace BettingCompany.BettingSystem.Domain
                     betsCalculated.Enqueue(betCalculated.Result);
                     
                     BetCalculated?.Invoke(this, new BetCalculatedEventArgs { });
+
+                    availableWorkers.Add(freeWorker);
                 });
         }
 
@@ -46,7 +51,7 @@ namespace BettingCompany.BettingSystem.Domain
         /// <returns></returns>
         private IWorker GetFreeWorker()
         {
-            throw new NotImplementedException();
+            return availableWorkers.Take();
         }
     }
 }

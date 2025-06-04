@@ -24,12 +24,12 @@ namespace BettingCompany.BettingSystem.Domain.Tests
             workersDirector.BetCalculated += (object sender, BetCalculatedEventArgs e) =>
             {
                 calculatedBet = workersDirector.FetchCalculatedBet();
+
+                Assert.Equal(BetOutcomeStatus.Won, calculatedBet.BetOutcome.Status);
+                Assert.Equal(250, calculatedBet.BetOutcome.Amount);
             };
 
             workersDirector.DelegateWork(betTransition);
-
-            Assert.Equal(BetOutcomeStatus.Won, calculatedBet.BetOutcome.Status);
-            Assert.Equal(250, calculatedBet.BetOutcome.Amount);
         }
     }
 }
