@@ -12,7 +12,12 @@ namespace BettingCompany.BettingSystem.Application
     {
         public bool ShouldPersist(ConcurrentQueue<BetCalculated> betsCalculated)
         {
-            return betsCalculated.Count > 100;
+            return betsCalculated.Count > 0;
+        }
+
+        public int GetNumberOfElementsToSave()
+        {
+            return 1;
         }
     }
 }

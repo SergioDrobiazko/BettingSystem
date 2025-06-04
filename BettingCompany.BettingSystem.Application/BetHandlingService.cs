@@ -18,10 +18,10 @@ namespace BettingCompany.BettingSystem.Application
         private ConcurrentQueue<BetCalculated> betsCalculated = new();
 
         public BetHandlingService(
-            IBetAgregator betAgregator, 
-            IWorkersDirector workersDirector, 
-            IPersistancePolicy persistancePolicy, 
-            IDateTimeProvider dateTimeProvider, 
+            IBetAgregator betAgregator,
+            IWorkersDirector workersDirector,
+            IPersistancePolicy persistancePolicy,
+            IDateTimeProvider dateTimeProvider,
             IBetRepository betRepository)
         {
             _betAgregator = betAgregator;
@@ -42,14 +42,26 @@ namespace BettingCompany.BettingSystem.Application
         private void OnBetCalculated(object sender, BetCalculatedEventArgs e)
         {
             var calculatedBet = _workersDirector.FetchCalculatedBet();
-            if(calculatedBet != null)
+            if (calculatedBet != null)
             {
                 betsCalculated.Enqueue(calculatedBet);
             }
 
-            if(_persistancePolicy.ShouldPersist(betsCalculated))
+            if (_persistancePolicy.ShouldPersist(betsCalculated))
             {
-                // persist bets
+                lock (StorageLock.Lock)
+                {
+                    int elementsToSave = _persistancePolicy.GetNumberOfElementsToSave();
+
+                    var betsToSave = new BetCalculated[elementsToSave];
+
+                    for (int i = 0; i < elementsToSave; ++i)
+                    {
+                        betsCalculated.TryDequeue(out var betCalculated);
+                        betsToSave[i] = betCalculated;
+                    }
+                    _betRepository.Save(betsToSave);
+                }
             }
         }
 

@@ -5,11 +5,8 @@ namespace BettingCompany.BettingSystem.Repository
 {
     public interface IBetRepository
     {
-        IEnumerable<Bet> Get()
-        {
+        IEnumerable<Bet> Get();
 
-        }
-
-        void Save(IEnumerable<Bet> bets);
+        void Save(IList<BetCalculated> bets);
     }
 }

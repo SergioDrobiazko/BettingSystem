@@ -6,7 +6,12 @@ namespace BettingCompany.BettingSystem.Repository
 {
     public class BetRepository : IBetRepository
     {
-        public void Save(IEnumerable<Bet> bets)
+        public IEnumerable<Bet> Get()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Save(IList<BetCalculated> bets)
         {
             throw new NotImplementedException();
         }
