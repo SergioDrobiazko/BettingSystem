@@ -9,6 +9,7 @@ namespace BettingCompany.BettingSystem.Application
     {
         private readonly IBetAgregator _betAgregator;
         private readonly IWorkersDirector _workersDirector;
+        private readonly IPersistancePolicy _persistancePolicy;
 
         private ConcurrentQueue<BetCalculated> betsCalculated = new();
 
@@ -32,6 +33,11 @@ namespace BettingCompany.BettingSystem.Application
             if(calculatedBet != null)
             {
                 betsCalculated.Enqueue(calculatedBet);
+            }
+
+            if(_persistancePolicy.ShouldPersist(betsCalculated))
+            {
+                // persist bets
             }
         }
 
