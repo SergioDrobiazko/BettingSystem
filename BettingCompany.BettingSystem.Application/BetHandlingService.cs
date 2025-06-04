@@ -14,13 +14,15 @@ namespace BettingCompany.BettingSystem.Application
 
         private ConcurrentQueue<BetCalculated> betsCalculated = new();
 
-        public BetHandlingService(IBetAgregator betAgregator, IWorkersDirector workersDirector)
+        public BetHandlingService(IBetAgregator betAgregator, IWorkersDirector workersDirector, IPersistancePolicy persistancePolicy, IDateTimeProvider dateTimeProvider)
         {
             _betAgregator = betAgregator;
             _betAgregator.BetTransitionFormed += OnBetTransitionFormed;
 
             _workersDirector = workersDirector;
             _workersDirector.BetCalculated += OnBetCalculated;
+            _persistancePolicy = persistancePolicy;
+            _dateTimeProvider = dateTimeProvider;
         }
 
         private void OnBetTransitionFormed(object sender, BetTransitionFormedEventArgs e)

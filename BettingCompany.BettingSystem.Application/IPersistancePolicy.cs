@@ -3,7 +3,7 @@ using System.Collections.Concurrent;
 
 namespace BettingCompany.BettingSystem.Application
 {
-    internal interface IPersistancePolicy
+    public interface IPersistancePolicy
     {
         bool ShouldPersist(ConcurrentQueue<BetCalculated> betsCalculated);
     }

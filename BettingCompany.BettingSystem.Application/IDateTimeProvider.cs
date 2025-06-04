@@ -2,7 +2,7 @@
 
 namespace BettingCompany.BettingSystem.Application
 {
-    internal interface IDateTimeProvider
+    public interface IDateTimeProvider
     {
         DateTime GetUTCNow();
     }
