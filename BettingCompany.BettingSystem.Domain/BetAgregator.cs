@@ -14,6 +14,8 @@ namespace BettingCompany.BettingSystem.Domain
 
     public class BetAgregator : IBetAgregator
     {
+        private bool isShuttingDown = false;
+
         private ConcurrentDictionary<int, Bet> registeredBets = new ();
 
         private ConcurrentQueue<BetTransition> betTransitions = new ();
@@ -22,6 +24,11 @@ namespace BettingCompany.BettingSystem.Domain
 
         public void AddBet(Bet bet)
         {
+            if(isShuttingDown)
+            {
+                return;
+            }
+
             if(IsRegistered(bet))
             {
                 var registeredBet = registeredBets[bet.Id];
@@ -45,6 +52,11 @@ namespace BettingCompany.BettingSystem.Domain
         private bool IsRegistered(Bet bet)
         {
             return registeredBets.ContainsKey(bet.Id);
+        }
+
+        public void ShutDown()
+        {
+            isShuttingDown = true;
         }
     }
 }

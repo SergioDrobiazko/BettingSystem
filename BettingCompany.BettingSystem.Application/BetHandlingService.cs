@@ -90,18 +90,20 @@ namespace BettingCompany.BettingSystem.Application
             }
         }
 
+        private ConcurrentQueue<Bet> unhandledBets = new();
+
         public void Handle(Bet bet)
         {
-            if(isShuttingDown)
-            {
-                // idea: send to some storage
-
-                return;
-            }
-
             lock (incomingBetsLock)
             {
                 incomingBets++;
+            }
+
+            if (isShuttingDown)
+            {
+                unhandledBets.Enqueue(bet);
+
+                return;
             }
 
             bet.SetDateArrived(_dateTimeProvider.GetUTCNow());
@@ -125,7 +127,7 @@ namespace BettingCompany.BettingSystem.Application
 
             _betAgregator.ShutDown();
 
-            // todo: save unculculated
+            // todo: save unhandled bets
         }
     }
 }

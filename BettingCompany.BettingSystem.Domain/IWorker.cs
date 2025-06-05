@@ -8,6 +8,6 @@ namespace BettingCompany.BettingSystem.Domain
 {
     public interface IWorker
     {
-        Task<BetCalculated> CalculateBetAsync(BetTransition betTransition);
+        Task<BetCalculated> CalculateBetAsync(BetTransition betTransition, System.Threading.CancellationToken cancellationToken);
     }
 }

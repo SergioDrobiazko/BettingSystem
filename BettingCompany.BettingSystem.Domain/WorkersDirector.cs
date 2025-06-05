@@ -3,12 +3,15 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace BettingCompany.BettingSystem.Domain
 {
     public class WorkersDirector : IWorkersDirector
     {
+        private bool isShuttingDown = false;
+
         public WorkersDirector(int maxWorkers)
         {
             for (int i = 0; i < maxWorkers; ++i)
@@ -25,18 +28,35 @@ namespace BettingCompany.BettingSystem.Domain
 
         public event EventHandler<BetCalculatedEventArgs> BetCalculated;
 
+        private readonly CancellationTokenSource Cts = new();
+
+        public void CancelOperations()
+        {
+            Cts.Cancel();
+        }
+
         public void DelegateBetCalculation(BetTransition betTransition)
         {
+            if(isShuttingDown == true)
+            {
+                return;
+            }
+
             IWorker freeWorker = GetFreeWorker();
-            var betCalculatedTask = freeWorker.CalculateBetAsync(betTransition)
+
+            var cancellationToken = Cts.Token;
+
+            var betCalculatedTask = freeWorker.CalculateBetAsync(betTransition, cancellationToken)
                 .ContinueWith((betCalculated) =>
                 {
+                    cancellationToken.ThrowIfCancellationRequested();
+
                     betsCalculated.Enqueue(betCalculated.Result);
 
                     BetCalculated?.Invoke(this, new BetCalculatedEventArgs { });
 
                     availableWorkers.Add(freeWorker);
-                });
+                }, cancellationToken);
 
             betsCalculationTasks.Enqueue(betCalculatedTask);
         }
@@ -64,6 +84,13 @@ namespace BettingCompany.BettingSystem.Domain
         private IWorker GetFreeWorker()
         {
             return availableWorkers.Take();
+        }
+
+        public void ShutDown()
+        {
+            isShuttingDown = true;
+
+            CancelOperations();
         }
     }
 }
