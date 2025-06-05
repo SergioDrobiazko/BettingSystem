@@ -14,9 +14,9 @@ namespace BettingCompany.BettingSystem.Repository
             _bets = mongoDatabase.GetCollection<BetCalculated>("Bets");
         }
 
-        public IEnumerable<Bet> Get()
+        public IEnumerable<BetCalculated> Get()
         {
-            throw new NotImplementedException();
+            return _bets.Find(_ => true).ToList();
         }
 
         public void Save(IList<BetCalculated> bets)
