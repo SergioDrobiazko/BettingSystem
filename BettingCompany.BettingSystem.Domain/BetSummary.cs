@@ -3,7 +3,7 @@
     public class BetSummary
     {
         public int TotalProcessed { get; init; }
-        public int TotalAmount { get; init; }
+        public double TotalAmount { get; init; }
 
         public decimal TotalProfitOrLoss { get; init; }
 

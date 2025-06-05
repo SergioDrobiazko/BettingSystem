@@ -39,7 +39,7 @@ namespace BettingCompany.BettingSystem.Application
             var topFiveLosers = CalculateTopFiveLosers(betSummaryFromStorage, betsInMemory);
 
             var totalProfitOrLoss = CalculateTopProfitOrLoss(betSummaryFromStorage, betsInMemory);
-            var totalAmount = CalculateTopFiveLosers(betSummaryFromStorage, betsInMemory);
+            double totalAmount = CalculateTotalAmount(betSummaryFromStorage, betsInMemory);
             var totalProcessed = CalculateTotalProcessed(betSummaryFromStorage, betsInMemory);
 
             return new BetSummary()
@@ -50,6 +50,11 @@ namespace BettingCompany.BettingSystem.Application
                 TotalAmount = totalAmount,
                 TotalProcessed = totalProcessed
             };
+        }
+
+        private double CalculateTotalAmount(BetSummary betSummaryFromStorage, BetCalculated[] betsInMemory)
+        {
+            throw new NotImplementedException();
         }
 
         private int CalculateTotalProcessed(BetSummary betSummaryFromStorage, BetCalculated[] betsInMemory)
