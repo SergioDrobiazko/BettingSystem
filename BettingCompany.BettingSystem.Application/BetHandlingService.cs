@@ -19,6 +19,8 @@ namespace BettingCompany.BettingSystem.Application
 
     public class BetHandlingService : IBetHandlingService
     {
+        private bool isShuttingDown = false;
+
         private readonly IBetAgregator _betAgregator;
         private readonly IWorkersDirector _workersDirector;
         private readonly IPersistancePolicy _persistancePolicy;
@@ -90,6 +92,13 @@ namespace BettingCompany.BettingSystem.Application
 
         public void Handle(Bet bet)
         {
+            if(isShuttingDown)
+            {
+                // idea: send to some storage
+
+                return;
+            }
+
             lock (incomingBetsLock)
             {
                 incomingBets++;
@@ -102,6 +111,21 @@ namespace BettingCompany.BettingSystem.Application
         public async Task WhenAllHandled()
         {
             await _workersDirector.WhenAllBetsCalculated();
+        }
+
+        public void ShutDown()
+        {
+            isShuttingDown = true;
+
+            var betsCalculated = _workersDirector.GetBetsCalculatedSnapshot();
+
+            _betRepository.Save(betsCalculated);
+
+            _workersDirector.ShutDown();
+
+            _betAgregator.ShutDown();
+
+            // todo: save unculculated
         }
     }
 }

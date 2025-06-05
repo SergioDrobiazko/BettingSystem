@@ -47,7 +47,7 @@ namespace BettingCompany.BettingSystem.Domain
             return calculatedBet;
         }
 
-        public BetCalculated[] CopyBetsCalculated()
+        public BetCalculated[] GetBetsCalculatedSnapshot()
         {
             return betsCalculated.ToArray();
         }

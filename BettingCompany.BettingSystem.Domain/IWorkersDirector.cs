@@ -10,9 +10,11 @@ namespace BettingCompany.BettingSystem.Domain
     {
         void DelegateBetCalculation(BetTransition betTransition);
         BetCalculated? FetchCalculatedBet();
-        BetCalculated[] CopyBetsCalculated();
+        BetCalculated[] GetBetsCalculatedSnapshot();
         Task WhenAllBetsCalculated();
 
         event EventHandler<BetCalculatedEventArgs> BetCalculated;
+
+        void ShutDown();
     }
 }

@@ -8,5 +8,7 @@ namespace BettingCompany.BettingSystem.Domain
         void AddBet(Bet bet);
 
         event EventHandler<BetTransitionFormedEventArgs> BetTransitionFormed;
+
+        void ShutDown();
     }
 }

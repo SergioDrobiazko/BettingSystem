@@ -25,7 +25,7 @@ namespace BettingCompany.BettingSystem.Application
             {
                 var betsFromStorage = _betRepository.Get();
 
-                var betsInMemory = _workersDirector.CopyBetsCalculated();
+                var betsInMemory = _workersDirector.GetBetsCalculatedSnapshot();
 
                 BetSummary betSummary = CalculateBetSummary(betsFromStorage, betsInMemory);
 
