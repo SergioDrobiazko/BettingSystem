@@ -12,11 +12,11 @@ namespace BettingCompany.BettingSystem.Domain
     {
         private bool isShuttingDown = false;
 
-        public WorkersDirector(int maxWorkers)
+        public WorkersDirector(int maxWorkers, IWorkersFactory workersFactory)
         {
             for (int i = 0; i < maxWorkers; ++i)
             {
-                availableWorkers.Add(new Worker());
+                availableWorkers.Add(workersFactory.CreateWorker());
             }
         }
 

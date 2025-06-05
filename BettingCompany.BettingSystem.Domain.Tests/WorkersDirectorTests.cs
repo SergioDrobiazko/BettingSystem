@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Moq;
+using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -12,7 +10,7 @@ namespace BettingCompany.BettingSystem.Domain.Tests
         [Fact]
         public void DelegateWork()
         {
-            var workersDirector = new WorkersDirector(100);
+            var workersDirector = new WorkersDirector(100, new WorkersFactory());
 
             var betArrivedFirst = new Bet(1, 100, 2.5, "Bob", "Lenox Luis vs Vitaly Klichko", "", "Klichko Wins", BetStatus.OPEN);
             var betArrivedSecond = new Bet(1, 100, 2.5, "Bob", "Lenox Luis vs Vitaly Klichko", "", "Klichko Wins", BetStatus.WINNER);
@@ -30,6 +28,38 @@ namespace BettingCompany.BettingSystem.Domain.Tests
             };
 
             workersDirector.DelegateBetCalculation(betTransition);
+        }
+
+        [Fact]
+        public async Task DelegateWork_ThenCancel()
+        {
+            Mock<IWorker> mockWorker = new Mock<IWorker>();
+
+            mockWorker.Setup(x => x.CalculateBetAsync(It.IsAny<BetTransition>(), It.IsAny<CancellationToken>()))
+                .Returns(
+                    async (BetTransition bt, CancellationToken ct) =>
+                    {
+                        await Task.Delay(50, ct);
+                        return new BetCalculated(betTransition: null, betOutcome: BetOutcome.Won(250));
+                    });
+
+            Mock<IWorkersFactory> mockWokersFactory = new Mock<IWorkersFactory>();
+
+            mockWokersFactory.Setup(x => x.CreateWorker())
+                .Returns(mockWorker.Object);
+
+            var workersDirector = new WorkersDirector(100, mockWokersFactory.Object);
+
+            var betArrivedFirst = new Bet(1, 100, 2.5, "Bob", "Lenox Luis vs Vitaly Klichko", "", "Klichko Wins", BetStatus.OPEN);
+            var betArrivedSecond = new Bet(1, 100, 2.5, "Bob", "Lenox Luis vs Vitaly Klichko", "", "Klichko Wins", BetStatus.WINNER);
+
+            var betTransition = new BetTransition(betArrivedFirst, betArrivedSecond);
+
+            workersDirector.DelegateBetCalculation(betTransition);
+
+            await Task.Delay(110);
+
+            workersDirector.ShutDown();
         }
     }
 }
