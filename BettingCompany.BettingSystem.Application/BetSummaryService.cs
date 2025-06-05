@@ -1,10 +1,6 @@
 ﻿using BettingCompany.BettingSystem.Domain;
 using BettingCompany.BettingSystem.Repository;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BettingCompany.BettingSystem.Application
 {
@@ -21,19 +17,34 @@ namespace BettingCompany.BettingSystem.Application
 
         public BetSummary GetSummary()
         {
-            lock(StorageLock.Lock)
+            BetSummary betSummaryFromStorage = default;
+            BetCalculated[] betsInMemory;
+
+            lock (StorageLock.Lock)
             {
-                var betsFromStorage = _betRepository.Get();
+                betSummaryFromStorage = _betRepository.GetSummary();
 
-                var betsInMemory = _workersDirector.GetBetsCalculatedSnapshot();
-
-                BetSummary betSummary = CalculateBetSummary(betsFromStorage, betsInMemory);
-
-                return betSummary;
+                betsInMemory = _workersDirector.GetBetsCalculatedSnapshot();
             }
+
+            BetSummary betSummary = CalculateBetSummary(betSummaryFromStorage, betsInMemory);
+
+            return betSummary;
         }
 
-        private BetSummary CalculateBetSummary(IEnumerable<Bet> betsFromStorage, BetCalculated[] betsInMemory)
+        private BetSummary CalculateBetSummary(BetSummary betSummaryFromStorage, BetCalculated[] betsInMemory)
+        {
+            var topFiveWinners = CalculateTopFiveWinners(betSummaryFromStorage, betsInMemory);
+            var topFiveLosers = CalculateTopFiveLosers(betSummaryFromStorage, betsInMemory);
+
+        }
+
+        private object CalculateTopFiveLosers(BetSummary betSummaryFromStorage, BetCalculated[] betsInMemory)
+        {
+            throw new NotImplementedException();
+        }
+
+        private object CalculateTopFiveWinners(BetSummary betSummaryFromStorage, BetCalculated[] betsInMemory)
         {
             throw new NotImplementedException();
         }

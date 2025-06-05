@@ -8,5 +8,6 @@ namespace BettingCompany.BettingSystem.Repository
         IEnumerable<BetCalculated> Get();
 
         void Save(IList<BetCalculated> bets);
+        BetSummary GetSummary();
     }
 }
