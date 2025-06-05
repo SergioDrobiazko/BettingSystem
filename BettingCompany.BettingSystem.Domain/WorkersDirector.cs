@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -20,7 +17,7 @@ namespace BettingCompany.BettingSystem.Domain
             }
         }
 
-        private BlockingCollection<IWorker> availableWorkers = new BlockingCollection<IWorker>(new ConcurrentQueue<IWorker>());
+        private BlockingCollection<IWorker> availableWorkers = new(new ConcurrentQueue<IWorker>());
 
         private ConcurrentQueue<BetCalculated> betsCalculated = new();
 
