@@ -12,12 +12,12 @@ namespace BettingCompany.BettingSystem.Application
     {
         public int GetNumberOfElementsToSave()
         {
-            return 100;
+            return 1;
         }
 
         public bool ShouldPersist(int betsCalculated)
         {
-            return betsCalculated == 100;
+            return betsCalculated == 1;
         }
     }
 }

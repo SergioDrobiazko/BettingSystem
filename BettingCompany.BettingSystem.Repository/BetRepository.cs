@@ -1,4 +1,5 @@
 ﻿using BettingCompany.BettingSystem.Domain;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 
@@ -6,6 +7,13 @@ namespace BettingCompany.BettingSystem.Repository
 {
     public class BetRepository : IBetRepository
     {
+        private readonly IMongoCollection<BetCalculated> _bets;
+
+        public BetRepository(IMongoDatabase mongoDatabase)
+        {
+            _bets = mongoDatabase.GetCollection<BetCalculated>("Bets");
+        }
+
         public IEnumerable<Bet> Get()
         {
             throw new NotImplementedException();
@@ -13,7 +21,7 @@ namespace BettingCompany.BettingSystem.Repository
 
         public void Save(IList<BetCalculated> bets)
         {
-            throw new NotImplementedException();
+            _bets.InsertMany(bets);
         }
     }
 }

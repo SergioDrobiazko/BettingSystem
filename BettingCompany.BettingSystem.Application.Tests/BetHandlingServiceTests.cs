@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -31,7 +32,7 @@ namespace BettingCompany.BettingSystem.Application.Tests
 
             var betHandlingService = new BetHandlingService(
                 new BetAgregator(),
-                new WorkersDirector(maxWorkers: 50),
+                new WorkersDirector(maxWorkers: 50, new WorkersFactory()),
                 new PersistancePolicy(),
                 new DateTimeProvider(), // todo: mock date time provider
                 mockRepository.Object);
@@ -272,22 +273,29 @@ namespace BettingCompany.BettingSystem.Application.Tests
                     Console.WriteLine("Saved bets");
                 });
 
+            Mock<IWorker> mockWorker = new Mock<IWorker>();
+
+            mockWorker.Setup(x => x.CalculateBetAsync(It.IsAny<BetTransition>(), It.IsAny<CancellationToken>()))
+                .Returns(
+                    async (BetTransition bt, CancellationToken ct) =>
+                    {
+                        Random r = new Random();
+                        await Task.Delay(r.Next(1,100), ct);
+                        ct.ThrowIfCancellationRequested();
+                        return new BetCalculated(betTransition: null, betOutcome: BetOutcome.Won(250));
+                    });
+
+            Mock<IWorkersFactory> mockWokersFactory = new Mock<IWorkersFactory>();
+
+            mockWokersFactory.Setup(x => x.CreateWorker())
+                .Returns(mockWorker.Object);
+
             var betHandlingService = new BetHandlingService(
                 new BetAgregator(),
-                new WorkersDirector(maxWorkers: 10, new WorkersFactory()),
+                new WorkersDirector(maxWorkers: 10, mockWokersFactory.Object),
                 new PersistancePolicy(),
                 new DateTimeProvider(), // todo: mock date time provider
                 mockRepository.Object);
-
-            var workerMock = new Mock<IWorker>();
-
-            //workerMock
-            //    .Setup(worker => worker.CalculateBetAsync(It.IsAny<IList<BetCalculated>>()))
-            //    .Callback<IList<BetCalculated>>(b =>
-            //    {
-            //        savedBets.AddRange(b);
-
-            //    });
 
             var testBets = new List<Bet>
 {
@@ -499,7 +507,7 @@ namespace BettingCompany.BettingSystem.Application.Tests
                 betHandlingService.Handle(testBet);
             }
 
-            await Task.Delay(1100);
+            await Task.Delay(60);
 
             betHandlingService.ShutDown();
 

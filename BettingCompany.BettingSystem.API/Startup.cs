@@ -1,19 +1,15 @@
+using BettingCompany.BettingSystem.API;
 using BettingCompany.BettingSystem.Application;
 using BettingCompany.BettingSystem.Domain;
 using BettingCompany.BettingSystem.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using MongoDB.Driver;
 
 namespace BettingCompany.BettingSystem
 {
@@ -31,10 +27,26 @@ namespace BettingCompany.BettingSystem
         {
             services.AddSingleton<IBetHandlingService, BetHandlingService>();
             services.AddSingleton<IBetAgregator, BetAgregator>();
-            services.AddSingleton<IWorkersDirector, WorkersDirector>(x => new WorkersDirector(100));
+            services.AddSingleton<IWorkersDirector, WorkersDirector>(x => new WorkersDirector(100, new WorkersFactory()));
             services.AddSingleton<IPersistancePolicy, PersistancePolicy>();
             services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
             services.AddSingleton<IBetRepository, BetRepository>();
+
+            services.Configure<MongoSettings>(
+                Configuration.GetSection("MongoDb"));
+
+            services.AddSingleton<IMongoClient>(sp =>
+            {
+                var settings = sp.GetRequiredService<IOptions<MongoSettings>>().Value;
+                return new MongoClient(settings.ConnectionString);
+            });
+
+            services.AddSingleton(sp =>
+            {
+                var settings = sp.GetRequiredService<IOptions<MongoSettings>>().Value;
+                var client = sp.GetRequiredService<IMongoClient>();
+                return client.GetDatabase(settings.DatabaseName);
+            });
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

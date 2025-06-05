@@ -20,8 +20,6 @@
             return betOutcome;
         }
 
-        public string Status { get; }
-
         private BetOutcome(string status, decimal amount)
         {
             Status = status;
@@ -29,5 +27,7 @@
         }
 
         public decimal Amount { get; private set; }
+
+        public string Status { get; private set; }
     }
 }
