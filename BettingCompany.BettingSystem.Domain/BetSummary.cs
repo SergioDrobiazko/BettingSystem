@@ -5,9 +5,9 @@
         public int TotalProcessed { get; init; }
         public int TotalAmount { get; init; }
 
-        public int TotalProfitOrLoss { get; init; }
+        public decimal TotalProfitOrLoss { get; init; }
 
-        public int TopFiveWinners { get; init; }
-        public int TopFiveLosers { get; init; }
+        public string[] TopFiveWinners { get; init; }
+        public string[] TopFiveLosers { get; init; }
     }
 }
