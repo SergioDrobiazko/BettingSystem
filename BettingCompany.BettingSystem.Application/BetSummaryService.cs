@@ -37,14 +37,36 @@ namespace BettingCompany.BettingSystem.Application
             var topFiveWinners = CalculateTopFiveWinners(betSummaryFromStorage, betsInMemory);
             var topFiveLosers = CalculateTopFiveLosers(betSummaryFromStorage, betsInMemory);
 
+            var totalProfitOrLoss = CalculateTopProfitOrLoss(betSummaryFromStorage, betsInMemory);
+            var totalAmount = CalculateTopFiveLosers(betSummaryFromStorage, betsInMemory);
+            var totalProcessed = CalculateTotalProcessed(betSummaryFromStorage, betsInMemory);
+
+            return new BetSummary()
+            {
+                TopFiveWinners = topFiveWinners,
+                TopFiveLosers = topFiveLosers,
+                TotalProfitOrLoss = totalProfitOrLoss,
+                TotalAmount = totalAmount,
+                TotalProcessed = totalProcessed
+            };
         }
 
-        private object CalculateTopFiveLosers(BetSummary betSummaryFromStorage, BetCalculated[] betsInMemory)
+        private int CalculateTotalProcessed(BetSummary betSummaryFromStorage, BetCalculated[] betsInMemory)
         {
             throw new NotImplementedException();
         }
 
-        private object CalculateTopFiveWinners(BetSummary betSummaryFromStorage, BetCalculated[] betsInMemory)
+        private int CalculateTopProfitOrLoss(BetSummary betSummaryFromStorage, BetCalculated[] betsInMemory)
+        {
+            throw new NotImplementedException();
+        }
+
+        private int CalculateTopFiveLosers(BetSummary betSummaryFromStorage, BetCalculated[] betsInMemory)
+        {
+            throw new NotImplementedException();
+        }
+
+        private int CalculateTopFiveWinners(BetSummary betSummaryFromStorage, BetCalculated[] betsInMemory)
         {
             throw new NotImplementedException();
         }

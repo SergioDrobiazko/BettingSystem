@@ -19,6 +19,11 @@ namespace BettingCompany.BettingSystem.Repository
             return _bets.Find(_ => true).ToList();
         }
 
+        public BetSummary GetSummary()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Save(IList<BetCalculated> bets)
         {
             _bets.InsertMany(bets);
