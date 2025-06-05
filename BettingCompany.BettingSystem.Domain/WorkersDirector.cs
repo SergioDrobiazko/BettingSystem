@@ -35,10 +35,13 @@ namespace BettingCompany.BettingSystem.Domain
             Cts.Cancel();
         }
 
+        private ConcurrentQueue<BetTransition> unhandledTransitions = new();
+
         public void DelegateBetCalculation(BetTransition betTransition)
         {
             if(isShuttingDown == true)
             {
+                unhandledTransitions.Enqueue(betTransition);
                 return;
             }
 
