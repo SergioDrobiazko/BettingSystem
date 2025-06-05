@@ -12,11 +12,7 @@ namespace BettingCompany.BettingSystem.Application.Tests
 {
     public class BetHandlingServiceTests
     {
-        object ListLock = new object();
-
-
         Stopwatch stopwatch = new Stopwatch();
-
 
         [Fact]
         public async Task HandleAsync_HandleOneHundreadIncomingBets_CorrectResults()
@@ -259,7 +255,6 @@ namespace BettingCompany.BettingSystem.Application.Tests
 
             stopwatch.Stop();
             var s = stopwatch.Elapsed;
-
         }
     }
 }
