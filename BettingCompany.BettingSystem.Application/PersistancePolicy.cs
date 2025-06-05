@@ -10,14 +10,14 @@ namespace BettingCompany.BettingSystem.Application
 {
     public class PersistancePolicy : IPersistancePolicy
     {
-        public bool ShouldPersist(ConcurrentQueue<BetCalculated> betsCalculated)
-        {
-            return betsCalculated.Count > 0;
-        }
-
         public int GetNumberOfElementsToSave()
         {
-            return 1;
+            return 100;
+        }
+
+        public bool ShouldPersist(int betsCalculated)
+        {
+            return betsCalculated == 100;
         }
     }
 }

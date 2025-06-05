@@ -29,7 +29,7 @@ namespace BettingCompany.BettingSystem.Domain.Tests
                 Assert.Equal(250, calculatedBet.BetOutcome.Amount);
             };
 
-            workersDirector.DelegateWork(betTransition);
+            workersDirector.DelegateBetCalculation(betTransition);
         }
     }
 }

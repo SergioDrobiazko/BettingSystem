@@ -7,6 +7,16 @@ using System.Threading.Tasks;
 
 namespace BettingCompany.BettingSystem.Application
 {
+    public class BetsChunkCalculated : EventArgs
+    {
+        public ConcurrentQueue<BetCalculated> betsCalculated;
+
+        public BetsChunkCalculated(ConcurrentQueue<BetCalculated> betsCalculated)
+        {
+            this.betsCalculated = betsCalculated;
+        }
+    }
+
     public class BetHandlingService : IBetHandlingService
     {
         private readonly IBetAgregator _betAgregator;
@@ -17,6 +27,12 @@ namespace BettingCompany.BettingSystem.Application
         private readonly IBetRepository _betRepository;
 
         private ConcurrentQueue<BetCalculated> betsCalculated = new();
+
+        private int betsCalculatedCounter = 0;
+
+        private readonly object betsCalculatedCounterLock = new object();
+
+        public event EventHandler<BetsChunkCalculated> ChunkCalculated;
 
         public BetHandlingService(
             IBetAgregator betAgregator,
@@ -37,7 +53,7 @@ namespace BettingCompany.BettingSystem.Application
 
         private void OnBetTransitionFormed(object sender, BetTransitionFormedEventArgs e)
         {
-            _workersDirector.DelegateWork(e.BetTransition);
+            _workersDirector.DelegateBetCalculation(e.BetTransition);
         }
 
         private void OnBetCalculated(object sender, BetCalculatedEventArgs e)
@@ -46,9 +62,13 @@ namespace BettingCompany.BettingSystem.Application
             if (calculatedBet != null)
             {
                 betsCalculated.Enqueue(calculatedBet);
+                lock (betsCalculatedCounterLock)
+                {
+                    betsCalculatedCounter++;
+                }
             }
 
-            if (_persistancePolicy.ShouldPersist(betsCalculated))
+            if (_persistancePolicy.ShouldPersist(betsCalculatedCounter))
             {
                 lock (StorageLock.Lock)
                 {
@@ -66,23 +86,10 @@ namespace BettingCompany.BettingSystem.Application
             }
         }
 
-        public async Task HandleAsync(Bet bet)
-        {
-            await Task.Run(() =>
-            {
-                Handle(bet);
-            });
-        }
-
         public void Handle(Bet bet)
         {
             bet.SetDateArrived(_dateTimeProvider.GetUTCNow());
             _betAgregator.AddBet(bet);
-        }
-
-        public void SaveBets(IEnumerable<BetCalculated> bets)
-        {
-            throw new NotImplementedException();
         }
     }
 }

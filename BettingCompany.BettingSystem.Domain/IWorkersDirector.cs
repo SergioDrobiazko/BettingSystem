@@ -8,7 +8,7 @@ namespace BettingCompany.BettingSystem.Domain
 {
     public interface IWorkersDirector
     {
-        void DelegateWork(BetTransition betTransition);
+        void DelegateBetCalculation(BetTransition betTransition);
         BetCalculated? FetchCalculatedBet();
         BetCalculated[] CopyBetsCalculated();
 
