@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -16,7 +17,7 @@ namespace BettingCompany.BettingSystem.Domain.Tests
 
             var betTransition = new BetTransition(betArrivedFirst, betArrivedSecond);
 
-            var betOutcomeTask = worker.CalculateBetAsync(betTransition);
+            var betOutcomeTask = worker.CalculateBetAsync(betTransition, new CancellationToken());
 
             var betOutcome = await betOutcomeTask;
 
@@ -33,7 +34,7 @@ namespace BettingCompany.BettingSystem.Domain.Tests
 
             var betTransition = new BetTransition(betArrivedFirst, betArrivedSecond);
 
-            var betOutcomeTask = worker.CalculateBetAsync(betTransition);
+            var betOutcomeTask = worker.CalculateBetAsync(betTransition, new CancellationToken());
 
             var betOutcome = await betOutcomeTask;
 
@@ -50,7 +51,7 @@ namespace BettingCompany.BettingSystem.Domain.Tests
 
             var betTransition = new BetTransition(betArrivedFirst, betArrivedSecond);
 
-            var betOutcomeTask = worker.CalculateBetAsync(betTransition);
+            var betOutcomeTask = worker.CalculateBetAsync(betTransition, new CancellationToken());
 
             var betOutcome = await betOutcomeTask;
 
@@ -69,7 +70,7 @@ namespace BettingCompany.BettingSystem.Domain.Tests
 
             var betTransition = new BetTransition(betArrivedFirst, betArrivedSecond);
 
-            var betOutcomeTask = worker.CalculateBetAsync(betTransition);
+            var betOutcomeTask = worker.CalculateBetAsync(betTransition, new CancellationToken());
 
             var betOutcome = await betOutcomeTask;
 
@@ -88,7 +89,7 @@ namespace BettingCompany.BettingSystem.Domain.Tests
 
             var betTransition = new BetTransition(betArrivedFirst, betArrivedSecond);
 
-            var betOutcomeTask = worker.CalculateBetAsync(betTransition);
+            var betOutcomeTask = worker.CalculateBetAsync(betTransition, cancellationToken: new CancellationToken());
 
             var betOutcome = await betOutcomeTask;
 
