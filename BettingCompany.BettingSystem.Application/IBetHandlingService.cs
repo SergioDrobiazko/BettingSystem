@@ -10,5 +10,6 @@ namespace BettingCompany.BettingSystem.Application
         event EventHandler<BetsChunkCalculated> ChunkCalculated;
 
         void Handle(Bet bet);
+        Task WhenAllHandled();
     }
 }

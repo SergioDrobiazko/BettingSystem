@@ -11,6 +11,7 @@ namespace BettingCompany.BettingSystem.Domain
         void DelegateBetCalculation(BetTransition betTransition);
         BetCalculated? FetchCalculatedBet();
         BetCalculated[] CopyBetsCalculated();
+        Task WhenAllBetsCalculated();
 
         event EventHandler<BetCalculatedEventArgs> BetCalculated;
     }

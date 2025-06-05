@@ -11,7 +11,7 @@ namespace BettingCompany.BettingSystem.Domain
     {
         public WorkersDirector(int maxWorkers)
         {
-            for(int i = 0; i < maxWorkers; ++i)
+            for (int i = 0; i < maxWorkers; ++i)
             {
                 availableWorkers.Add(new Worker());
             }
@@ -19,24 +19,26 @@ namespace BettingCompany.BettingSystem.Domain
 
         private BlockingCollection<IWorker> availableWorkers = new BlockingCollection<IWorker>(new ConcurrentQueue<IWorker>());
 
-        private ConcurrentQueue<BetCalculated> betsCalculated = new ();
+        private ConcurrentQueue<BetCalculated> betsCalculated = new();
+
+        private ConcurrentQueue<Task> betsCalculationTasks = new();
 
         public event EventHandler<BetCalculatedEventArgs> BetCalculated;
 
         public void DelegateBetCalculation(BetTransition betTransition)
         {
             IWorker freeWorker = GetFreeWorker();
-            var betCalculatedTask = freeWorker.CalculateBetAsync(betTransition);
-
-            betCalculatedTask
+            var betCalculatedTask = freeWorker.CalculateBetAsync(betTransition)
                 .ContinueWith((betCalculated) =>
                 {
                     betsCalculated.Enqueue(betCalculated.Result);
-                    
+
                     BetCalculated?.Invoke(this, new BetCalculatedEventArgs { });
 
                     availableWorkers.Add(freeWorker);
                 });
+
+            betsCalculationTasks.Enqueue(betCalculatedTask);
         }
 
         public BetCalculated? FetchCalculatedBet()
@@ -48,6 +50,11 @@ namespace BettingCompany.BettingSystem.Domain
         public BetCalculated[] CopyBetsCalculated()
         {
             return betsCalculated.ToArray();
+        }
+
+        public async Task WhenAllBetsCalculated()
+        {
+            await Task.WhenAll(betsCalculationTasks);
         }
 
         /// <summary>

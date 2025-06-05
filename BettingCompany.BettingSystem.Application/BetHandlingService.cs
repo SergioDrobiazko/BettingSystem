@@ -28,9 +28,11 @@ namespace BettingCompany.BettingSystem.Application
 
         private ConcurrentQueue<BetCalculated> betsCalculated = new();
 
-        private int betsCalculatedCounter = 0;
+        private int incomingBets = 0;
+        private int betsHandled = 0;
 
         private readonly object betsCalculatedCounterLock = new object();
+        private readonly object incomingBetsLock = new object();
 
         public event EventHandler<BetsChunkCalculated> ChunkCalculated;
 
@@ -64,11 +66,11 @@ namespace BettingCompany.BettingSystem.Application
                 betsCalculated.Enqueue(calculatedBet);
                 lock (betsCalculatedCounterLock)
                 {
-                    betsCalculatedCounter++;
+                    betsHandled++;
                 }
             }
 
-            if (_persistancePolicy.ShouldPersist(betsCalculatedCounter))
+            if (_persistancePolicy.ShouldPersist(betsHandled))
             {
                 lock (StorageLock.Lock)
                 {
@@ -88,8 +90,18 @@ namespace BettingCompany.BettingSystem.Application
 
         public void Handle(Bet bet)
         {
+            lock (incomingBetsLock)
+            {
+                incomingBets++;
+            }
+
             bet.SetDateArrived(_dateTimeProvider.GetUTCNow());
             _betAgregator.AddBet(bet);
+        }
+
+        public async Task WhenAllHandled()
+        {
+            await _workersDirector.WhenAllBetsCalculated();
         }
     }
 }

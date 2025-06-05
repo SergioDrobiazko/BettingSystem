@@ -19,7 +19,7 @@ namespace BettingCompany.BettingSystem.Application.Tests
 
 
         [Fact]
-        public void HandleAsync_HandleOneHundreadIncomingBets_CorrectResults()
+        public async Task HandleAsync_HandleOneHundreadIncomingBets_CorrectResults()
         {
             var mockRepository = new Mock<IBetRepository>();
 
@@ -30,11 +30,7 @@ namespace BettingCompany.BettingSystem.Application.Tests
                 .Callback<IList<BetCalculated>>(b =>
                 {
                     savedBets.AddRange(b);
-                    stopwatch.Stop();
-                    var s = stopwatch.Elapsed;
-
-                    Assert.Equal(100, savedBets.Count);
-
+                    
                 });
 
             var betHandlingService = new BetHandlingService(
@@ -42,7 +38,7 @@ namespace BettingCompany.BettingSystem.Application.Tests
                 new WorkersDirector(maxWorkers: 5),
                 new PersistancePolicy(),
                 new DateTimeProvider(), // todo: mock date time provider
-                new BetRepository());
+                mockRepository.Object);
 
 
             var testBets = new List<Bet>
@@ -255,7 +251,15 @@ namespace BettingCompany.BettingSystem.Application.Tests
             foreach (var testBet in testBets)
             {
                 betHandlingService.Handle(testBet);
-            }   
+            }
+
+            await betHandlingService.WhenAllHandled();
+
+            Assert.Equal(100, savedBets.Count);
+
+            stopwatch.Stop();
+            var s = stopwatch.Elapsed;
+
         }
     }
 }
