@@ -2,6 +2,7 @@
 using BettingCompany.BettingSystem.Domain.Extension;
 using BettingCompany.BettingSystem.Repository;
 using System;
+using System.Linq;
 
 namespace BettingCompany.BettingSystem.Application
 {
@@ -37,8 +38,8 @@ namespace BettingCompany.BettingSystem.Application
         {
             var betsInMemorySummary = betsInMemory.GetSummary();
 
-            string[] topFiveWinners = CalculateTopFiveWinners(betSummaryFromStorage.TopFiveWinners, betsInMemorySummary.TopFiveWinners);
-            string[] topFiveLosers = CalculateTopFiveLosers(betSummaryFromStorage.TopFiveLosers, betsInMemorySummary.TopFiveLosers);
+            ClientProfit[] topFiveWinners = CalculateTopFiveWinners(betSummaryFromStorage.TopFiveWinners, betsInMemorySummary.TopFiveWinners);
+            ClientProfit[] topFiveLosers = CalculateTopFiveLosers(betSummaryFromStorage.TopFiveLosers, betsInMemorySummary.TopFiveLosers);
 
             var totalProfitOrLoss = betSummaryFromStorage.TotalProfitOrLoss + betsInMemorySummary.TotalProfitOrLoss;
             decimal totalAmount = betSummaryFromStorage.TotalAmount + betsInMemorySummary.TotalAmount;
@@ -47,14 +48,22 @@ namespace BettingCompany.BettingSystem.Application
             return new BetSummary(totalProcessed, totalAmount, totalProfitOrLoss, topFiveWinners, topFiveLosers);
         }
 
-        private string[] CalculateTopFiveLosers(string[] topFiveLosers1, string[] topFiveLosers2)
+        private ClientProfit[] CalculateTopFiveLosers(ClientProfit[] topFiveLosers1, ClientProfit[] topFiveLosers2)
         {
-            throw new NotImplementedException();
+            return topFiveLosers1
+                .Union(topFiveLosers2)
+                .OrderBy(x => x.Profit)
+                .Take(5)
+                .ToArray();
         }
 
-        private string[] CalculateTopFiveWinners(string[] topFiveWinners1, string[] topFiveWinners2)
+        private ClientProfit[] CalculateTopFiveWinners(ClientProfit[] topFiveWinners1, ClientProfit[] topFiveWinners2)
         {
-            throw new NotImplementedException();
+            return topFiveWinners1
+                .Union(topFiveWinners2)
+                .OrderBy(x => x.Profit)
+                .TakeLast(5)
+                .ToArray();
         }
     }
 }

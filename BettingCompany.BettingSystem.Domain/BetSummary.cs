@@ -2,7 +2,7 @@
 {
     public class BetSummary
     {
-        public BetSummary(int totalProcessed, decimal totalAmount, decimal totalProfitOrLoss, string[] topFiveWinners, string[] topFiveLosers)
+        public BetSummary(int totalProcessed, decimal totalAmount, decimal totalProfitOrLoss, ClientProfit[] topFiveWinners, ClientProfit[] topFiveLosers)
         {
             TotalProcessed = totalProcessed;
             TotalAmount = totalAmount;
@@ -16,7 +16,7 @@
 
         public decimal TotalProfitOrLoss { get; init; }
 
-        public string[] TopFiveWinners { get; init; }
-        public string[] TopFiveLosers { get; init; }
+        public ClientProfit[] TopFiveWinners { get; init; }
+        public ClientProfit[] TopFiveLosers { get; init; }
     }
 }

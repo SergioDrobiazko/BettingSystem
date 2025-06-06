@@ -11,13 +11,13 @@ namespace BettingCompany.BettingSystem.Domain.Extension
                 .GroupBy(x => x.BetTransition.InitialBet.Client);
 
             var usersProfits = groupsByUser
-                .Select(x => new { user = x.Key, totalProfit = x.Sum(user => user.BetOutcome.Amount) })
-                .OrderBy(x => x.totalProfit);
+                .Select(x => new ClientProfit(x.Key, x.Sum(user => user.BetOutcome.Amount)))
+                .OrderBy(x => x.Profit);
 
-            var topFiveWinners = usersProfits.Take(5).Select(x => x.user).ToArray();
-            var topFiveLosers = usersProfits.TakeLast(5).Select(x => x.user).ToArray();
+            var topFiveWinners = usersProfits.TakeLast(5).ToArray();
+            var topFiveLosers = usersProfits.Take(5).ToArray();
 
-            var totalProfitOrLoss = usersProfits.Sum(x => x.totalProfit);
+            var totalProfitOrLoss = usersProfits.Sum(x => x.Profit);
 
             var totalBetsProcessed = bets.Count();
             var totalAmount = bets.Sum(x => x.GetProfit());
