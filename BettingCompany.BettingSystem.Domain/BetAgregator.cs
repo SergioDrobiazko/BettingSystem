@@ -36,6 +36,7 @@ namespace BettingCompany.BettingSystem.Domain
 
                 betTransitions.Enqueue(betTransition);
                 betTransitions.TryDequeue(out BetTransition firstBetTransition);
+                registeredBets.TryRemove(bet.Id, out _);
                 BetTransitionFormed.Invoke(this, new BetTransitionFormedEventArgs { BetTransition = firstBetTransition });
             }
             else

@@ -1,0 +1,2002 @@
+[
+  {
+    "id": 1,
+    "amount": 420,
+    "odds": 4.08,
+    "client": "David",
+    "event": "David vs Eve",
+    "market": "Correct Score",
+    "selection": "3:2",
+    "status": 0
+  },
+  {
+    "id": 1,
+    "amount": 420,
+    "odds": 4.08,
+    "client": "David",
+    "event": "David vs Eve",
+    "market": "Correct Score",
+    "selection": "3:2",
+    "status": 1
+  },
+  {
+    "id": 2,
+    "amount": 358,
+    "odds": 2.73,
+    "client": "Bob",
+    "event": "Eve vs Bob",
+    "market": "1X2",
+    "selection": "2",
+    "status": 0
+  },
+  {
+    "id": 2,
+    "amount": 358,
+    "odds": 2.73,
+    "client": "Bob",
+    "event": "Eve vs Bob",
+    "market": "1X2",
+    "selection": "2",
+    "status": 1
+  },
+  {
+    "id": 3,
+    "amount": 112,
+    "odds": 2.72,
+    "client": "Bob",
+    "event": "Alice vs Charlie",
+    "market": "Correct Score",
+    "selection": "2:1",
+    "status": 0
+  },
+  {
+    "id": 3,
+    "amount": 112,
+    "odds": 2.72,
+    "client": "Bob",
+    "event": "Alice vs Charlie",
+    "market": "Correct Score",
+    "selection": "2:1",
+    "status": 3
+  },
+  {
+    "id": 4,
+    "amount": 114,
+    "odds": 3.74,
+    "client": "Bob",
+    "event": "Alice vs Charlie",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 0
+  },
+  {
+    "id": 4,
+    "amount": 114,
+    "odds": 3.74,
+    "client": "Bob",
+    "event": "Alice vs Charlie",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 3
+  },
+  {
+    "id": 5,
+    "amount": 367,
+    "odds": 3.19,
+    "client": "David",
+    "event": "Charlie vs David",
+    "market": "1X2",
+    "selection": "2",
+    "status": 0
+  },
+  {
+    "id": 5,
+    "amount": 367,
+    "odds": 3.19,
+    "client": "David",
+    "event": "Charlie vs David",
+    "market": "1X2",
+    "selection": "2",
+    "status": 2
+  },
+  {
+    "id": 6,
+    "amount": 250,
+    "odds": 1.65,
+    "client": "Eve",
+    "event": "David vs Eve",
+    "market": "1X2",
+    "selection": "2",
+    "status": 0
+  },
+  {
+    "id": 6,
+    "amount": 250,
+    "odds": 1.65,
+    "client": "Eve",
+    "event": "David vs Eve",
+    "market": "1X2",
+    "selection": "2",
+    "status": 3
+  },
+  {
+    "id": 7,
+    "amount": 150,
+    "odds": 4.57,
+    "client": "Bob",
+    "event": "David vs Eve",
+    "market": "Handicap",
+    "selection": "0",
+    "status": 0
+  },
+  {
+    "id": 7,
+    "amount": 150,
+    "odds": 4.57,
+    "client": "Bob",
+    "event": "David vs Eve",
+    "market": "Handicap",
+    "selection": "0",
+    "status": 1
+  },
+  {
+    "id": 8,
+    "amount": 10,
+    "odds": 4.62,
+    "client": "Eve",
+    "event": "David vs Eve",
+    "market": "Total Goals",
+    "selection": "Under 2.5",
+    "status": 0
+  },
+  {
+    "id": 8,
+    "amount": 10,
+    "odds": 4.62,
+    "client": "Eve",
+    "event": "David vs Eve",
+    "market": "Total Goals",
+    "selection": "Under 2.5",
+    "status": 2
+  },
+  {
+    "id": 9,
+    "amount": 358,
+    "odds": 2.22,
+    "client": "Bob",
+    "event": "Eve vs Bob",
+    "market": "Total Goals",
+    "selection": "Under 2.5",
+    "status": 0
+  },
+  {
+    "id": 9,
+    "amount": 358,
+    "odds": 2.22,
+    "client": "Bob",
+    "event": "Eve vs Bob",
+    "market": "Total Goals",
+    "selection": "Under 2.5",
+    "status": 3
+  },
+  {
+    "id": 10,
+    "amount": 427,
+    "odds": 4.81,
+    "client": "Bob",
+    "event": "Eve vs Bob",
+    "market": "Both Teams to Score",
+    "selection": "Yes",
+    "status": 0
+  },
+  {
+    "id": 10,
+    "amount": 427,
+    "odds": 4.81,
+    "client": "Bob",
+    "event": "Eve vs Bob",
+    "market": "Both Teams to Score",
+    "selection": "Yes",
+    "status": 3
+  },
+  {
+    "id": 11,
+    "amount": 223,
+    "odds": 4.61,
+    "client": "Charlie",
+    "event": "David vs Eve",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 0
+  },
+  {
+    "id": 11,
+    "amount": 223,
+    "odds": 4.61,
+    "client": "Charlie",
+    "event": "David vs Eve",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 2
+  },
+  {
+    "id": 12,
+    "amount": 246,
+    "odds": 3.25,
+    "client": "Bob",
+    "event": "Charlie vs David",
+    "market": "Correct Score",
+    "selection": "3:2",
+    "status": 0
+  },
+  {
+    "id": 12,
+    "amount": 246,
+    "odds": 3.25,
+    "client": "Bob",
+    "event": "Charlie vs David",
+    "market": "Correct Score",
+    "selection": "3:2",
+    "status": 2
+  },
+  {
+    "id": 13,
+    "amount": 308,
+    "odds": 2.9,
+    "client": "Charlie",
+    "event": "Bob vs Alice",
+    "market": "1X2",
+    "selection": "1",
+    "status": 0
+  },
+  {
+    "id": 13,
+    "amount": 308,
+    "odds": 2.9,
+    "client": "Charlie",
+    "event": "Bob vs Alice",
+    "market": "1X2",
+    "selection": "1",
+    "status": 1
+  },
+  {
+    "id": 14,
+    "amount": 440,
+    "odds": 4.32,
+    "client": "David",
+    "event": "Eve vs Bob",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 0
+  },
+  {
+    "id": 14,
+    "amount": 440,
+    "odds": 4.32,
+    "client": "David",
+    "event": "Eve vs Bob",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 3
+  },
+  {
+    "id": 15,
+    "amount": 172,
+    "odds": 4.1,
+    "client": "David",
+    "event": "Eve vs Bob",
+    "market": "1X2",
+    "selection": "X",
+    "status": 0
+  },
+  {
+    "id": 15,
+    "amount": 172,
+    "odds": 4.1,
+    "client": "David",
+    "event": "Eve vs Bob",
+    "market": "1X2",
+    "selection": "X",
+    "status": 2
+  },
+  {
+    "id": 16,
+    "amount": 92,
+    "odds": 4.43,
+    "client": "David",
+    "event": "David vs Eve",
+    "market": "1X2",
+    "selection": "X",
+    "status": 0
+  },
+  {
+    "id": 16,
+    "amount": 92,
+    "odds": 4.43,
+    "client": "David",
+    "event": "David vs Eve",
+    "market": "1X2",
+    "selection": "X",
+    "status": 2
+  },
+  {
+    "id": 17,
+    "amount": 154,
+    "odds": 4.25,
+    "client": "Charlie",
+    "event": "David vs Eve",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 0
+  },
+  {
+    "id": 17,
+    "amount": 154,
+    "odds": 4.25,
+    "client": "Charlie",
+    "event": "David vs Eve",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 3
+  },
+  {
+    "id": 18,
+    "amount": 434,
+    "odds": 3.58,
+    "client": "Eve",
+    "event": "Bob vs Alice",
+    "market": "Correct Score",
+    "selection": "0:0",
+    "status": 0
+  },
+  {
+    "id": 18,
+    "amount": 434,
+    "odds": 3.58,
+    "client": "Eve",
+    "event": "Bob vs Alice",
+    "market": "Correct Score",
+    "selection": "0:0",
+    "status": 1
+  },
+  {
+    "id": 19,
+    "amount": 144,
+    "odds": 4.2,
+    "client": "Alice",
+    "event": "Alice vs Charlie",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 0
+  },
+  {
+    "id": 19,
+    "amount": 144,
+    "odds": 4.2,
+    "client": "Alice",
+    "event": "Alice vs Charlie",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 1
+  },
+  {
+    "id": 20,
+    "amount": 305,
+    "odds": 4.12,
+    "client": "David",
+    "event": "David vs Eve",
+    "market": "1X2",
+    "selection": "2",
+    "status": 0
+  },
+  {
+    "id": 20,
+    "amount": 305,
+    "odds": 4.12,
+    "client": "David",
+    "event": "David vs Eve",
+    "market": "1X2",
+    "selection": "2",
+    "status": 1
+  },
+  {
+    "id": 21,
+    "amount": 29,
+    "odds": 4.96,
+    "client": "David",
+    "event": "Eve vs Bob",
+    "market": "1X2",
+    "selection": "1",
+    "status": 0
+  },
+  {
+    "id": 21,
+    "amount": 29,
+    "odds": 4.96,
+    "client": "David",
+    "event": "Eve vs Bob",
+    "market": "1X2",
+    "selection": "1",
+    "status": 2
+  },
+  {
+    "id": 22,
+    "amount": 82,
+    "odds": 4.57,
+    "client": "Alice",
+    "event": "David vs Eve",
+    "market": "1X2",
+    "selection": "1",
+    "status": 0
+  },
+  {
+    "id": 22,
+    "amount": 82,
+    "odds": 4.57,
+    "client": "Alice",
+    "event": "David vs Eve",
+    "market": "1X2",
+    "selection": "1",
+    "status": 3
+  },
+  {
+    "id": 23,
+    "amount": 183,
+    "odds": 4.32,
+    "client": "Alice",
+    "event": "Charlie vs David",
+    "market": "Total Goals",
+    "selection": "Under 2.5",
+    "status": 0
+  },
+  {
+    "id": 23,
+    "amount": 183,
+    "odds": 4.32,
+    "client": "Alice",
+    "event": "Charlie vs David",
+    "market": "Total Goals",
+    "selection": "Under 2.5",
+    "status": 1
+  },
+  {
+    "id": 24,
+    "amount": 360,
+    "odds": 3.6,
+    "client": "Bob",
+    "event": "Bob vs Alice",
+    "market": "Both Teams to Score",
+    "selection": "Yes",
+    "status": 0
+  },
+  {
+    "id": 24,
+    "amount": 360,
+    "odds": 3.6,
+    "client": "Bob",
+    "event": "Bob vs Alice",
+    "market": "Both Teams to Score",
+    "selection": "Yes",
+    "status": 1
+  },
+  {
+    "id": 25,
+    "amount": 118,
+    "odds": 2.09,
+    "client": "Eve",
+    "event": "Eve vs Bob",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 0
+  },
+  {
+    "id": 25,
+    "amount": 118,
+    "odds": 2.09,
+    "client": "Eve",
+    "event": "Eve vs Bob",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 3
+  },
+  {
+    "id": 26,
+    "amount": 104,
+    "odds": 4.48,
+    "client": "Bob",
+    "event": "Bob vs Alice",
+    "market": "Total Goals",
+    "selection": "Under 2.5",
+    "status": 0
+  },
+  {
+    "id": 26,
+    "amount": 104,
+    "odds": 4.48,
+    "client": "Bob",
+    "event": "Bob vs Alice",
+    "market": "Total Goals",
+    "selection": "Under 2.5",
+    "status": 2
+  },
+  {
+    "id": 27,
+    "amount": 477,
+    "odds": 2.86,
+    "client": "Charlie",
+    "event": "Alice vs Charlie",
+    "market": "1X2",
+    "selection": "X",
+    "status": 0
+  },
+  {
+    "id": 27,
+    "amount": 477,
+    "odds": 2.86,
+    "client": "Charlie",
+    "event": "Alice vs Charlie",
+    "market": "1X2",
+    "selection": "X",
+    "status": 3
+  },
+  {
+    "id": 28,
+    "amount": 208,
+    "odds": 2.29,
+    "client": "David",
+    "event": "Charlie vs David",
+    "market": "1X2",
+    "selection": "X",
+    "status": 0
+  },
+  {
+    "id": 28,
+    "amount": 208,
+    "odds": 2.29,
+    "client": "David",
+    "event": "Charlie vs David",
+    "market": "1X2",
+    "selection": "X",
+    "status": 3
+  },
+  {
+    "id": 29,
+    "amount": 192,
+    "odds": 4.92,
+    "client": "Eve",
+    "event": "Bob vs Alice",
+    "market": "Handicap",
+    "selection": "-1",
+    "status": 0
+  },
+  {
+    "id": 29,
+    "amount": 192,
+    "odds": 4.92,
+    "client": "Eve",
+    "event": "Bob vs Alice",
+    "market": "Handicap",
+    "selection": "-1",
+    "status": 3
+  },
+  {
+    "id": 30,
+    "amount": 201,
+    "odds": 4.39,
+    "client": "David",
+    "event": "Eve vs Bob",
+    "market": "Total Goals",
+    "selection": "Under 2.5",
+    "status": 0
+  },
+  {
+    "id": 30,
+    "amount": 201,
+    "odds": 4.39,
+    "client": "David",
+    "event": "Eve vs Bob",
+    "market": "Total Goals",
+    "selection": "Under 2.5",
+    "status": 2
+  },
+  {
+    "id": 31,
+    "amount": 489,
+    "odds": 4.27,
+    "client": "Charlie",
+    "event": "Charlie vs David",
+    "market": "Correct Score",
+    "selection": "2:2",
+    "status": 0
+  },
+  {
+    "id": 31,
+    "amount": 489,
+    "odds": 4.27,
+    "client": "Charlie",
+    "event": "Charlie vs David",
+    "market": "Correct Score",
+    "selection": "2:2",
+    "status": 1
+  },
+  {
+    "id": 32,
+    "amount": 203,
+    "odds": 4.55,
+    "client": "Charlie",
+    "event": "Alice vs Charlie",
+    "market": "Handicap",
+    "selection": "+1",
+    "status": 0
+  },
+  {
+    "id": 32,
+    "amount": 203,
+    "odds": 4.55,
+    "client": "Charlie",
+    "event": "Alice vs Charlie",
+    "market": "Handicap",
+    "selection": "+1",
+    "status": 1
+  },
+  {
+    "id": 33,
+    "amount": 448,
+    "odds": 2.24,
+    "client": "David",
+    "event": "Eve vs Bob",
+    "market": "Handicap",
+    "selection": "0",
+    "status": 0
+  },
+  {
+    "id": 33,
+    "amount": 448,
+    "odds": 2.24,
+    "client": "David",
+    "event": "Eve vs Bob",
+    "market": "Handicap",
+    "selection": "0",
+    "status": 2
+  },
+  {
+    "id": 34,
+    "amount": 174,
+    "odds": 4.65,
+    "client": "Eve",
+    "event": "Bob vs Alice",
+    "market": "Handicap",
+    "selection": "+1",
+    "status": 0
+  },
+  {
+    "id": 34,
+    "amount": 174,
+    "odds": 4.65,
+    "client": "Eve",
+    "event": "Bob vs Alice",
+    "market": "Handicap",
+    "selection": "+1",
+    "status": 3
+  },
+  {
+    "id": 35,
+    "amount": 433,
+    "odds": 1.65,
+    "client": "Charlie",
+    "event": "Charlie vs David",
+    "market": "Handicap",
+    "selection": "+1",
+    "status": 0
+  },
+  {
+    "id": 35,
+    "amount": 433,
+    "odds": 1.65,
+    "client": "Charlie",
+    "event": "Charlie vs David",
+    "market": "Handicap",
+    "selection": "+1",
+    "status": 3
+  },
+  {
+    "id": 36,
+    "amount": 72,
+    "odds": 4.5,
+    "client": "David",
+    "event": "Alice vs Charlie",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 0
+  },
+  {
+    "id": 36,
+    "amount": 72,
+    "odds": 4.5,
+    "client": "David",
+    "event": "Alice vs Charlie",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 2
+  },
+  {
+    "id": 37,
+    "amount": 170,
+    "odds": 1.72,
+    "client": "Bob",
+    "event": "David vs Eve",
+    "market": "Total Goals",
+    "selection": "Over 2.5",
+    "status": 0
+  },
+  {
+    "id": 37,
+    "amount": 170,
+    "odds": 1.72,
+    "client": "Bob",
+    "event": "David vs Eve",
+    "market": "Total Goals",
+    "selection": "Over 2.5",
+    "status": 1
+  },
+  {
+    "id": 38,
+    "amount": 273,
+    "odds": 3.28,
+    "client": "Bob",
+    "event": "Alice vs Charlie",
+    "market": "Total Goals",
+    "selection": "Over 2.5",
+    "status": 0
+  },
+  {
+    "id": 38,
+    "amount": 273,
+    "odds": 3.28,
+    "client": "Bob",
+    "event": "Alice vs Charlie",
+    "market": "Total Goals",
+    "selection": "Over 2.5",
+    "status": 3
+  },
+  {
+    "id": 39,
+    "amount": 172,
+    "odds": 4.03,
+    "client": "Eve",
+    "event": "Eve vs Bob",
+    "market": "1X2",
+    "selection": "2",
+    "status": 0
+  },
+  {
+    "id": 39,
+    "amount": 172,
+    "odds": 4.03,
+    "client": "Eve",
+    "event": "Eve vs Bob",
+    "market": "1X2",
+    "selection": "2",
+    "status": 1
+  },
+  {
+    "id": 40,
+    "amount": 315,
+    "odds": 3.21,
+    "client": "Charlie",
+    "event": "David vs Eve",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 0
+  },
+  {
+    "id": 40,
+    "amount": 315,
+    "odds": 3.21,
+    "client": "Charlie",
+    "event": "David vs Eve",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 1
+  },
+  {
+    "id": 41,
+    "amount": 404,
+    "odds": 3.8,
+    "client": "Bob",
+    "event": "Bob vs Alice",
+    "market": "Handicap",
+    "selection": "-1",
+    "status": 0
+  },
+  {
+    "id": 41,
+    "amount": 404,
+    "odds": 3.8,
+    "client": "Bob",
+    "event": "Bob vs Alice",
+    "market": "Handicap",
+    "selection": "-1",
+    "status": 1
+  },
+  {
+    "id": 42,
+    "amount": 221,
+    "odds": 3.84,
+    "client": "Charlie",
+    "event": "Bob vs Alice",
+    "market": "Correct Score",
+    "selection": "0:0",
+    "status": 0
+  },
+  {
+    "id": 42,
+    "amount": 221,
+    "odds": 3.84,
+    "client": "Charlie",
+    "event": "Bob vs Alice",
+    "market": "Correct Score",
+    "selection": "0:0",
+    "status": 1
+  },
+  {
+    "id": 43,
+    "amount": 475,
+    "odds": 3.95,
+    "client": "Alice",
+    "event": "Alice vs Charlie",
+    "market": "Handicap",
+    "selection": "-1",
+    "status": 0
+  },
+  {
+    "id": 43,
+    "amount": 475,
+    "odds": 3.95,
+    "client": "Alice",
+    "event": "Alice vs Charlie",
+    "market": "Handicap",
+    "selection": "-1",
+    "status": 3
+  },
+  {
+    "id": 44,
+    "amount": 156,
+    "odds": 3.93,
+    "client": "Eve",
+    "event": "Eve vs Bob",
+    "market": "Correct Score",
+    "selection": "0:0",
+    "status": 0
+  },
+  {
+    "id": 44,
+    "amount": 156,
+    "odds": 3.93,
+    "client": "Eve",
+    "event": "Eve vs Bob",
+    "market": "Correct Score",
+    "selection": "0:0",
+    "status": 3
+  },
+  {
+    "id": 45,
+    "amount": 359,
+    "odds": 3.53,
+    "client": "David",
+    "event": "Eve vs Bob",
+    "market": "Correct Score",
+    "selection": "0:0",
+    "status": 0
+  },
+  {
+    "id": 45,
+    "amount": 359,
+    "odds": 3.53,
+    "client": "David",
+    "event": "Eve vs Bob",
+    "market": "Correct Score",
+    "selection": "0:0",
+    "status": 2
+  },
+  {
+    "id": 46,
+    "amount": 253,
+    "odds": 4.58,
+    "client": "David",
+    "event": "Bob vs Alice",
+    "market": "Total Goals",
+    "selection": "Over 2.5",
+    "status": 0
+  },
+  {
+    "id": 46,
+    "amount": 253,
+    "odds": 4.58,
+    "client": "David",
+    "event": "Bob vs Alice",
+    "market": "Total Goals",
+    "selection": "Over 2.5",
+    "status": 2
+  },
+  {
+    "id": 47,
+    "amount": 450,
+    "odds": 2.47,
+    "client": "David",
+    "event": "David vs Eve",
+    "market": "Both Teams to Score",
+    "selection": "Yes",
+    "status": 0
+  },
+  {
+    "id": 47,
+    "amount": 450,
+    "odds": 2.47,
+    "client": "David",
+    "event": "David vs Eve",
+    "market": "Both Teams to Score",
+    "selection": "Yes",
+    "status": 1
+  },
+  {
+    "id": 48,
+    "amount": 32,
+    "odds": 4.83,
+    "client": "Alice",
+    "event": "Eve vs Bob",
+    "market": "Handicap",
+    "selection": "0",
+    "status": 0
+  },
+  {
+    "id": 48,
+    "amount": 32,
+    "odds": 4.83,
+    "client": "Alice",
+    "event": "Eve vs Bob",
+    "market": "Handicap",
+    "selection": "0",
+    "status": 3
+  },
+  {
+    "id": 49,
+    "amount": 383,
+    "odds": 4.8,
+    "client": "Bob",
+    "event": "Eve vs Bob",
+    "market": "Handicap",
+    "selection": "-1",
+    "status": 0
+  },
+  {
+    "id": 49,
+    "amount": 383,
+    "odds": 4.8,
+    "client": "Bob",
+    "event": "Eve vs Bob",
+    "market": "Handicap",
+    "selection": "-1",
+    "status": 1
+  },
+  {
+    "id": 50,
+    "amount": 182,
+    "odds": 3.23,
+    "client": "Bob",
+    "event": "Alice vs Charlie",
+    "market": "Handicap",
+    "selection": "0",
+    "status": 0
+  },
+  {
+    "id": 50,
+    "amount": 182,
+    "odds": 3.23,
+    "client": "Bob",
+    "event": "Alice vs Charlie",
+    "market": "Handicap",
+    "selection": "0",
+    "status": 1
+  },
+  {
+    "id": 51,
+    "amount": 60,
+    "odds": 4.59,
+    "client": "David",
+    "event": "Bob vs Alice",
+    "market": "Handicap",
+    "selection": "0",
+    "status": 0
+  },
+  {
+    "id": 51,
+    "amount": 60,
+    "odds": 4.59,
+    "client": "David",
+    "event": "Bob vs Alice",
+    "market": "Handicap",
+    "selection": "0",
+    "status": 1
+  },
+  {
+    "id": 52,
+    "amount": 91,
+    "odds": 4.51,
+    "client": "Eve",
+    "event": "Alice vs Charlie",
+    "market": "Correct Score",
+    "selection": "2:1",
+    "status": 0
+  },
+  {
+    "id": 52,
+    "amount": 91,
+    "odds": 4.51,
+    "client": "Eve",
+    "event": "Alice vs Charlie",
+    "market": "Correct Score",
+    "selection": "2:1",
+    "status": 3
+  },
+  {
+    "id": 53,
+    "amount": 273,
+    "odds": 2.41,
+    "client": "Eve",
+    "event": "David vs Eve",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 0
+  },
+  {
+    "id": 53,
+    "amount": 273,
+    "odds": 2.41,
+    "client": "Eve",
+    "event": "David vs Eve",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 1
+  },
+  {
+    "id": 54,
+    "amount": 182,
+    "odds": 3.33,
+    "client": "Bob",
+    "event": "Eve vs Bob",
+    "market": "1X2",
+    "selection": "X",
+    "status": 0
+  },
+  {
+    "id": 54,
+    "amount": 182,
+    "odds": 3.33,
+    "client": "Bob",
+    "event": "Eve vs Bob",
+    "market": "1X2",
+    "selection": "X",
+    "status": 3
+  },
+  {
+    "id": 55,
+    "amount": 40,
+    "odds": 3.45,
+    "client": "David",
+    "event": "Eve vs Bob",
+    "market": "Handicap",
+    "selection": "-1",
+    "status": 0
+  },
+  {
+    "id": 55,
+    "amount": 40,
+    "odds": 3.45,
+    "client": "David",
+    "event": "Eve vs Bob",
+    "market": "Handicap",
+    "selection": "-1",
+    "status": 2
+  },
+  {
+    "id": 56,
+    "amount": 93,
+    "odds": 2.59,
+    "client": "Eve",
+    "event": "David vs Eve",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 0
+  },
+  {
+    "id": 56,
+    "amount": 93,
+    "odds": 2.59,
+    "client": "Eve",
+    "event": "David vs Eve",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 2
+  },
+  {
+    "id": 57,
+    "amount": 117,
+    "odds": 3.01,
+    "client": "David",
+    "event": "Alice vs Charlie",
+    "market": "Handicap",
+    "selection": "-1",
+    "status": 0
+  },
+  {
+    "id": 57,
+    "amount": 117,
+    "odds": 3.01,
+    "client": "David",
+    "event": "Alice vs Charlie",
+    "market": "Handicap",
+    "selection": "-1",
+    "status": 1
+  },
+  {
+    "id": 58,
+    "amount": 406,
+    "odds": 3.07,
+    "client": "Alice",
+    "event": "Charlie vs David",
+    "market": "Handicap",
+    "selection": "+1",
+    "status": 0
+  },
+  {
+    "id": 58,
+    "amount": 406,
+    "odds": 3.07,
+    "client": "Alice",
+    "event": "Charlie vs David",
+    "market": "Handicap",
+    "selection": "+1",
+    "status": 3
+  },
+  {
+    "id": 59,
+    "amount": 199,
+    "odds": 2.89,
+    "client": "Alice",
+    "event": "David vs Eve",
+    "market": "Both Teams to Score",
+    "selection": "Yes",
+    "status": 0
+  },
+  {
+    "id": 59,
+    "amount": 199,
+    "odds": 2.89,
+    "client": "Alice",
+    "event": "David vs Eve",
+    "market": "Both Teams to Score",
+    "selection": "Yes",
+    "status": 2
+  },
+  {
+    "id": 60,
+    "amount": 251,
+    "odds": 3.65,
+    "client": "Charlie",
+    "event": "Alice vs Charlie",
+    "market": "Correct Score",
+    "selection": "0:0",
+    "status": 0
+  },
+  {
+    "id": 60,
+    "amount": 251,
+    "odds": 3.65,
+    "client": "Charlie",
+    "event": "Alice vs Charlie",
+    "market": "Correct Score",
+    "selection": "0:0",
+    "status": 2
+  },
+  {
+    "id": 61,
+    "amount": 152,
+    "odds": 1.52,
+    "client": "Charlie",
+    "event": "Eve vs Bob",
+    "market": "Correct Score",
+    "selection": "2:1",
+    "status": 0
+  },
+  {
+    "id": 61,
+    "amount": 152,
+    "odds": 1.52,
+    "client": "Charlie",
+    "event": "Eve vs Bob",
+    "market": "Correct Score",
+    "selection": "2:1",
+    "status": 1
+  },
+  {
+    "id": 62,
+    "amount": 135,
+    "odds": 3.73,
+    "client": "Bob",
+    "event": "Bob vs Alice",
+    "market": "Handicap",
+    "selection": "-1",
+    "status": 0
+  },
+  {
+    "id": 62,
+    "amount": 135,
+    "odds": 3.73,
+    "client": "Bob",
+    "event": "Bob vs Alice",
+    "market": "Handicap",
+    "selection": "-1",
+    "status": 2
+  },
+  {
+    "id": 63,
+    "amount": 495,
+    "odds": 2.62,
+    "client": "David",
+    "event": "Eve vs Bob",
+    "market": "Total Goals",
+    "selection": "Under 2.5",
+    "status": 0
+  },
+  {
+    "id": 63,
+    "amount": 495,
+    "odds": 2.62,
+    "client": "David",
+    "event": "Eve vs Bob",
+    "market": "Total Goals",
+    "selection": "Under 2.5",
+    "status": 2
+  },
+  {
+    "id": 64,
+    "amount": 480,
+    "odds": 1.54,
+    "client": "Charlie",
+    "event": "Charlie vs David",
+    "market": "Total Goals",
+    "selection": "Over 2.5",
+    "status": 0
+  },
+  {
+    "id": 64,
+    "amount": 480,
+    "odds": 1.54,
+    "client": "Charlie",
+    "event": "Charlie vs David",
+    "market": "Total Goals",
+    "selection": "Over 2.5",
+    "status": 3
+  },
+  {
+    "id": 65,
+    "amount": 277,
+    "odds": 4.92,
+    "client": "David",
+    "event": "Alice vs Charlie",
+    "market": "Handicap",
+    "selection": "-1",
+    "status": 0
+  },
+  {
+    "id": 65,
+    "amount": 277,
+    "odds": 4.92,
+    "client": "David",
+    "event": "Alice vs Charlie",
+    "market": "Handicap",
+    "selection": "-1",
+    "status": 3
+  },
+  {
+    "id": 66,
+    "amount": 131,
+    "odds": 3.56,
+    "client": "David",
+    "event": "Charlie vs David",
+    "market": "1X2",
+    "selection": "1",
+    "status": 0
+  },
+  {
+    "id": 66,
+    "amount": 131,
+    "odds": 3.56,
+    "client": "David",
+    "event": "Charlie vs David",
+    "market": "1X2",
+    "selection": "1",
+    "status": 2
+  },
+  {
+    "id": 67,
+    "amount": 440,
+    "odds": 2.43,
+    "client": "Alice",
+    "event": "David vs Eve",
+    "market": "Handicap",
+    "selection": "+1",
+    "status": 0
+  },
+  {
+    "id": 67,
+    "amount": 440,
+    "odds": 2.43,
+    "client": "Alice",
+    "event": "David vs Eve",
+    "market": "Handicap",
+    "selection": "+1",
+    "status": 3
+  },
+  {
+    "id": 68,
+    "amount": 65,
+    "odds": 4.62,
+    "client": "Charlie",
+    "event": "Eve vs Bob",
+    "market": "Correct Score",
+    "selection": "0:0",
+    "status": 0
+  },
+  {
+    "id": 68,
+    "amount": 65,
+    "odds": 4.62,
+    "client": "Charlie",
+    "event": "Eve vs Bob",
+    "market": "Correct Score",
+    "selection": "0:0",
+    "status": 1
+  },
+  {
+    "id": 69,
+    "amount": 193,
+    "odds": 3.14,
+    "client": "David",
+    "event": "Charlie vs David",
+    "market": "Total Goals",
+    "selection": "Over 2.5",
+    "status": 0
+  },
+  {
+    "id": 69,
+    "amount": 193,
+    "odds": 3.14,
+    "client": "David",
+    "event": "Charlie vs David",
+    "market": "Total Goals",
+    "selection": "Over 2.5",
+    "status": 2
+  },
+  {
+    "id": 70,
+    "amount": 163,
+    "odds": 4.21,
+    "client": "Bob",
+    "event": "Eve vs Bob",
+    "market": "Both Teams to Score",
+    "selection": "Yes",
+    "status": 0
+  },
+  {
+    "id": 70,
+    "amount": 163,
+    "odds": 4.21,
+    "client": "Bob",
+    "event": "Eve vs Bob",
+    "market": "Both Teams to Score",
+    "selection": "Yes",
+    "status": 3
+  },
+  {
+    "id": 71,
+    "amount": 73,
+    "odds": 4.47,
+    "client": "David",
+    "event": "Alice vs Charlie",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 0
+  },
+  {
+    "id": 71,
+    "amount": 73,
+    "odds": 4.47,
+    "client": "David",
+    "event": "Alice vs Charlie",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 2
+  },
+  {
+    "id": 72,
+    "amount": 63,
+    "odds": 1.97,
+    "client": "Alice",
+    "event": "Alice vs Charlie",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 0
+  },
+  {
+    "id": 72,
+    "amount": 63,
+    "odds": 1.97,
+    "client": "Alice",
+    "event": "Alice vs Charlie",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 3
+  },
+  {
+    "id": 73,
+    "amount": 293,
+    "odds": 2.61,
+    "client": "Alice",
+    "event": "Charlie vs David",
+    "market": "Correct Score",
+    "selection": "2:1",
+    "status": 0
+  },
+  {
+    "id": 73,
+    "amount": 293,
+    "odds": 2.61,
+    "client": "Alice",
+    "event": "Charlie vs David",
+    "market": "Correct Score",
+    "selection": "2:1",
+    "status": 3
+  },
+  {
+    "id": 74,
+    "amount": 384,
+    "odds": 2.27,
+    "client": "Alice",
+    "event": "Charlie vs David",
+    "market": "1X2",
+    "selection": "2",
+    "status": 0
+  },
+  {
+    "id": 74,
+    "amount": 384,
+    "odds": 2.27,
+    "client": "Alice",
+    "event": "Charlie vs David",
+    "market": "1X2",
+    "selection": "2",
+    "status": 1
+  },
+  {
+    "id": 75,
+    "amount": 177,
+    "odds": 3.63,
+    "client": "David",
+    "event": "Eve vs Bob",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 0
+  },
+  {
+    "id": 75,
+    "amount": 177,
+    "odds": 3.63,
+    "client": "David",
+    "event": "Eve vs Bob",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 3
+  },
+  {
+    "id": 76,
+    "amount": 64,
+    "odds": 1.98,
+    "client": "Charlie",
+    "event": "David vs Eve",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 0
+  },
+  {
+    "id": 76,
+    "amount": 64,
+    "odds": 1.98,
+    "client": "Charlie",
+    "event": "David vs Eve",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 3
+  },
+  {
+    "id": 77,
+    "amount": 383,
+    "odds": 2.37,
+    "client": "Charlie",
+    "event": "Bob vs Alice",
+    "market": "Handicap",
+    "selection": "+1",
+    "status": 0
+  },
+  {
+    "id": 77,
+    "amount": 383,
+    "odds": 2.37,
+    "client": "Charlie",
+    "event": "Bob vs Alice",
+    "market": "Handicap",
+    "selection": "+1",
+    "status": 1
+  },
+  {
+    "id": 78,
+    "amount": 433,
+    "odds": 2.26,
+    "client": "David",
+    "event": "Alice vs Charlie",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 0
+  },
+  {
+    "id": 78,
+    "amount": 433,
+    "odds": 2.26,
+    "client": "David",
+    "event": "Alice vs Charlie",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 3
+  },
+  {
+    "id": 79,
+    "amount": 349,
+    "odds": 2.92,
+    "client": "Bob",
+    "event": "Charlie vs David",
+    "market": "Both Teams to Score",
+    "selection": "Yes",
+    "status": 0
+  },
+  {
+    "id": 79,
+    "amount": 349,
+    "odds": 2.92,
+    "client": "Bob",
+    "event": "Charlie vs David",
+    "market": "Both Teams to Score",
+    "selection": "Yes",
+    "status": 3
+  },
+  {
+    "id": 80,
+    "amount": 62,
+    "odds": 2.75,
+    "client": "Eve",
+    "event": "Bob vs Alice",
+    "market": "Handicap",
+    "selection": "-1",
+    "status": 0
+  },
+  {
+    "id": 80,
+    "amount": 62,
+    "odds": 2.75,
+    "client": "Eve",
+    "event": "Bob vs Alice",
+    "market": "Handicap",
+    "selection": "-1",
+    "status": 3
+  },
+  {
+    "id": 81,
+    "amount": 277,
+    "odds": 2.72,
+    "client": "Eve",
+    "event": "David vs Eve",
+    "market": "Correct Score",
+    "selection": "0:0",
+    "status": 0
+  },
+  {
+    "id": 81,
+    "amount": 277,
+    "odds": 2.72,
+    "client": "Eve",
+    "event": "David vs Eve",
+    "market": "Correct Score",
+    "selection": "0:0",
+    "status": 1
+  },
+  {
+    "id": 82,
+    "amount": 116,
+    "odds": 4.72,
+    "client": "Alice",
+    "event": "Bob vs Alice",
+    "market": "Handicap",
+    "selection": "+1",
+    "status": 0
+  },
+  {
+    "id": 82,
+    "amount": 116,
+    "odds": 4.72,
+    "client": "Alice",
+    "event": "Bob vs Alice",
+    "market": "Handicap",
+    "selection": "+1",
+    "status": 2
+  },
+  {
+    "id": 83,
+    "amount": 191,
+    "odds": 3.31,
+    "client": "David",
+    "event": "Alice vs Charlie",
+    "market": "1X2",
+    "selection": "1",
+    "status": 0
+  },
+  {
+    "id": 83,
+    "amount": 191,
+    "odds": 3.31,
+    "client": "David",
+    "event": "Alice vs Charlie",
+    "market": "1X2",
+    "selection": "1",
+    "status": 1
+  },
+  {
+    "id": 84,
+    "amount": 384,
+    "odds": 2.19,
+    "client": "Alice",
+    "event": "Eve vs Bob",
+    "market": "Total Goals",
+    "selection": "Over 2.5",
+    "status": 0
+  },
+  {
+    "id": 84,
+    "amount": 384,
+    "odds": 2.19,
+    "client": "Alice",
+    "event": "Eve vs Bob",
+    "market": "Total Goals",
+    "selection": "Over 2.5",
+    "status": 2
+  },
+  {
+    "id": 85,
+    "amount": 207,
+    "odds": 4.51,
+    "client": "Bob",
+    "event": "Bob vs Alice",
+    "market": "Handicap",
+    "selection": "+1",
+    "status": 0
+  },
+  {
+    "id": 85,
+    "amount": 207,
+    "odds": 4.51,
+    "client": "Bob",
+    "event": "Bob vs Alice",
+    "market": "Handicap",
+    "selection": "+1",
+    "status": 3
+  },
+  {
+    "id": 86,
+    "amount": 410,
+    "odds": 3.89,
+    "client": "Bob",
+    "event": "Charlie vs David",
+    "market": "1X2",
+    "selection": "2",
+    "status": 0
+  },
+  {
+    "id": 86,
+    "amount": 410,
+    "odds": 3.89,
+    "client": "Bob",
+    "event": "Charlie vs David",
+    "market": "1X2",
+    "selection": "2",
+    "status": 1
+  },
+  {
+    "id": 87,
+    "amount": 59,
+    "odds": 1.72,
+    "client": "Charlie",
+    "event": "Bob vs Alice",
+    "market": "1X2",
+    "selection": "1",
+    "status": 0
+  },
+  {
+    "id": 87,
+    "amount": 59,
+    "odds": 1.72,
+    "client": "Charlie",
+    "event": "Bob vs Alice",
+    "market": "1X2",
+    "selection": "1",
+    "status": 1
+  },
+  {
+    "id": 88,
+    "amount": 11,
+    "odds": 2.23,
+    "client": "David",
+    "event": "Alice vs Charlie",
+    "market": "Handicap",
+    "selection": "0",
+    "status": 0
+  },
+  {
+    "id": 88,
+    "amount": 11,
+    "odds": 2.23,
+    "client": "David",
+    "event": "Alice vs Charlie",
+    "market": "Handicap",
+    "selection": "0",
+    "status": 1
+  },
+  {
+    "id": 89,
+    "amount": 80,
+    "odds": 2.07,
+    "client": "Charlie",
+    "event": "Charlie vs David",
+    "market": "Both Teams to Score",
+    "selection": "Yes",
+    "status": 0
+  },
+  {
+    "id": 89,
+    "amount": 80,
+    "odds": 2.07,
+    "client": "Charlie",
+    "event": "Charlie vs David",
+    "market": "Both Teams to Score",
+    "selection": "Yes",
+    "status": 3
+  },
+  {
+    "id": 90,
+    "amount": 240,
+    "odds": 1.53,
+    "client": "Eve",
+    "event": "David vs Eve",
+    "market": "Total Goals",
+    "selection": "Over 2.5",
+    "status": 0
+  },
+  {
+    "id": 90,
+    "amount": 240,
+    "odds": 1.53,
+    "client": "Eve",
+    "event": "David vs Eve",
+    "market": "Total Goals",
+    "selection": "Over 2.5",
+    "status": 3
+  },
+  {
+    "id": 91,
+    "amount": 107,
+    "odds": 2.14,
+    "client": "Eve",
+    "event": "Eve vs Bob",
+    "market": "Handicap",
+    "selection": "+1",
+    "status": 0
+  },
+  {
+    "id": 91,
+    "amount": 107,
+    "odds": 2.14,
+    "client": "Eve",
+    "event": "Eve vs Bob",
+    "market": "Handicap",
+    "selection": "+1",
+    "status": 2
+  },
+  {
+    "id": 92,
+    "amount": 419,
+    "odds": 4.44,
+    "client": "Alice",
+    "event": "Eve vs Bob",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 0
+  },
+  {
+    "id": 92,
+    "amount": 419,
+    "odds": 4.44,
+    "client": "Alice",
+    "event": "Eve vs Bob",
+    "market": "Both Teams to Score",
+    "selection": "No",
+    "status": 3
+  },
+  {
+    "id": 93,
+    "amount": 329,
+    "odds": 4.93,
+    "client": "Bob",
+    "event": "Charlie vs David",
+    "market": "1X2",
+    "selection": "1",
+    "status": 0
+  },
+  {
+    "id": 93,
+    "amount": 329,
+    "odds": 4.93,
+    "client": "Bob",
+    "event": "Charlie vs David",
+    "market": "1X2",
+    "selection": "1",
+    "status": 2
+  },
+  {
+    "id": 94,
+    "amount": 24,
+    "odds": 3.54,
+    "client": "David",
+    "event": "Bob vs Alice",
+    "market": "Total Goals",
+    "selection": "Under 2.5",
+    "status": 0
+  },
+  {
+    "id": 94,
+    "amount": 24,
+    "odds": 3.54,
+    "client": "David",
+    "event": "Bob vs Alice",
+    "market": "Total Goals",
+    "selection": "Under 2.5",
+    "status": 3
+  },
+  {
+    "id": 95,
+    "amount": 29,
+    "odds": 4.87,
+    "client": "Charlie",
+    "event": "Eve vs Bob",
+    "market": "1X2",
+    "selection": "X",
+    "status": 0
+  },
+  {
+    "id": 95,
+    "amount": 29,
+    "odds": 4.87,
+    "client": "Charlie",
+    "event": "Eve vs Bob",
+    "market": "1X2",
+    "selection": "X",
+    "status": 3
+  },
+  {
+    "id": 96,
+    "amount": 207,
+    "odds": 2.61,
+    "client": "Bob",
+    "event": "Alice vs Charlie",
+    "market": "Both Teams to Score",
+    "selection": "Yes",
+    "status": 0
+  },
+  {
+    "id": 96,
+    "amount": 207,
+    "odds": 2.61,
+    "client": "Bob",
+    "event": "Alice vs Charlie",
+    "market": "Both Teams to Score",
+    "selection": "Yes",
+    "status": 1
+  },
+  {
+    "id": 97,
+    "amount": 124,
+    "odds": 4.13,
+    "client": "Eve",
+    "event": "Bob vs Alice",
+    "market": "Both Teams to Score",
+    "selection": "Yes",
+    "status": 0
+  },
+  {
+    "id": 97,
+    "amount": 124,
+    "odds": 4.13,
+    "client": "Eve",
+    "event": "Bob vs Alice",
+    "market": "Both Teams to Score",
+    "selection": "Yes",
+    "status": 1
+  },
+  {
+    "id": 98,
+    "amount": 251,
+    "odds": 2.01,
+    "client": "David",
+    "event": "Charlie vs David",
+    "market": "Total Goals",
+    "selection": "Over 2.5",
+    "status": 0
+  },
+  {
+    "id": 98,
+    "amount": 251,
+    "odds": 2.01,
+    "client": "David",
+    "event": "Charlie vs David",
+    "market": "Total Goals",
+    "selection": "Over 2.5",
+    "status": 3
+  },
+  {
+    "id": 99,
+    "amount": 300,
+    "odds": 2.21,
+    "client": "Eve",
+    "event": "Eve vs Bob",
+    "market": "Total Goals",
+    "selection": "Over 2.5",
+    "status": 0
+  },
+  {
+    "id": 99,
+    "amount": 300,
+    "odds": 2.21,
+    "client": "Eve",
+    "event": "Eve vs Bob",
+    "market": "Total Goals",
+    "selection": "Over 2.5",
+    "status": 1
+  },
+  {
+    "id": 100,
+    "amount": 289,
+    "odds": 1.7,
+    "client": "Alice",
+    "event": "Eve vs Bob",
+    "market": "Correct Score",
+    "selection": "2:2",
+    "status": 0
+  },
+  {
+    "id": 100,
+    "amount": 289,
+    "odds": 1.7,
+    "client": "Alice",
+    "event": "Eve vs Bob",
+    "market": "Correct Score",
+    "selection": "2:2",
+    "status": 1
+  }
+]
