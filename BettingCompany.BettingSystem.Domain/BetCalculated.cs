@@ -30,5 +30,27 @@ namespace BettingCompany.BettingSystem.Domain
         public BetOutcome BetOutcome { get; private set; }
 
         public bool IsMarkedForReview { get; private set; }
+
+        public decimal GetProfit()
+        {
+            var status = BetOutcome.Status;
+
+            if(status == BetOutcomeStatus.Won)
+            {
+                return BetOutcome.Amount;
+            }
+
+            if(status == BetOutcomeStatus.Lost)
+            {
+                return -BetOutcome.Amount;
+            }
+
+            if(status == BetOutcomeStatus.Void)
+            {
+                return 0;
+            }
+
+            throw new ArgumentException();
+        }
     }
 }

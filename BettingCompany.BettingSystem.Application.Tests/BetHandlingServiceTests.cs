@@ -250,6 +250,8 @@ namespace BettingCompany.BettingSystem.Application.Tests
             await betHandlingService.WhenAllHandled();
 
             Assert.Equal(100, savedBets.Count);
+
+            Assert.All(savedBets, (bet) => { Assert.NotNull(bet.BetOutcome); });
         }
 
         [Fact]
