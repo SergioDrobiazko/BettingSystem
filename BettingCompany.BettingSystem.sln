@@ -11,9 +11,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BettingCompany.BettingSyste
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BettingCompany.BettingSystem.API", "BettingCompany.BettingSystem.API\BettingCompany.BettingSystem.API.csproj", "{4731E0DD-F04A-43F9-BFF4-A60419C957E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BettingCompany.BettingSystem.Repository", "BettingCompany.BettingSystem.Repository\BettingCompany.BettingSystem.Repository.csproj", "{52050BFC-3868-409B-9E16-05C5D89E259C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BettingCompany.BettingSystem.Repository", "BettingCompany.BettingSystem.Repository\BettingCompany.BettingSystem.Repository.csproj", "{52050BFC-3868-409B-9E16-05C5D89E259C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BettingCompany.BettingSystem.Application.Tests", "BettingCompany.BettingSystem.Application.Tests\BettingCompany.BettingSystem.Application.Tests.csproj", "{938ECCFA-9DDC-4004-B6BD-9825DBB5F1F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BettingCompany.BettingSystem.Application.Tests", "BettingCompany.BettingSystem.Application.Tests\BettingCompany.BettingSystem.Application.Tests.csproj", "{938ECCFA-9DDC-4004-B6BD-9825DBB5F1F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2AAD74B4-22D0-48F4-AE9B-B08CA562214D}"
+	ProjectSection(SolutionItems) = preProject
+		Data for manual testing.txt = Data for manual testing.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
