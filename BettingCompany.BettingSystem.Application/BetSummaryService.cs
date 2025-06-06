@@ -1,7 +1,7 @@
 ﻿using BettingCompany.BettingSystem.Domain;
+using BettingCompany.BettingSystem.Domain.Extension;
 using BettingCompany.BettingSystem.Repository;
 using System;
-using System.Linq;
 
 namespace BettingCompany.BettingSystem.Application
 {
@@ -35,47 +35,24 @@ namespace BettingCompany.BettingSystem.Application
 
         private BetSummary CalculateBetSummary(BetSummary betSummaryFromStorage, BetCalculated[] betsInMemory)
         {
-            var topFiveWinners = CalculateTopFiveWinners(betSummaryFromStorage, betsInMemory);
-            var topFiveLosers = CalculateTopFiveLosers(betSummaryFromStorage, betsInMemory);
+            var betsInMemorySummary = betsInMemory.GetSummary();
 
-            var totalProfitOrLoss = CalculateTopProfitOrLoss(betSummaryFromStorage, betsInMemory);
-            decimal totalAmount = CalculateTotalAmount(betSummaryFromStorage, betsInMemory);
-            var totalProcessed = CalculateTotalProcessed(betSummaryFromStorage, betsInMemory);
+            string[] topFiveWinners = CalculateTopFiveWinners(betSummaryFromStorage.TopFiveWinners, betsInMemorySummary.TopFiveWinners);
+            string[] topFiveLosers = CalculateTopFiveLosers(betSummaryFromStorage.TopFiveLosers, betsInMemorySummary.TopFiveLosers);
+
+            var totalProfitOrLoss = betSummaryFromStorage.TotalProfitOrLoss + betsInMemorySummary.TotalProfitOrLoss;
+            decimal totalAmount = betSummaryFromStorage.TotalAmount + betsInMemorySummary.TotalAmount;
+            var totalProcessed = betSummaryFromStorage.TotalProcessed + betsInMemory.Length;
 
             return new BetSummary(totalProcessed, totalAmount, totalProfitOrLoss, topFiveWinners, topFiveLosers);
         }
 
-        private decimal CalculateTotalAmount(BetSummary betSummaryFromStorage, BetCalculated[] betsInMemory)
+        private string[] CalculateTopFiveLosers(string[] topFiveLosers1, string[] topFiveLosers2)
         {
             throw new NotImplementedException();
         }
 
-        private int CalculateTotalProcessed(BetSummary betSummaryFromStorage, BetCalculated[] betsInMemory)
-        {
-            return betSummaryFromStorage.TotalProcessed + betsInMemory.Length;
-        }
-
-        private decimal CalculateTopProfitOrLoss(BetSummary betSummaryFromStorage, BetCalculated[] betsInMemory)
-        {
-            var partialSumOfWins = betsInMemory
-                .Where(x => x.BetOutcome.Status == BetOutcomeStatus.Won)
-                .Sum(x => x.BetOutcome.Amount);
-
-            var partialSumOfLoses = betsInMemory
-                .Where(x => x.BetOutcome.Status == BetOutcomeStatus.Lost)
-                .Sum(x => (-1) * x.BetOutcome.Amount);
-
-            var topProfitOrLoss = betSummaryFromStorage.TotalProfitOrLoss + partialSumOfWins + partialSumOfLoses;
-
-            return topProfitOrLoss;
-        }
-
-        private string[] CalculateTopFiveLosers(BetSummary betSummaryFromStorage, BetCalculated[] betsInMemory)
-        {
-            throw new NotImplementedException();
-        }
-
-        private string[] CalculateTopFiveWinners(BetSummary betSummaryFromStorage, BetCalculated[] betsInMemory)
+        private string[] CalculateTopFiveWinners(string[] topFiveWinners1, string[] topFiveWinners2)
         {
             throw new NotImplementedException();
         }
