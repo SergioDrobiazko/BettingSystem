@@ -59,9 +59,9 @@ namespace BettingCompany.BettingSystem.Application
                 }
             }
 
-            if (_persistancePolicy.ShouldPersist(betsHandled, betsSaved))
+            lock (StorageLock.Lock)
             {
-                lock (StorageLock.Lock)
+                if (_persistancePolicy.ShouldPersist(betsHandled, betsSaved))
                 {
                     int elementsToSave = _persistancePolicy.GetNumberOfElementsToSave();
 
