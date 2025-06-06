@@ -7,8 +7,6 @@ namespace BettingCompany.BettingSystem.Application
 {
     public interface IBetHandlingService
     {
-        event EventHandler<BetsChunkCalculated> ChunkCalculated;
-
         BetCalculated[] GetBets();
         void Handle(Bet bet);
         Task WhenAllHandled();

@@ -37,8 +37,6 @@ namespace BettingCompany.BettingSystem.Application
         private readonly object betsCalculatedCounterLock = new object();
         private readonly object incomingBetsLock = new object();
 
-        public event EventHandler<BetsChunkCalculated> ChunkCalculated;
-
         public BetHandlingService(
             IBetAgregator betAgregator,
             IWorkersDirector workersDirector,
@@ -73,11 +71,11 @@ namespace BettingCompany.BettingSystem.Application
                 }
             }
 
-            //if (_persistancePolicy.ShouldPersist(betsHandled, betsSaved))
+            if (_persistancePolicy.ShouldPersist(betsHandled, betsSaved))
             {
                 lock (StorageLock.Lock)
                 {
-                    int elementsToSave = 1;
+                    int elementsToSave = _persistancePolicy.GetNumberOfElementsToSave();
 
                     var betsToSave = new BetCalculated[elementsToSave];
 
@@ -129,7 +127,6 @@ namespace BettingCompany.BettingSystem.Application
 
             _betRepository.Save(betsCalculated);
 
-            
             // todo: save unhandled bets
         }
 

@@ -13,8 +13,6 @@ namespace BettingCompany.BettingSystem.Application.Tests
 {
     public class BetHandlingServiceTests
     {
-        Stopwatch stopwatch = new Stopwatch();
-
         [Fact]
         public async Task HandleAsync_HandleOneHundreadIncomingBets_CorrectResults()
         {
@@ -243,8 +241,6 @@ namespace BettingCompany.BettingSystem.Application.Tests
 
             var tasks = new List<Task>();
 
-            stopwatch.Start();
-
             foreach (var testBet in testBets)
             {
                 betHandlingService.Handle(testBet);
@@ -253,9 +249,6 @@ namespace BettingCompany.BettingSystem.Application.Tests
             await betHandlingService.WhenAllHandled();
 
             Assert.Equal(100, savedBets.Count);
-
-            stopwatch.Stop();
-            var s = stopwatch.Elapsed;
         }
 
         [Fact]
@@ -267,13 +260,12 @@ namespace BettingCompany.BettingSystem.Application.Tests
 
             mockRepository
                 .Setup(repo => repo.Save(It.IsAny<IList<BetCalculated>>()))
-                .Callback<IList<BetCalculated>>(b =>
+                .Callback<IList<BetCalculated>>(bets =>
                 {
-                    savedBets.AddRange(b);
-                    Console.WriteLine("Saved bets");
+                    savedBets.AddRange(bets);
                 });
 
-            Mock<IWorker> mockWorker = new Mock<IWorker>();
+            Mock<IWorker> mockWorker = new();
 
             mockWorker.Setup(x => x.CalculateBetAsync(It.IsAny<BetTransition>(), It.IsAny<CancellationToken>()))
                 .Returns(
@@ -507,11 +499,9 @@ namespace BettingCompany.BettingSystem.Application.Tests
                 betHandlingService.Handle(testBet);
             }
 
-            await Task.Delay(500);
+            await Task.Delay(50);
 
             betHandlingService.ShutDown();
-
-            var surprise = savedBets.Count;
         }
     }
 }
