@@ -1,0 +1,6002 @@
+[
+  {
+    "id": 1,
+    "amount": 193.33,
+    "odds": 3.02,
+    "client": "Peggy",
+    "event": "Juventus vs Milan",
+    "market": "Handicap",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1001,
+    "amount": 193.33,
+    "odds": 3.02,
+    "client": "Peggy",
+    "event": "Juventus vs Milan",
+    "market": "Handicap",
+    "selection": "1:0",
+    "status": "WINNER"
+  },
+  {
+    "id": 2,
+    "amount": 201.71,
+    "odds": 3.24,
+    "client": "Niaj",
+    "event": "Porto vs Benfica",
+    "market": "Correct Score",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1002,
+    "amount": 201.71,
+    "odds": 3.24,
+    "client": "Niaj",
+    "event": "Porto vs Benfica",
+    "market": "Correct Score",
+    "selection": "Over 2.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 3,
+    "amount": 254.4,
+    "odds": 3.35,
+    "client": "Quentin",
+    "event": "Porto vs Benfica",
+    "market": "Correct Score",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1003,
+    "amount": 254.4,
+    "odds": 3.35,
+    "client": "Quentin",
+    "event": "Porto vs Benfica",
+    "market": "Correct Score",
+    "selection": "1:0",
+    "status": "VOID"
+  },
+  {
+    "id": 4,
+    "amount": 43.67,
+    "odds": 2.91,
+    "client": "Laura",
+    "event": "Roma vs Napoli",
+    "market": "Winner",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1004,
+    "amount": 43.67,
+    "odds": 2.91,
+    "client": "Laura",
+    "event": "Roma vs Napoli",
+    "market": "Winner",
+    "selection": "Over 2.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 5,
+    "amount": 366.07,
+    "odds": 1.51,
+    "client": "Peggy",
+    "event": "Bayern vs Dortmund",
+    "market": "Correct Score",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1005,
+    "amount": 366.07,
+    "odds": 1.51,
+    "client": "Peggy",
+    "event": "Bayern vs Dortmund",
+    "market": "Correct Score",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 6,
+    "amount": 360.82,
+    "odds": 4.84,
+    "client": "Sybil",
+    "event": "Celtic vs Rangers",
+    "market": "Handicap",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1006,
+    "amount": 360.82,
+    "odds": 4.84,
+    "client": "Sybil",
+    "event": "Celtic vs Rangers",
+    "market": "Handicap",
+    "selection": "+1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 7,
+    "amount": 430.49,
+    "odds": 2.55,
+    "client": "Sybil",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1007,
+    "amount": 430.49,
+    "odds": 2.55,
+    "client": "Sybil",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 8,
+    "amount": 246.93,
+    "odds": 3.67,
+    "client": "Judy",
+    "event": "Bayern vs Dortmund",
+    "market": "Correct Score",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1008,
+    "amount": 246.93,
+    "odds": 3.67,
+    "client": "Judy",
+    "event": "Bayern vs Dortmund",
+    "market": "Correct Score",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 9,
+    "amount": 356.32,
+    "odds": 4.62,
+    "client": "Alice",
+    "event": "Liverpool vs Man City",
+    "market": "Over/Under",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1009,
+    "amount": 356.32,
+    "odds": 4.62,
+    "client": "Alice",
+    "event": "Liverpool vs Man City",
+    "market": "Over/Under",
+    "selection": "Over 2.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 10,
+    "amount": 481.63,
+    "odds": 2.75,
+    "client": "Hannah",
+    "event": "Porto vs Benfica",
+    "market": "Correct Score",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1010,
+    "amount": 481.63,
+    "odds": 2.75,
+    "client": "Hannah",
+    "event": "Porto vs Benfica",
+    "market": "Correct Score",
+    "selection": "Over 2.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 11,
+    "amount": 89.36,
+    "odds": 4.73,
+    "client": "Quentin",
+    "event": "Bayern vs Dortmund",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1011,
+    "amount": 89.36,
+    "odds": 4.73,
+    "client": "Quentin",
+    "event": "Bayern vs Dortmund",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 12,
+    "amount": 437.34,
+    "odds": 4.58,
+    "client": "David",
+    "event": "PSG vs Marseille",
+    "market": "Handicap",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1012,
+    "amount": 437.34,
+    "odds": 4.58,
+    "client": "David",
+    "event": "PSG vs Marseille",
+    "market": "Handicap",
+    "selection": "1:0",
+    "status": "LOSER"
+  },
+  {
+    "id": 13,
+    "amount": 51.39,
+    "odds": 3.76,
+    "client": "Judy",
+    "event": "Arsenal vs Chelsea",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1013,
+    "amount": 51.39,
+    "odds": 3.76,
+    "client": "Judy",
+    "event": "Arsenal vs Chelsea",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "WINNER"
+  },
+  {
+    "id": 14,
+    "amount": 68.98,
+    "odds": 2.87,
+    "client": "Peggy",
+    "event": "Arsenal vs Chelsea",
+    "market": "Over/Under",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1014,
+    "amount": 68.98,
+    "odds": 2.87,
+    "client": "Peggy",
+    "event": "Arsenal vs Chelsea",
+    "market": "Over/Under",
+    "selection": "Over 2.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 15,
+    "amount": 485.46,
+    "odds": 4.95,
+    "client": "Rupert",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1015,
+    "amount": 485.46,
+    "odds": 4.95,
+    "client": "Rupert",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "LOSER"
+  },
+  {
+    "id": 16,
+    "amount": 214.66,
+    "odds": 3.18,
+    "client": "Charlie",
+    "event": "Porto vs Benfica",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1016,
+    "amount": 214.66,
+    "odds": 3.18,
+    "client": "Charlie",
+    "event": "Porto vs Benfica",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "VOID"
+  },
+  {
+    "id": 17,
+    "amount": 225.72,
+    "odds": 3.74,
+    "client": "Charlie",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1017,
+    "amount": 225.72,
+    "odds": 3.74,
+    "client": "Charlie",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "WINNER"
+  },
+  {
+    "id": 18,
+    "amount": 60.03,
+    "odds": 3.44,
+    "client": "Ivan",
+    "event": "Porto vs Benfica",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1018,
+    "amount": 60.03,
+    "odds": 3.44,
+    "client": "Ivan",
+    "event": "Porto vs Benfica",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "WINNER"
+  },
+  {
+    "id": 19,
+    "amount": 60.48,
+    "odds": 3.03,
+    "client": "Judy",
+    "event": "Ajax vs Feyenoord",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1019,
+    "amount": 60.48,
+    "odds": 3.03,
+    "client": "Judy",
+    "event": "Ajax vs Feyenoord",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 20,
+    "amount": 402.29,
+    "odds": 2.58,
+    "client": "Olivia",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1020,
+    "amount": 402.29,
+    "odds": 2.58,
+    "client": "Olivia",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "2:1",
+    "status": "WINNER"
+  },
+  {
+    "id": 21,
+    "amount": 68.1,
+    "odds": 3.6,
+    "client": "Grace",
+    "event": "Celtic vs Rangers",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1021,
+    "amount": 68.1,
+    "odds": 3.6,
+    "client": "Grace",
+    "event": "Celtic vs Rangers",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 22,
+    "amount": 111.31,
+    "odds": 3.46,
+    "client": "Eve",
+    "event": "Porto vs Benfica",
+    "market": "Winner",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1022,
+    "amount": 111.31,
+    "odds": 3.46,
+    "client": "Eve",
+    "event": "Porto vs Benfica",
+    "market": "Winner",
+    "selection": "+1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 23,
+    "amount": 27.5,
+    "odds": 3.09,
+    "client": "Charlie",
+    "event": "Porto vs Benfica",
+    "market": "Handicap",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1023,
+    "amount": 27.5,
+    "odds": 3.09,
+    "client": "Charlie",
+    "event": "Porto vs Benfica",
+    "market": "Handicap",
+    "selection": "1:0",
+    "status": "LOSER"
+  },
+  {
+    "id": 24,
+    "amount": 88.5,
+    "odds": 3.53,
+    "client": "Eve",
+    "event": "Juventus vs Milan",
+    "market": "Correct Score",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1024,
+    "amount": 88.5,
+    "odds": 3.53,
+    "client": "Eve",
+    "event": "Juventus vs Milan",
+    "market": "Correct Score",
+    "selection": "TeamB",
+    "status": "WINNER"
+  },
+  {
+    "id": 25,
+    "amount": 388.7,
+    "odds": 3.41,
+    "client": "Bob",
+    "event": "Liverpool vs Man City",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1025,
+    "amount": 388.7,
+    "odds": 3.41,
+    "client": "Bob",
+    "event": "Liverpool vs Man City",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "WINNER"
+  },
+  {
+    "id": 26,
+    "amount": 336.65,
+    "odds": 3.42,
+    "client": "Hannah",
+    "event": "Ajax vs Feyenoord",
+    "market": "Handicap",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1026,
+    "amount": 336.65,
+    "odds": 3.42,
+    "client": "Hannah",
+    "event": "Ajax vs Feyenoord",
+    "market": "Handicap",
+    "selection": "TeamA",
+    "status": "WINNER"
+  },
+  {
+    "id": 27,
+    "amount": 347.23,
+    "odds": 2.06,
+    "client": "Niaj",
+    "event": "Bayern vs Dortmund",
+    "market": "Over/Under",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1027,
+    "amount": 347.23,
+    "odds": 2.06,
+    "client": "Niaj",
+    "event": "Bayern vs Dortmund",
+    "market": "Over/Under",
+    "selection": "2:1",
+    "status": "LOSER"
+  },
+  {
+    "id": 28,
+    "amount": 284.87,
+    "odds": 3.35,
+    "client": "Niaj",
+    "event": "Ajax vs Feyenoord",
+    "market": "Handicap",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1028,
+    "amount": 284.87,
+    "odds": 3.35,
+    "client": "Niaj",
+    "event": "Ajax vs Feyenoord",
+    "market": "Handicap",
+    "selection": "TeamA",
+    "status": "LOSER"
+  },
+  {
+    "id": 29,
+    "amount": 173.01,
+    "odds": 3.91,
+    "client": "Judy",
+    "event": "Bayern vs Dortmund",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1029,
+    "amount": 173.01,
+    "odds": 3.91,
+    "client": "Judy",
+    "event": "Bayern vs Dortmund",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 30,
+    "amount": 401.43,
+    "odds": 1.69,
+    "client": "Frank",
+    "event": "Arsenal vs Chelsea",
+    "market": "Handicap",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1030,
+    "amount": 401.43,
+    "odds": 1.69,
+    "client": "Frank",
+    "event": "Arsenal vs Chelsea",
+    "market": "Handicap",
+    "selection": "+1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 31,
+    "amount": 279.71,
+    "odds": 1.87,
+    "client": "Alice",
+    "event": "Ajax vs Feyenoord",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1031,
+    "amount": 279.71,
+    "odds": 1.87,
+    "client": "Alice",
+    "event": "Ajax vs Feyenoord",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "WINNER"
+  },
+  {
+    "id": 32,
+    "amount": 420.58,
+    "odds": 2.0,
+    "client": "Grace",
+    "event": "Liverpool vs Man City",
+    "market": "Correct Score",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1032,
+    "amount": 420.58,
+    "odds": 2.0,
+    "client": "Grace",
+    "event": "Liverpool vs Man City",
+    "market": "Correct Score",
+    "selection": "Under 1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 33,
+    "amount": 313.35,
+    "odds": 3.64,
+    "client": "Quentin",
+    "event": "Roma vs Napoli",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1033,
+    "amount": 313.35,
+    "odds": 3.64,
+    "client": "Quentin",
+    "event": "Roma vs Napoli",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "WINNER"
+  },
+  {
+    "id": 34,
+    "amount": 32.36,
+    "odds": 3.72,
+    "client": "Olivia",
+    "event": "Juventus vs Milan",
+    "market": "Handicap",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1034,
+    "amount": 32.36,
+    "odds": 3.72,
+    "client": "Olivia",
+    "event": "Juventus vs Milan",
+    "market": "Handicap",
+    "selection": "-1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 35,
+    "amount": 22.44,
+    "odds": 2.39,
+    "client": "Mallory",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1035,
+    "amount": 22.44,
+    "odds": 2.39,
+    "client": "Mallory",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "LOSER"
+  },
+  {
+    "id": 36,
+    "amount": 47.49,
+    "odds": 1.93,
+    "client": "Eve",
+    "event": "Porto vs Benfica",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1036,
+    "amount": 47.49,
+    "odds": 1.93,
+    "client": "Eve",
+    "event": "Porto vs Benfica",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "LOSER"
+  },
+  {
+    "id": 37,
+    "amount": 75.73,
+    "odds": 3.04,
+    "client": "Kevin",
+    "event": "Juventus vs Milan",
+    "market": "Winner",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1037,
+    "amount": 75.73,
+    "odds": 3.04,
+    "client": "Kevin",
+    "event": "Juventus vs Milan",
+    "market": "Winner",
+    "selection": "Over 2.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 38,
+    "amount": 425.35,
+    "odds": 2.26,
+    "client": "Niaj",
+    "event": "Celtic vs Rangers",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1038,
+    "amount": 425.35,
+    "odds": 2.26,
+    "client": "Niaj",
+    "event": "Celtic vs Rangers",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 39,
+    "amount": 477.28,
+    "odds": 3.42,
+    "client": "Frank",
+    "event": "Arsenal vs Chelsea",
+    "market": "Winner",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1039,
+    "amount": 477.28,
+    "odds": 3.42,
+    "client": "Frank",
+    "event": "Arsenal vs Chelsea",
+    "market": "Winner",
+    "selection": "Under 1.5",
+    "status": "VOID"
+  },
+  {
+    "id": 40,
+    "amount": 165.22,
+    "odds": 4.12,
+    "client": "Sybil",
+    "event": "Liverpool vs Man City",
+    "market": "Correct Score",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1040,
+    "amount": 165.22,
+    "odds": 4.12,
+    "client": "Sybil",
+    "event": "Liverpool vs Man City",
+    "market": "Correct Score",
+    "selection": "TeamB",
+    "status": "WINNER"
+  },
+  {
+    "id": 41,
+    "amount": 406.78,
+    "odds": 4.9,
+    "client": "Charlie",
+    "event": "Porto vs Benfica",
+    "market": "Correct Score",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1041,
+    "amount": 406.78,
+    "odds": 4.9,
+    "client": "Charlie",
+    "event": "Porto vs Benfica",
+    "market": "Correct Score",
+    "selection": "1:0",
+    "status": "WINNER"
+  },
+  {
+    "id": 42,
+    "amount": 121.18,
+    "odds": 4.58,
+    "client": "Sybil",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1042,
+    "amount": 121.18,
+    "odds": 4.58,
+    "client": "Sybil",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "Over 2.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 43,
+    "amount": 383.44,
+    "odds": 3.81,
+    "client": "Judy",
+    "event": "Porto vs Benfica",
+    "market": "Correct Score",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1043,
+    "amount": 383.44,
+    "odds": 3.81,
+    "client": "Judy",
+    "event": "Porto vs Benfica",
+    "market": "Correct Score",
+    "selection": "TeamA",
+    "status": "LOSER"
+  },
+  {
+    "id": 44,
+    "amount": 495.72,
+    "odds": 4.49,
+    "client": "Mallory",
+    "event": "Liverpool vs Man City",
+    "market": "Winner",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1044,
+    "amount": 495.72,
+    "odds": 4.49,
+    "client": "Mallory",
+    "event": "Liverpool vs Man City",
+    "market": "Winner",
+    "selection": "1:0",
+    "status": "WINNER"
+  },
+  {
+    "id": 45,
+    "amount": 465.5,
+    "odds": 4.92,
+    "client": "Quentin",
+    "event": "Juventus vs Milan",
+    "market": "Winner",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1045,
+    "amount": 465.5,
+    "odds": 4.92,
+    "client": "Quentin",
+    "event": "Juventus vs Milan",
+    "market": "Winner",
+    "selection": "+1.5",
+    "status": "VOID"
+  },
+  {
+    "id": 46,
+    "amount": 88.2,
+    "odds": 3.61,
+    "client": "Olivia",
+    "event": "Roma vs Napoli",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1046,
+    "amount": 88.2,
+    "odds": 3.61,
+    "client": "Olivia",
+    "event": "Roma vs Napoli",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "LOSER"
+  },
+  {
+    "id": 47,
+    "amount": 403.53,
+    "odds": 2.61,
+    "client": "Trent",
+    "event": "Ajax vs Feyenoord",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1047,
+    "amount": 403.53,
+    "odds": 2.61,
+    "client": "Trent",
+    "event": "Ajax vs Feyenoord",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 48,
+    "amount": 183.38,
+    "odds": 2.35,
+    "client": "Trent",
+    "event": "Porto vs Benfica",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1048,
+    "amount": 183.38,
+    "odds": 2.35,
+    "client": "Trent",
+    "event": "Porto vs Benfica",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "LOSER"
+  },
+  {
+    "id": 49,
+    "amount": 140.7,
+    "odds": 2.16,
+    "client": "Alice",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1049,
+    "amount": 140.7,
+    "odds": 2.16,
+    "client": "Alice",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "LOSER"
+  },
+  {
+    "id": 50,
+    "amount": 64.99,
+    "odds": 2.73,
+    "client": "Charlie",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1050,
+    "amount": 64.99,
+    "odds": 2.73,
+    "client": "Charlie",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "WINNER"
+  },
+  {
+    "id": 51,
+    "amount": 144.93,
+    "odds": 2.07,
+    "client": "Peggy",
+    "event": "PSG vs Marseille",
+    "market": "Handicap",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1051,
+    "amount": 144.93,
+    "odds": 2.07,
+    "client": "Peggy",
+    "event": "PSG vs Marseille",
+    "market": "Handicap",
+    "selection": "TeamB",
+    "status": "LOSER"
+  },
+  {
+    "id": 52,
+    "amount": 473.36,
+    "odds": 4.39,
+    "client": "Peggy",
+    "event": "Juventus vs Milan",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1052,
+    "amount": 473.36,
+    "odds": 4.39,
+    "client": "Peggy",
+    "event": "Juventus vs Milan",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 53,
+    "amount": 337.08,
+    "odds": 4.57,
+    "client": "Sybil",
+    "event": "Arsenal vs Chelsea",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1053,
+    "amount": 337.08,
+    "odds": 4.57,
+    "client": "Sybil",
+    "event": "Arsenal vs Chelsea",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 54,
+    "amount": 52.96,
+    "odds": 2.74,
+    "client": "Olivia",
+    "event": "Arsenal vs Chelsea",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1054,
+    "amount": 52.96,
+    "odds": 2.74,
+    "client": "Olivia",
+    "event": "Arsenal vs Chelsea",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "WINNER"
+  },
+  {
+    "id": 55,
+    "amount": 21.98,
+    "odds": 4.64,
+    "client": "Judy",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Handicap",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1055,
+    "amount": 21.98,
+    "odds": 4.64,
+    "client": "Judy",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Handicap",
+    "selection": "1:0",
+    "status": "WINNER"
+  },
+  {
+    "id": 56,
+    "amount": 82.63,
+    "odds": 4.65,
+    "client": "Bob",
+    "event": "Bayern vs Dortmund",
+    "market": "Handicap",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1056,
+    "amount": 82.63,
+    "odds": 4.65,
+    "client": "Bob",
+    "event": "Bayern vs Dortmund",
+    "market": "Handicap",
+    "selection": "1:0",
+    "status": "LOSER"
+  },
+  {
+    "id": 57,
+    "amount": 56.28,
+    "odds": 2.38,
+    "client": "Alice",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1057,
+    "amount": 56.28,
+    "odds": 2.38,
+    "client": "Alice",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "+1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 58,
+    "amount": 155.71,
+    "odds": 2.68,
+    "client": "Grace",
+    "event": "PSG vs Marseille",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1058,
+    "amount": 155.71,
+    "odds": 2.68,
+    "client": "Grace",
+    "event": "PSG vs Marseille",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "LOSER"
+  },
+  {
+    "id": 59,
+    "amount": 105.82,
+    "odds": 4.14,
+    "client": "Eve",
+    "event": "Bayern vs Dortmund",
+    "market": "Winner",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1059,
+    "amount": 105.82,
+    "odds": 4.14,
+    "client": "Eve",
+    "event": "Bayern vs Dortmund",
+    "market": "Winner",
+    "selection": "2:1",
+    "status": "WINNER"
+  },
+  {
+    "id": 60,
+    "amount": 414.05,
+    "odds": 1.65,
+    "client": "Rupert",
+    "event": "Ajax vs Feyenoord",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1060,
+    "amount": 414.05,
+    "odds": 1.65,
+    "client": "Rupert",
+    "event": "Ajax vs Feyenoord",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 61,
+    "amount": 192.08,
+    "odds": 2.85,
+    "client": "Frank",
+    "event": "Liverpool vs Man City",
+    "market": "Over/Under",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1061,
+    "amount": 192.08,
+    "odds": 2.85,
+    "client": "Frank",
+    "event": "Liverpool vs Man City",
+    "market": "Over/Under",
+    "selection": "+1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 62,
+    "amount": 15.52,
+    "odds": 2.15,
+    "client": "Olivia",
+    "event": "PSG vs Marseille",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1062,
+    "amount": 15.52,
+    "odds": 2.15,
+    "client": "Olivia",
+    "event": "PSG vs Marseille",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 63,
+    "amount": 156.66,
+    "odds": 2.91,
+    "client": "Bob",
+    "event": "Porto vs Benfica",
+    "market": "Handicap",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1063,
+    "amount": 156.66,
+    "odds": 2.91,
+    "client": "Bob",
+    "event": "Porto vs Benfica",
+    "market": "Handicap",
+    "selection": "Under 1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 64,
+    "amount": 124.93,
+    "odds": 1.59,
+    "client": "Kevin",
+    "event": "PSG vs Marseille",
+    "market": "Winner",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1064,
+    "amount": 124.93,
+    "odds": 1.59,
+    "client": "Kevin",
+    "event": "PSG vs Marseille",
+    "market": "Winner",
+    "selection": "+1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 65,
+    "amount": 153.72,
+    "odds": 2.34,
+    "client": "Alice",
+    "event": "Arsenal vs Chelsea",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1065,
+    "amount": 153.72,
+    "odds": 2.34,
+    "client": "Alice",
+    "event": "Arsenal vs Chelsea",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "VOID"
+  },
+  {
+    "id": 66,
+    "amount": 41.68,
+    "odds": 2.62,
+    "client": "Kevin",
+    "event": "Liverpool vs Man City",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1066,
+    "amount": 41.68,
+    "odds": 2.62,
+    "client": "Kevin",
+    "event": "Liverpool vs Man City",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "WINNER"
+  },
+  {
+    "id": 67,
+    "amount": 132.6,
+    "odds": 1.96,
+    "client": "Niaj",
+    "event": "Roma vs Napoli",
+    "market": "Winner",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1067,
+    "amount": 132.6,
+    "odds": 1.96,
+    "client": "Niaj",
+    "event": "Roma vs Napoli",
+    "market": "Winner",
+    "selection": "Under 1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 68,
+    "amount": 287.53,
+    "odds": 3.26,
+    "client": "Niaj",
+    "event": "Porto vs Benfica",
+    "market": "Winner",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1068,
+    "amount": 287.53,
+    "odds": 3.26,
+    "client": "Niaj",
+    "event": "Porto vs Benfica",
+    "market": "Winner",
+    "selection": "1:0",
+    "status": "WINNER"
+  },
+  {
+    "id": 69,
+    "amount": 350.36,
+    "odds": 4.98,
+    "client": "Charlie",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Correct Score",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1069,
+    "amount": 350.36,
+    "odds": 4.98,
+    "client": "Charlie",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Correct Score",
+    "selection": "Under 1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 70,
+    "amount": 191.94,
+    "odds": 3.7,
+    "client": "Alice",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1070,
+    "amount": 191.94,
+    "odds": 3.7,
+    "client": "Alice",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "LOSER"
+  },
+  {
+    "id": 71,
+    "amount": 258.92,
+    "odds": 2.56,
+    "client": "Judy",
+    "event": "Bayern vs Dortmund",
+    "market": "Handicap",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1071,
+    "amount": 258.92,
+    "odds": 2.56,
+    "client": "Judy",
+    "event": "Bayern vs Dortmund",
+    "market": "Handicap",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 72,
+    "amount": 485.97,
+    "odds": 1.82,
+    "client": "Frank",
+    "event": "Juventus vs Milan",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1072,
+    "amount": 485.97,
+    "odds": 1.82,
+    "client": "Frank",
+    "event": "Juventus vs Milan",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 73,
+    "amount": 11.91,
+    "odds": 3.89,
+    "client": "Peggy",
+    "event": "Ajax vs Feyenoord",
+    "market": "Correct Score",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1073,
+    "amount": 11.91,
+    "odds": 3.89,
+    "client": "Peggy",
+    "event": "Ajax vs Feyenoord",
+    "market": "Correct Score",
+    "selection": "Under 1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 74,
+    "amount": 435.04,
+    "odds": 3.68,
+    "client": "Judy",
+    "event": "Celtic vs Rangers",
+    "market": "Over/Under",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1074,
+    "amount": 435.04,
+    "odds": 3.68,
+    "client": "Judy",
+    "event": "Celtic vs Rangers",
+    "market": "Over/Under",
+    "selection": "+1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 75,
+    "amount": 206.4,
+    "odds": 3.19,
+    "client": "Bob",
+    "event": "Celtic vs Rangers",
+    "market": "Over/Under",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1075,
+    "amount": 206.4,
+    "odds": 3.19,
+    "client": "Bob",
+    "event": "Celtic vs Rangers",
+    "market": "Over/Under",
+    "selection": "2:1",
+    "status": "LOSER"
+  },
+  {
+    "id": 76,
+    "amount": 161.11,
+    "odds": 4.56,
+    "client": "Laura",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Correct Score",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1076,
+    "amount": 161.11,
+    "odds": 4.56,
+    "client": "Laura",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Correct Score",
+    "selection": "Under 1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 77,
+    "amount": 169.52,
+    "odds": 3.89,
+    "client": "Bob",
+    "event": "Roma vs Napoli",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1077,
+    "amount": 169.52,
+    "odds": 3.89,
+    "client": "Bob",
+    "event": "Roma vs Napoli",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 78,
+    "amount": 95.19,
+    "odds": 2.45,
+    "client": "Rupert",
+    "event": "Bayern vs Dortmund",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1078,
+    "amount": 95.19,
+    "odds": 2.45,
+    "client": "Rupert",
+    "event": "Bayern vs Dortmund",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 79,
+    "amount": 252.48,
+    "odds": 2.64,
+    "client": "Laura",
+    "event": "Ajax vs Feyenoord",
+    "market": "Over/Under",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1079,
+    "amount": 252.48,
+    "odds": 2.64,
+    "client": "Laura",
+    "event": "Ajax vs Feyenoord",
+    "market": "Over/Under",
+    "selection": "TeamB",
+    "status": "LOSER"
+  },
+  {
+    "id": 80,
+    "amount": 434.06,
+    "odds": 4.88,
+    "client": "Niaj",
+    "event": "Roma vs Napoli",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1080,
+    "amount": 434.06,
+    "odds": 4.88,
+    "client": "Niaj",
+    "event": "Roma vs Napoli",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 81,
+    "amount": 163.29,
+    "odds": 2.9,
+    "client": "Bob",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1081,
+    "amount": 163.29,
+    "odds": 2.9,
+    "client": "Bob",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "Over 2.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 82,
+    "amount": 427.2,
+    "odds": 4.27,
+    "client": "Ivan",
+    "event": "Bayern vs Dortmund",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1082,
+    "amount": 427.2,
+    "odds": 4.27,
+    "client": "Ivan",
+    "event": "Bayern vs Dortmund",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "LOSER"
+  },
+  {
+    "id": 83,
+    "amount": 272.95,
+    "odds": 4.95,
+    "client": "Judy",
+    "event": "Celtic vs Rangers",
+    "market": "Handicap",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1083,
+    "amount": 272.95,
+    "odds": 4.95,
+    "client": "Judy",
+    "event": "Celtic vs Rangers",
+    "market": "Handicap",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 84,
+    "amount": 232.17,
+    "odds": 3.13,
+    "client": "Olivia",
+    "event": "Celtic vs Rangers",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1084,
+    "amount": 232.17,
+    "odds": 3.13,
+    "client": "Olivia",
+    "event": "Celtic vs Rangers",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "WINNER"
+  },
+  {
+    "id": 85,
+    "amount": 322.41,
+    "odds": 3.41,
+    "client": "Kevin",
+    "event": "Bayern vs Dortmund",
+    "market": "Winner",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1085,
+    "amount": 322.41,
+    "odds": 3.41,
+    "client": "Kevin",
+    "event": "Bayern vs Dortmund",
+    "market": "Winner",
+    "selection": "+1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 86,
+    "amount": 148.8,
+    "odds": 2.89,
+    "client": "Hannah",
+    "event": "Juventus vs Milan",
+    "market": "Winner",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1086,
+    "amount": 148.8,
+    "odds": 2.89,
+    "client": "Hannah",
+    "event": "Juventus vs Milan",
+    "market": "Winner",
+    "selection": "2:1",
+    "status": "WINNER"
+  },
+  {
+    "id": 87,
+    "amount": 200.66,
+    "odds": 3.16,
+    "client": "Hannah",
+    "event": "Arsenal vs Chelsea",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1087,
+    "amount": 200.66,
+    "odds": 3.16,
+    "client": "Hannah",
+    "event": "Arsenal vs Chelsea",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "WINNER"
+  },
+  {
+    "id": 88,
+    "amount": 289.73,
+    "odds": 1.65,
+    "client": "Quentin",
+    "event": "Arsenal vs Chelsea",
+    "market": "Winner",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1088,
+    "amount": 289.73,
+    "odds": 1.65,
+    "client": "Quentin",
+    "event": "Arsenal vs Chelsea",
+    "market": "Winner",
+    "selection": "Over 2.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 89,
+    "amount": 197.06,
+    "odds": 2.74,
+    "client": "Olivia",
+    "event": "Ajax vs Feyenoord",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1089,
+    "amount": 197.06,
+    "odds": 2.74,
+    "client": "Olivia",
+    "event": "Ajax vs Feyenoord",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 90,
+    "amount": 415.41,
+    "odds": 2.82,
+    "client": "David",
+    "event": "Roma vs Napoli",
+    "market": "Correct Score",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1090,
+    "amount": 415.41,
+    "odds": 2.82,
+    "client": "David",
+    "event": "Roma vs Napoli",
+    "market": "Correct Score",
+    "selection": "1:0",
+    "status": "LOSER"
+  },
+  {
+    "id": 91,
+    "amount": 367.95,
+    "odds": 2.48,
+    "client": "Rupert",
+    "event": "Arsenal vs Chelsea",
+    "market": "Over/Under",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1091,
+    "amount": 367.95,
+    "odds": 2.48,
+    "client": "Rupert",
+    "event": "Arsenal vs Chelsea",
+    "market": "Over/Under",
+    "selection": "Under 1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 92,
+    "amount": 144.75,
+    "odds": 3.71,
+    "client": "Eve",
+    "event": "Juventus vs Milan",
+    "market": "Winner",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1092,
+    "amount": 144.75,
+    "odds": 3.71,
+    "client": "Eve",
+    "event": "Juventus vs Milan",
+    "market": "Winner",
+    "selection": "+1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 93,
+    "amount": 210.66,
+    "odds": 2.43,
+    "client": "Eve",
+    "event": "Ajax vs Feyenoord",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1093,
+    "amount": 210.66,
+    "odds": 2.43,
+    "client": "Eve",
+    "event": "Ajax vs Feyenoord",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "WINNER"
+  },
+  {
+    "id": 94,
+    "amount": 376.38,
+    "odds": 1.69,
+    "client": "Grace",
+    "event": "Porto vs Benfica",
+    "market": "Winner",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1094,
+    "amount": 376.38,
+    "odds": 1.69,
+    "client": "Grace",
+    "event": "Porto vs Benfica",
+    "market": "Winner",
+    "selection": "TeamA",
+    "status": "LOSER"
+  },
+  {
+    "id": 95,
+    "amount": 381.33,
+    "odds": 1.88,
+    "client": "Trent",
+    "event": "Ajax vs Feyenoord",
+    "market": "Correct Score",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1095,
+    "amount": 381.33,
+    "odds": 1.88,
+    "client": "Trent",
+    "event": "Ajax vs Feyenoord",
+    "market": "Correct Score",
+    "selection": "-1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 96,
+    "amount": 311.38,
+    "odds": 1.92,
+    "client": "Bob",
+    "event": "Roma vs Napoli",
+    "market": "Over/Under",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1096,
+    "amount": 311.38,
+    "odds": 1.92,
+    "client": "Bob",
+    "event": "Roma vs Napoli",
+    "market": "Over/Under",
+    "selection": "2:1",
+    "status": "LOSER"
+  },
+  {
+    "id": 97,
+    "amount": 52.72,
+    "odds": 4.9,
+    "client": "Peggy",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1097,
+    "amount": 52.72,
+    "odds": 4.9,
+    "client": "Peggy",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "1:0",
+    "status": "LOSER"
+  },
+  {
+    "id": 98,
+    "amount": 469.82,
+    "odds": 2.73,
+    "client": "Charlie",
+    "event": "PSG vs Marseille",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1098,
+    "amount": 469.82,
+    "odds": 2.73,
+    "client": "Charlie",
+    "event": "PSG vs Marseille",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 99,
+    "amount": 373.83,
+    "odds": 3.18,
+    "client": "David",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1099,
+    "amount": 373.83,
+    "odds": 3.18,
+    "client": "David",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "TeamB",
+    "status": "LOSER"
+  },
+  {
+    "id": 100,
+    "amount": 285.78,
+    "odds": 3.92,
+    "client": "Kevin",
+    "event": "Bayern vs Dortmund",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1100,
+    "amount": 285.78,
+    "odds": 3.92,
+    "client": "Kevin",
+    "event": "Bayern vs Dortmund",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "VOID"
+  },
+  {
+    "id": 101,
+    "amount": 428.83,
+    "odds": 2.78,
+    "client": "Kevin",
+    "event": "Porto vs Benfica",
+    "market": "Over/Under",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1101,
+    "amount": 428.83,
+    "odds": 2.78,
+    "client": "Kevin",
+    "event": "Porto vs Benfica",
+    "market": "Over/Under",
+    "selection": "+1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 102,
+    "amount": 66.47,
+    "odds": 2.32,
+    "client": "Niaj",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1102,
+    "amount": 66.47,
+    "odds": 2.32,
+    "client": "Niaj",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "TeamB",
+    "status": "WINNER"
+  },
+  {
+    "id": 103,
+    "amount": 490.58,
+    "odds": 4.47,
+    "client": "Peggy",
+    "event": "Bayern vs Dortmund",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1103,
+    "amount": 490.58,
+    "odds": 4.47,
+    "client": "Peggy",
+    "event": "Bayern vs Dortmund",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 104,
+    "amount": 433.66,
+    "odds": 1.74,
+    "client": "Trent",
+    "event": "Celtic vs Rangers",
+    "market": "Correct Score",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1104,
+    "amount": 433.66,
+    "odds": 1.74,
+    "client": "Trent",
+    "event": "Celtic vs Rangers",
+    "market": "Correct Score",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 105,
+    "amount": 101.88,
+    "odds": 1.68,
+    "client": "Rupert",
+    "event": "Bayern vs Dortmund",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1105,
+    "amount": 101.88,
+    "odds": 1.68,
+    "client": "Rupert",
+    "event": "Bayern vs Dortmund",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "VOID"
+  },
+  {
+    "id": 106,
+    "amount": 438.52,
+    "odds": 2.04,
+    "client": "Mallory",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1106,
+    "amount": 438.52,
+    "odds": 2.04,
+    "client": "Mallory",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "VOID"
+  },
+  {
+    "id": 107,
+    "amount": 71.28,
+    "odds": 1.53,
+    "client": "Trent",
+    "event": "Liverpool vs Man City",
+    "market": "Handicap",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1107,
+    "amount": 71.28,
+    "odds": 1.53,
+    "client": "Trent",
+    "event": "Liverpool vs Man City",
+    "market": "Handicap",
+    "selection": "+1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 108,
+    "amount": 297.03,
+    "odds": 1.54,
+    "client": "Sybil",
+    "event": "Porto vs Benfica",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1108,
+    "amount": 297.03,
+    "odds": 1.54,
+    "client": "Sybil",
+    "event": "Porto vs Benfica",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "LOSER"
+  },
+  {
+    "id": 109,
+    "amount": 199.93,
+    "odds": 4.44,
+    "client": "Eve",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Correct Score",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1109,
+    "amount": 199.93,
+    "odds": 4.44,
+    "client": "Eve",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Correct Score",
+    "selection": "TeamA",
+    "status": "WINNER"
+  },
+  {
+    "id": 110,
+    "amount": 205.88,
+    "odds": 3.02,
+    "client": "Alice",
+    "event": "Celtic vs Rangers",
+    "market": "Winner",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1110,
+    "amount": 205.88,
+    "odds": 3.02,
+    "client": "Alice",
+    "event": "Celtic vs Rangers",
+    "market": "Winner",
+    "selection": "2:1",
+    "status": "LOSER"
+  },
+  {
+    "id": 111,
+    "amount": 169.37,
+    "odds": 4.13,
+    "client": "Bob",
+    "event": "Porto vs Benfica",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1111,
+    "amount": 169.37,
+    "odds": 4.13,
+    "client": "Bob",
+    "event": "Porto vs Benfica",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 112,
+    "amount": 364.07,
+    "odds": 2.91,
+    "client": "Frank",
+    "event": "PSG vs Marseille",
+    "market": "Correct Score",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1112,
+    "amount": 364.07,
+    "odds": 2.91,
+    "client": "Frank",
+    "event": "PSG vs Marseille",
+    "market": "Correct Score",
+    "selection": "Over 2.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 113,
+    "amount": 92.3,
+    "odds": 4.28,
+    "client": "Mallory",
+    "event": "PSG vs Marseille",
+    "market": "Over/Under",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1113,
+    "amount": 92.3,
+    "odds": 4.28,
+    "client": "Mallory",
+    "event": "PSG vs Marseille",
+    "market": "Over/Under",
+    "selection": "TeamB",
+    "status": "WINNER"
+  },
+  {
+    "id": 114,
+    "amount": 317.5,
+    "odds": 3.55,
+    "client": "Eve",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1114,
+    "amount": 317.5,
+    "odds": 3.55,
+    "client": "Eve",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "Over 2.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 115,
+    "amount": 82.04,
+    "odds": 4.43,
+    "client": "Judy",
+    "event": "Bayern vs Dortmund",
+    "market": "Correct Score",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1115,
+    "amount": 82.04,
+    "odds": 4.43,
+    "client": "Judy",
+    "event": "Bayern vs Dortmund",
+    "market": "Correct Score",
+    "selection": "TeamB",
+    "status": "VOID"
+  },
+  {
+    "id": 116,
+    "amount": 410.07,
+    "odds": 4.59,
+    "client": "Frank",
+    "event": "Porto vs Benfica",
+    "market": "Handicap",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1116,
+    "amount": 410.07,
+    "odds": 4.59,
+    "client": "Frank",
+    "event": "Porto vs Benfica",
+    "market": "Handicap",
+    "selection": "Under 1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 117,
+    "amount": 66.24,
+    "odds": 4.61,
+    "client": "Judy",
+    "event": "Juventus vs Milan",
+    "market": "Winner",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1117,
+    "amount": 66.24,
+    "odds": 4.61,
+    "client": "Judy",
+    "event": "Juventus vs Milan",
+    "market": "Winner",
+    "selection": "+1.5",
+    "status": "VOID"
+  },
+  {
+    "id": 118,
+    "amount": 424.44,
+    "odds": 3.08,
+    "client": "Olivia",
+    "event": "Porto vs Benfica",
+    "market": "Handicap",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1118,
+    "amount": 424.44,
+    "odds": 3.08,
+    "client": "Olivia",
+    "event": "Porto vs Benfica",
+    "market": "Handicap",
+    "selection": "TeamB",
+    "status": "LOSER"
+  },
+  {
+    "id": 119,
+    "amount": 456.06,
+    "odds": 3.21,
+    "client": "Sybil",
+    "event": "Celtic vs Rangers",
+    "market": "Handicap",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1119,
+    "amount": 456.06,
+    "odds": 3.21,
+    "client": "Sybil",
+    "event": "Celtic vs Rangers",
+    "market": "Handicap",
+    "selection": "TeamB",
+    "status": "WINNER"
+  },
+  {
+    "id": 120,
+    "amount": 160.17,
+    "odds": 2.83,
+    "client": "Eve",
+    "event": "PSG vs Marseille",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1120,
+    "amount": 160.17,
+    "odds": 2.83,
+    "client": "Eve",
+    "event": "PSG vs Marseille",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "LOSER"
+  },
+  {
+    "id": 121,
+    "amount": 284.25,
+    "odds": 4.5,
+    "client": "Kevin",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1121,
+    "amount": 284.25,
+    "odds": 4.5,
+    "client": "Kevin",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "VOID"
+  },
+  {
+    "id": 122,
+    "amount": 179.92,
+    "odds": 2.52,
+    "client": "Trent",
+    "event": "Roma vs Napoli",
+    "market": "Winner",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1122,
+    "amount": 179.92,
+    "odds": 2.52,
+    "client": "Trent",
+    "event": "Roma vs Napoli",
+    "market": "Winner",
+    "selection": "Over 2.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 123,
+    "amount": 188.7,
+    "odds": 2.22,
+    "client": "Bob",
+    "event": "Liverpool vs Man City",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1123,
+    "amount": 188.7,
+    "odds": 2.22,
+    "client": "Bob",
+    "event": "Liverpool vs Man City",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 124,
+    "amount": 64.71,
+    "odds": 4.57,
+    "client": "Grace",
+    "event": "Ajax vs Feyenoord",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1124,
+    "amount": 64.71,
+    "odds": 4.57,
+    "client": "Grace",
+    "event": "Ajax vs Feyenoord",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "VOID"
+  },
+  {
+    "id": 125,
+    "amount": 252.28,
+    "odds": 1.92,
+    "client": "Frank",
+    "event": "Ajax vs Feyenoord",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1125,
+    "amount": 252.28,
+    "odds": 1.92,
+    "client": "Frank",
+    "event": "Ajax vs Feyenoord",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "VOID"
+  },
+  {
+    "id": 126,
+    "amount": 98.95,
+    "odds": 4.46,
+    "client": "Kevin",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Over/Under",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1126,
+    "amount": 98.95,
+    "odds": 4.46,
+    "client": "Kevin",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Over/Under",
+    "selection": "TeamB",
+    "status": "LOSER"
+  },
+  {
+    "id": 127,
+    "amount": 413.33,
+    "odds": 4.32,
+    "client": "Niaj",
+    "event": "Juventus vs Milan",
+    "market": "Winner",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1127,
+    "amount": 413.33,
+    "odds": 4.32,
+    "client": "Niaj",
+    "event": "Juventus vs Milan",
+    "market": "Winner",
+    "selection": "TeamA",
+    "status": "WINNER"
+  },
+  {
+    "id": 128,
+    "amount": 268.12,
+    "odds": 2.78,
+    "client": "Ivan",
+    "event": "Ajax vs Feyenoord",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1128,
+    "amount": 268.12,
+    "odds": 2.78,
+    "client": "Ivan",
+    "event": "Ajax vs Feyenoord",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 129,
+    "amount": 395.66,
+    "odds": 4.45,
+    "client": "Olivia",
+    "event": "PSG vs Marseille",
+    "market": "Winner",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1129,
+    "amount": 395.66,
+    "odds": 4.45,
+    "client": "Olivia",
+    "event": "PSG vs Marseille",
+    "market": "Winner",
+    "selection": "2:1",
+    "status": "LOSER"
+  },
+  {
+    "id": 130,
+    "amount": 114.8,
+    "odds": 3.99,
+    "client": "David",
+    "event": "Roma vs Napoli",
+    "market": "Correct Score",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1130,
+    "amount": 114.8,
+    "odds": 3.99,
+    "client": "David",
+    "event": "Roma vs Napoli",
+    "market": "Correct Score",
+    "selection": "Under 1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 131,
+    "amount": 31.46,
+    "odds": 2.66,
+    "client": "Peggy",
+    "event": "Celtic vs Rangers",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1131,
+    "amount": 31.46,
+    "odds": 2.66,
+    "client": "Peggy",
+    "event": "Celtic vs Rangers",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "LOSER"
+  },
+  {
+    "id": 132,
+    "amount": 410.99,
+    "odds": 4.84,
+    "client": "Olivia",
+    "event": "Arsenal vs Chelsea",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1132,
+    "amount": 410.99,
+    "odds": 4.84,
+    "client": "Olivia",
+    "event": "Arsenal vs Chelsea",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "LOSER"
+  },
+  {
+    "id": 133,
+    "amount": 357.75,
+    "odds": 3.31,
+    "client": "Kevin",
+    "event": "Ajax vs Feyenoord",
+    "market": "Correct Score",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1133,
+    "amount": 357.75,
+    "odds": 3.31,
+    "client": "Kevin",
+    "event": "Ajax vs Feyenoord",
+    "market": "Correct Score",
+    "selection": "TeamB",
+    "status": "LOSER"
+  },
+  {
+    "id": 134,
+    "amount": 447.54,
+    "odds": 3.75,
+    "client": "David",
+    "event": "Bayern vs Dortmund",
+    "market": "Winner",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1134,
+    "amount": 447.54,
+    "odds": 3.75,
+    "client": "David",
+    "event": "Bayern vs Dortmund",
+    "market": "Winner",
+    "selection": "+1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 135,
+    "amount": 413.69,
+    "odds": 2.49,
+    "client": "Niaj",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1135,
+    "amount": 413.69,
+    "odds": 2.49,
+    "client": "Niaj",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 136,
+    "amount": 160.81,
+    "odds": 4.69,
+    "client": "Rupert",
+    "event": "Roma vs Napoli",
+    "market": "Correct Score",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1136,
+    "amount": 160.81,
+    "odds": 4.69,
+    "client": "Rupert",
+    "event": "Roma vs Napoli",
+    "market": "Correct Score",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 137,
+    "amount": 440.08,
+    "odds": 1.98,
+    "client": "Mallory",
+    "event": "PSG vs Marseille",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1137,
+    "amount": 440.08,
+    "odds": 1.98,
+    "client": "Mallory",
+    "event": "PSG vs Marseille",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "WINNER"
+  },
+  {
+    "id": 138,
+    "amount": 454.58,
+    "odds": 1.74,
+    "client": "Laura",
+    "event": "Celtic vs Rangers",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1138,
+    "amount": 454.58,
+    "odds": 1.74,
+    "client": "Laura",
+    "event": "Celtic vs Rangers",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "LOSER"
+  },
+  {
+    "id": 139,
+    "amount": 484.59,
+    "odds": 3.89,
+    "client": "Trent",
+    "event": "Roma vs Napoli",
+    "market": "Winner",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1139,
+    "amount": 484.59,
+    "odds": 3.89,
+    "client": "Trent",
+    "event": "Roma vs Napoli",
+    "market": "Winner",
+    "selection": "2:1",
+    "status": "WINNER"
+  },
+  {
+    "id": 140,
+    "amount": 133.75,
+    "odds": 3.22,
+    "client": "Grace",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Correct Score",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1140,
+    "amount": 133.75,
+    "odds": 3.22,
+    "client": "Grace",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Correct Score",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 141,
+    "amount": 253.98,
+    "odds": 2.7,
+    "client": "Laura",
+    "event": "Bayern vs Dortmund",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1141,
+    "amount": 253.98,
+    "odds": 2.7,
+    "client": "Laura",
+    "event": "Bayern vs Dortmund",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 142,
+    "amount": 495.83,
+    "odds": 3.8,
+    "client": "Laura",
+    "event": "Liverpool vs Man City",
+    "market": "Correct Score",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1142,
+    "amount": 495.83,
+    "odds": 3.8,
+    "client": "Laura",
+    "event": "Liverpool vs Man City",
+    "market": "Correct Score",
+    "selection": "Under 1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 143,
+    "amount": 332.98,
+    "odds": 1.92,
+    "client": "Charlie",
+    "event": "Arsenal vs Chelsea",
+    "market": "Correct Score",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1143,
+    "amount": 332.98,
+    "odds": 1.92,
+    "client": "Charlie",
+    "event": "Arsenal vs Chelsea",
+    "market": "Correct Score",
+    "selection": "TeamB",
+    "status": "WINNER"
+  },
+  {
+    "id": 144,
+    "amount": 152.2,
+    "odds": 3.61,
+    "client": "Laura",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Over/Under",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1144,
+    "amount": 152.2,
+    "odds": 3.61,
+    "client": "Laura",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Over/Under",
+    "selection": "Over 2.5",
+    "status": "VOID"
+  },
+  {
+    "id": 145,
+    "amount": 119.65,
+    "odds": 1.67,
+    "client": "Judy",
+    "event": "Ajax vs Feyenoord",
+    "market": "Winner",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1145,
+    "amount": 119.65,
+    "odds": 1.67,
+    "client": "Judy",
+    "event": "Ajax vs Feyenoord",
+    "market": "Winner",
+    "selection": "+1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 146,
+    "amount": 475.68,
+    "odds": 4.6,
+    "client": "Trent",
+    "event": "Roma vs Napoli",
+    "market": "Handicap",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1146,
+    "amount": 475.68,
+    "odds": 4.6,
+    "client": "Trent",
+    "event": "Roma vs Napoli",
+    "market": "Handicap",
+    "selection": "+1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 147,
+    "amount": 385.44,
+    "odds": 2.34,
+    "client": "Judy",
+    "event": "Porto vs Benfica",
+    "market": "Over/Under",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1147,
+    "amount": 385.44,
+    "odds": 2.34,
+    "client": "Judy",
+    "event": "Porto vs Benfica",
+    "market": "Over/Under",
+    "selection": "Under 1.5",
+    "status": "VOID"
+  },
+  {
+    "id": 148,
+    "amount": 419.74,
+    "odds": 4.95,
+    "client": "Bob",
+    "event": "Liverpool vs Man City",
+    "market": "Handicap",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1148,
+    "amount": 419.74,
+    "odds": 4.95,
+    "client": "Bob",
+    "event": "Liverpool vs Man City",
+    "market": "Handicap",
+    "selection": "-1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 149,
+    "amount": 294.09,
+    "odds": 2.2,
+    "client": "Bob",
+    "event": "Celtic vs Rangers",
+    "market": "Winner",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1149,
+    "amount": 294.09,
+    "odds": 2.2,
+    "client": "Bob",
+    "event": "Celtic vs Rangers",
+    "market": "Winner",
+    "selection": "1:0",
+    "status": "LOSER"
+  },
+  {
+    "id": 150,
+    "amount": 103.41,
+    "odds": 4.61,
+    "client": "David",
+    "event": "Celtic vs Rangers",
+    "market": "Winner",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1150,
+    "amount": 103.41,
+    "odds": 4.61,
+    "client": "David",
+    "event": "Celtic vs Rangers",
+    "market": "Winner",
+    "selection": "Under 1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 151,
+    "amount": 177.53,
+    "odds": 4.09,
+    "client": "Ivan",
+    "event": "Liverpool vs Man City",
+    "market": "Over/Under",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1151,
+    "amount": 177.53,
+    "odds": 4.09,
+    "client": "Ivan",
+    "event": "Liverpool vs Man City",
+    "market": "Over/Under",
+    "selection": "Over 2.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 152,
+    "amount": 296.2,
+    "odds": 4.86,
+    "client": "Quentin",
+    "event": "PSG vs Marseille",
+    "market": "Over/Under",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1152,
+    "amount": 296.2,
+    "odds": 4.86,
+    "client": "Quentin",
+    "event": "PSG vs Marseille",
+    "market": "Over/Under",
+    "selection": "2:1",
+    "status": "WINNER"
+  },
+  {
+    "id": 153,
+    "amount": 348.77,
+    "odds": 2.72,
+    "client": "Hannah",
+    "event": "Arsenal vs Chelsea",
+    "market": "Winner",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1153,
+    "amount": 348.77,
+    "odds": 2.72,
+    "client": "Hannah",
+    "event": "Arsenal vs Chelsea",
+    "market": "Winner",
+    "selection": "Under 1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 154,
+    "amount": 284.29,
+    "odds": 2.68,
+    "client": "Ivan",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Handicap",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1154,
+    "amount": 284.29,
+    "odds": 2.68,
+    "client": "Ivan",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Handicap",
+    "selection": "+1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 155,
+    "amount": 176.03,
+    "odds": 4.58,
+    "client": "Mallory",
+    "event": "Juventus vs Milan",
+    "market": "Winner",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1155,
+    "amount": 176.03,
+    "odds": 4.58,
+    "client": "Mallory",
+    "event": "Juventus vs Milan",
+    "market": "Winner",
+    "selection": "2:1",
+    "status": "LOSER"
+  },
+  {
+    "id": 156,
+    "amount": 57.45,
+    "odds": 4.47,
+    "client": "Mallory",
+    "event": "Ajax vs Feyenoord",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1156,
+    "amount": 57.45,
+    "odds": 4.47,
+    "client": "Mallory",
+    "event": "Ajax vs Feyenoord",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 157,
+    "amount": 312.48,
+    "odds": 2.38,
+    "client": "Hannah",
+    "event": "Porto vs Benfica",
+    "market": "Correct Score",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1157,
+    "amount": 312.48,
+    "odds": 2.38,
+    "client": "Hannah",
+    "event": "Porto vs Benfica",
+    "market": "Correct Score",
+    "selection": "2:1",
+    "status": "LOSER"
+  },
+  {
+    "id": 158,
+    "amount": 41.69,
+    "odds": 3.52,
+    "client": "Frank",
+    "event": "Ajax vs Feyenoord",
+    "market": "Winner",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1158,
+    "amount": 41.69,
+    "odds": 3.52,
+    "client": "Frank",
+    "event": "Ajax vs Feyenoord",
+    "market": "Winner",
+    "selection": "1:0",
+    "status": "LOSER"
+  },
+  {
+    "id": 159,
+    "amount": 157.31,
+    "odds": 3.65,
+    "client": "Niaj",
+    "event": "Bayern vs Dortmund",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1159,
+    "amount": 157.31,
+    "odds": 3.65,
+    "client": "Niaj",
+    "event": "Bayern vs Dortmund",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "VOID"
+  },
+  {
+    "id": 160,
+    "amount": 41.71,
+    "odds": 4.81,
+    "client": "Kevin",
+    "event": "Liverpool vs Man City",
+    "market": "Over/Under",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1160,
+    "amount": 41.71,
+    "odds": 4.81,
+    "client": "Kevin",
+    "event": "Liverpool vs Man City",
+    "market": "Over/Under",
+    "selection": "Over 2.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 161,
+    "amount": 365.1,
+    "odds": 4.64,
+    "client": "Mallory",
+    "event": "Ajax vs Feyenoord",
+    "market": "Winner",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1161,
+    "amount": 365.1,
+    "odds": 4.64,
+    "client": "Mallory",
+    "event": "Ajax vs Feyenoord",
+    "market": "Winner",
+    "selection": "1:0",
+    "status": "WINNER"
+  },
+  {
+    "id": 162,
+    "amount": 281.95,
+    "odds": 1.51,
+    "client": "Sybil",
+    "event": "Bayern vs Dortmund",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1162,
+    "amount": 281.95,
+    "odds": 1.51,
+    "client": "Sybil",
+    "event": "Bayern vs Dortmund",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "LOSER"
+  },
+  {
+    "id": 163,
+    "amount": 75.31,
+    "odds": 4.98,
+    "client": "Peggy",
+    "event": "Ajax vs Feyenoord",
+    "market": "Winner",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1163,
+    "amount": 75.31,
+    "odds": 4.98,
+    "client": "Peggy",
+    "event": "Ajax vs Feyenoord",
+    "market": "Winner",
+    "selection": "TeamA",
+    "status": "WINNER"
+  },
+  {
+    "id": 164,
+    "amount": 67.01,
+    "odds": 2.5,
+    "client": "Bob",
+    "event": "Celtic vs Rangers",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1164,
+    "amount": 67.01,
+    "odds": 2.5,
+    "client": "Bob",
+    "event": "Celtic vs Rangers",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "LOSER"
+  },
+  {
+    "id": 165,
+    "amount": 228.76,
+    "odds": 1.85,
+    "client": "Olivia",
+    "event": "Juventus vs Milan",
+    "market": "Correct Score",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1165,
+    "amount": 228.76,
+    "odds": 1.85,
+    "client": "Olivia",
+    "event": "Juventus vs Milan",
+    "market": "Correct Score",
+    "selection": "Over 2.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 166,
+    "amount": 293.12,
+    "odds": 3.33,
+    "client": "Kevin",
+    "event": "Juventus vs Milan",
+    "market": "Correct Score",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1166,
+    "amount": 293.12,
+    "odds": 3.33,
+    "client": "Kevin",
+    "event": "Juventus vs Milan",
+    "market": "Correct Score",
+    "selection": "1:0",
+    "status": "WINNER"
+  },
+  {
+    "id": 167,
+    "amount": 111.86,
+    "odds": 1.69,
+    "client": "Bob",
+    "event": "Liverpool vs Man City",
+    "market": "Correct Score",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1167,
+    "amount": 111.86,
+    "odds": 1.69,
+    "client": "Bob",
+    "event": "Liverpool vs Man City",
+    "market": "Correct Score",
+    "selection": "TeamB",
+    "status": "WINNER"
+  },
+  {
+    "id": 168,
+    "amount": 14.75,
+    "odds": 4.51,
+    "client": "Ivan",
+    "event": "Roma vs Napoli",
+    "market": "Handicap",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1168,
+    "amount": 14.75,
+    "odds": 4.51,
+    "client": "Ivan",
+    "event": "Roma vs Napoli",
+    "market": "Handicap",
+    "selection": "TeamB",
+    "status": "LOSER"
+  },
+  {
+    "id": 169,
+    "amount": 482.81,
+    "odds": 2.98,
+    "client": "Trent",
+    "event": "PSG vs Marseille",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1169,
+    "amount": 482.81,
+    "odds": 2.98,
+    "client": "Trent",
+    "event": "PSG vs Marseille",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "WINNER"
+  },
+  {
+    "id": 170,
+    "amount": 221.26,
+    "odds": 1.83,
+    "client": "David",
+    "event": "Liverpool vs Man City",
+    "market": "Over/Under",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1170,
+    "amount": 221.26,
+    "odds": 1.83,
+    "client": "David",
+    "event": "Liverpool vs Man City",
+    "market": "Over/Under",
+    "selection": "2:1",
+    "status": "WINNER"
+  },
+  {
+    "id": 171,
+    "amount": 469.74,
+    "odds": 4.77,
+    "client": "Ivan",
+    "event": "Porto vs Benfica",
+    "market": "Over/Under",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1171,
+    "amount": 469.74,
+    "odds": 4.77,
+    "client": "Ivan",
+    "event": "Porto vs Benfica",
+    "market": "Over/Under",
+    "selection": "Under 1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 172,
+    "amount": 474.62,
+    "odds": 4.61,
+    "client": "Hannah",
+    "event": "Celtic vs Rangers",
+    "market": "Handicap",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1172,
+    "amount": 474.62,
+    "odds": 4.61,
+    "client": "Hannah",
+    "event": "Celtic vs Rangers",
+    "market": "Handicap",
+    "selection": "TeamA",
+    "status": "LOSER"
+  },
+  {
+    "id": 173,
+    "amount": 474.02,
+    "odds": 2.34,
+    "client": "Charlie",
+    "event": "Porto vs Benfica",
+    "market": "Over/Under",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1173,
+    "amount": 474.02,
+    "odds": 2.34,
+    "client": "Charlie",
+    "event": "Porto vs Benfica",
+    "market": "Over/Under",
+    "selection": "Under 1.5",
+    "status": "VOID"
+  },
+  {
+    "id": 174,
+    "amount": 274.0,
+    "odds": 2.92,
+    "client": "Judy",
+    "event": "Ajax vs Feyenoord",
+    "market": "Handicap",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1174,
+    "amount": 274.0,
+    "odds": 2.92,
+    "client": "Judy",
+    "event": "Ajax vs Feyenoord",
+    "market": "Handicap",
+    "selection": "-1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 175,
+    "amount": 135.46,
+    "odds": 3.4,
+    "client": "Frank",
+    "event": "Ajax vs Feyenoord",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1175,
+    "amount": 135.46,
+    "odds": 3.4,
+    "client": "Frank",
+    "event": "Ajax vs Feyenoord",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 176,
+    "amount": 111.77,
+    "odds": 2.24,
+    "client": "Ivan",
+    "event": "Roma vs Napoli",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1176,
+    "amount": 111.77,
+    "odds": 2.24,
+    "client": "Ivan",
+    "event": "Roma vs Napoli",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 177,
+    "amount": 119.99,
+    "odds": 3.67,
+    "client": "Kevin",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Handicap",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1177,
+    "amount": 119.99,
+    "odds": 3.67,
+    "client": "Kevin",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Handicap",
+    "selection": "1:0",
+    "status": "VOID"
+  },
+  {
+    "id": 178,
+    "amount": 368.69,
+    "odds": 3.53,
+    "client": "Charlie",
+    "event": "Liverpool vs Man City",
+    "market": "Handicap",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1178,
+    "amount": 368.69,
+    "odds": 3.53,
+    "client": "Charlie",
+    "event": "Liverpool vs Man City",
+    "market": "Handicap",
+    "selection": "1:0",
+    "status": "LOSER"
+  },
+  {
+    "id": 179,
+    "amount": 205.69,
+    "odds": 3.37,
+    "client": "Trent",
+    "event": "Roma vs Napoli",
+    "market": "Over/Under",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1179,
+    "amount": 205.69,
+    "odds": 3.37,
+    "client": "Trent",
+    "event": "Roma vs Napoli",
+    "market": "Over/Under",
+    "selection": "2:1",
+    "status": "LOSER"
+  },
+  {
+    "id": 180,
+    "amount": 486.28,
+    "odds": 3.86,
+    "client": "Laura",
+    "event": "Roma vs Napoli",
+    "market": "Winner",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1180,
+    "amount": 486.28,
+    "odds": 3.86,
+    "client": "Laura",
+    "event": "Roma vs Napoli",
+    "market": "Winner",
+    "selection": "1:0",
+    "status": "VOID"
+  },
+  {
+    "id": 181,
+    "amount": 127.94,
+    "odds": 4.11,
+    "client": "Peggy",
+    "event": "Ajax vs Feyenoord",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1181,
+    "amount": 127.94,
+    "odds": 4.11,
+    "client": "Peggy",
+    "event": "Ajax vs Feyenoord",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "VOID"
+  },
+  {
+    "id": 182,
+    "amount": 174.82,
+    "odds": 3.6,
+    "client": "Kevin",
+    "event": "Roma vs Napoli",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1182,
+    "amount": 174.82,
+    "odds": 3.6,
+    "client": "Kevin",
+    "event": "Roma vs Napoli",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 183,
+    "amount": 423.2,
+    "odds": 2.9,
+    "client": "Frank",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1183,
+    "amount": 423.2,
+    "odds": 2.9,
+    "client": "Frank",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "+1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 184,
+    "amount": 440.38,
+    "odds": 2.16,
+    "client": "Niaj",
+    "event": "PSG vs Marseille",
+    "market": "Correct Score",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1184,
+    "amount": 440.38,
+    "odds": 2.16,
+    "client": "Niaj",
+    "event": "PSG vs Marseille",
+    "market": "Correct Score",
+    "selection": "2:1",
+    "status": "LOSER"
+  },
+  {
+    "id": 185,
+    "amount": 38.03,
+    "odds": 4.69,
+    "client": "Laura",
+    "event": "PSG vs Marseille",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1185,
+    "amount": 38.03,
+    "odds": 4.69,
+    "client": "Laura",
+    "event": "PSG vs Marseille",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 186,
+    "amount": 481.9,
+    "odds": 3.93,
+    "client": "Ivan",
+    "event": "Celtic vs Rangers",
+    "market": "Correct Score",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1186,
+    "amount": 481.9,
+    "odds": 3.93,
+    "client": "Ivan",
+    "event": "Celtic vs Rangers",
+    "market": "Correct Score",
+    "selection": "1:0",
+    "status": "LOSER"
+  },
+  {
+    "id": 187,
+    "amount": 189.71,
+    "odds": 1.94,
+    "client": "Judy",
+    "event": "Liverpool vs Man City",
+    "market": "Correct Score",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1187,
+    "amount": 189.71,
+    "odds": 1.94,
+    "client": "Judy",
+    "event": "Liverpool vs Man City",
+    "market": "Correct Score",
+    "selection": "TeamB",
+    "status": "LOSER"
+  },
+  {
+    "id": 188,
+    "amount": 48.1,
+    "odds": 2.28,
+    "client": "Laura",
+    "event": "Ajax vs Feyenoord",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1188,
+    "amount": 48.1,
+    "odds": 2.28,
+    "client": "Laura",
+    "event": "Ajax vs Feyenoord",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "LOSER"
+  },
+  {
+    "id": 189,
+    "amount": 361.51,
+    "odds": 4.81,
+    "client": "Frank",
+    "event": "Roma vs Napoli",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1189,
+    "amount": 361.51,
+    "odds": 4.81,
+    "client": "Frank",
+    "event": "Roma vs Napoli",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "WINNER"
+  },
+  {
+    "id": 190,
+    "amount": 439.95,
+    "odds": 2.24,
+    "client": "Kevin",
+    "event": "Ajax vs Feyenoord",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1190,
+    "amount": 439.95,
+    "odds": 2.24,
+    "client": "Kevin",
+    "event": "Ajax vs Feyenoord",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 191,
+    "amount": 406.27,
+    "odds": 2.98,
+    "client": "Kevin",
+    "event": "PSG vs Marseille",
+    "market": "Winner",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1191,
+    "amount": 406.27,
+    "odds": 2.98,
+    "client": "Kevin",
+    "event": "PSG vs Marseille",
+    "market": "Winner",
+    "selection": "TeamA",
+    "status": "WINNER"
+  },
+  {
+    "id": 192,
+    "amount": 271.89,
+    "odds": 2.67,
+    "client": "Laura",
+    "event": "Bayern vs Dortmund",
+    "market": "Over/Under",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1192,
+    "amount": 271.89,
+    "odds": 2.67,
+    "client": "Laura",
+    "event": "Bayern vs Dortmund",
+    "market": "Over/Under",
+    "selection": "TeamB",
+    "status": "LOSER"
+  },
+  {
+    "id": 193,
+    "amount": 278.78,
+    "odds": 3.4,
+    "client": "Eve",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Handicap",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1193,
+    "amount": 278.78,
+    "odds": 3.4,
+    "client": "Eve",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Handicap",
+    "selection": "1:0",
+    "status": "LOSER"
+  },
+  {
+    "id": 194,
+    "amount": 127.91,
+    "odds": 4.58,
+    "client": "Charlie",
+    "event": "Roma vs Napoli",
+    "market": "Correct Score",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1194,
+    "amount": 127.91,
+    "odds": 4.58,
+    "client": "Charlie",
+    "event": "Roma vs Napoli",
+    "market": "Correct Score",
+    "selection": "Under 1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 195,
+    "amount": 498.58,
+    "odds": 3.34,
+    "client": "Rupert",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1195,
+    "amount": 498.58,
+    "odds": 3.34,
+    "client": "Rupert",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "+1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 196,
+    "amount": 194.41,
+    "odds": 1.72,
+    "client": "Hannah",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1196,
+    "amount": 194.41,
+    "odds": 1.72,
+    "client": "Hannah",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "LOSER"
+  },
+  {
+    "id": 197,
+    "amount": 59.39,
+    "odds": 2.4,
+    "client": "Charlie",
+    "event": "Roma vs Napoli",
+    "market": "Over/Under",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1197,
+    "amount": 59.39,
+    "odds": 2.4,
+    "client": "Charlie",
+    "event": "Roma vs Napoli",
+    "market": "Over/Under",
+    "selection": "Over 2.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 198,
+    "amount": 479.57,
+    "odds": 2.68,
+    "client": "Grace",
+    "event": "Celtic vs Rangers",
+    "market": "Over/Under",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1198,
+    "amount": 479.57,
+    "odds": 2.68,
+    "client": "Grace",
+    "event": "Celtic vs Rangers",
+    "market": "Over/Under",
+    "selection": "+1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 199,
+    "amount": 26.66,
+    "odds": 2.69,
+    "client": "Niaj",
+    "event": "Celtic vs Rangers",
+    "market": "Winner",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1199,
+    "amount": 26.66,
+    "odds": 2.69,
+    "client": "Niaj",
+    "event": "Celtic vs Rangers",
+    "market": "Winner",
+    "selection": "1:0",
+    "status": "LOSER"
+  },
+  {
+    "id": 200,
+    "amount": 32.28,
+    "odds": 1.86,
+    "client": "Mallory",
+    "event": "Bayern vs Dortmund",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1200,
+    "amount": 32.28,
+    "odds": 1.86,
+    "client": "Mallory",
+    "event": "Bayern vs Dortmund",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "WINNER"
+  },
+  {
+    "id": 201,
+    "amount": 54.82,
+    "odds": 4.17,
+    "client": "Ivan",
+    "event": "Roma vs Napoli",
+    "market": "Winner",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1201,
+    "amount": 54.82,
+    "odds": 4.17,
+    "client": "Ivan",
+    "event": "Roma vs Napoli",
+    "market": "Winner",
+    "selection": "TeamA",
+    "status": "VOID"
+  },
+  {
+    "id": 202,
+    "amount": 139.69,
+    "odds": 1.79,
+    "client": "Rupert",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1202,
+    "amount": 139.69,
+    "odds": 1.79,
+    "client": "Rupert",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "VOID"
+  },
+  {
+    "id": 203,
+    "amount": 329.92,
+    "odds": 2.42,
+    "client": "Charlie",
+    "event": "Bayern vs Dortmund",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1203,
+    "amount": 329.92,
+    "odds": 2.42,
+    "client": "Charlie",
+    "event": "Bayern vs Dortmund",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 204,
+    "amount": 393.02,
+    "odds": 2.93,
+    "client": "David",
+    "event": "Liverpool vs Man City",
+    "market": "Handicap",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1204,
+    "amount": 393.02,
+    "odds": 2.93,
+    "client": "David",
+    "event": "Liverpool vs Man City",
+    "market": "Handicap",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 205,
+    "amount": 199.24,
+    "odds": 2.74,
+    "client": "Laura",
+    "event": "Porto vs Benfica",
+    "market": "Winner",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1205,
+    "amount": 199.24,
+    "odds": 2.74,
+    "client": "Laura",
+    "event": "Porto vs Benfica",
+    "market": "Winner",
+    "selection": "2:1",
+    "status": "VOID"
+  },
+  {
+    "id": 206,
+    "amount": 50.7,
+    "odds": 2.78,
+    "client": "Sybil",
+    "event": "Liverpool vs Man City",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1206,
+    "amount": 50.7,
+    "odds": 2.78,
+    "client": "Sybil",
+    "event": "Liverpool vs Man City",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "WINNER"
+  },
+  {
+    "id": 207,
+    "amount": 201.12,
+    "odds": 3.62,
+    "client": "Alice",
+    "event": "Porto vs Benfica",
+    "market": "Correct Score",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1207,
+    "amount": 201.12,
+    "odds": 3.62,
+    "client": "Alice",
+    "event": "Porto vs Benfica",
+    "market": "Correct Score",
+    "selection": "Over 2.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 208,
+    "amount": 427.29,
+    "odds": 3.16,
+    "client": "Charlie",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Over/Under",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1208,
+    "amount": 427.29,
+    "odds": 3.16,
+    "client": "Charlie",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Over/Under",
+    "selection": "Under 1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 209,
+    "amount": 91.69,
+    "odds": 1.99,
+    "client": "Grace",
+    "event": "Celtic vs Rangers",
+    "market": "Winner",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1209,
+    "amount": 91.69,
+    "odds": 1.99,
+    "client": "Grace",
+    "event": "Celtic vs Rangers",
+    "market": "Winner",
+    "selection": "Over 2.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 210,
+    "amount": 386.24,
+    "odds": 3.03,
+    "client": "Laura",
+    "event": "PSG vs Marseille",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1210,
+    "amount": 386.24,
+    "odds": 3.03,
+    "client": "Laura",
+    "event": "PSG vs Marseille",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "LOSER"
+  },
+  {
+    "id": 211,
+    "amount": 402.01,
+    "odds": 3.88,
+    "client": "David",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1211,
+    "amount": 402.01,
+    "odds": 3.88,
+    "client": "David",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "+1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 212,
+    "amount": 449.1,
+    "odds": 1.82,
+    "client": "Frank",
+    "event": "Liverpool vs Man City",
+    "market": "Winner",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1212,
+    "amount": 449.1,
+    "odds": 1.82,
+    "client": "Frank",
+    "event": "Liverpool vs Man City",
+    "market": "Winner",
+    "selection": "Over 2.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 213,
+    "amount": 75.67,
+    "odds": 2.6,
+    "client": "Kevin",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Over/Under",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1213,
+    "amount": 75.67,
+    "odds": 2.6,
+    "client": "Kevin",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Over/Under",
+    "selection": "+1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 214,
+    "amount": 414.67,
+    "odds": 2.99,
+    "client": "Grace",
+    "event": "Roma vs Napoli",
+    "market": "Winner",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1214,
+    "amount": 414.67,
+    "odds": 2.99,
+    "client": "Grace",
+    "event": "Roma vs Napoli",
+    "market": "Winner",
+    "selection": "Under 1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 215,
+    "amount": 470.46,
+    "odds": 4.76,
+    "client": "Grace",
+    "event": "Juventus vs Milan",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1215,
+    "amount": 470.46,
+    "odds": 4.76,
+    "client": "Grace",
+    "event": "Juventus vs Milan",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 216,
+    "amount": 71.35,
+    "odds": 2.53,
+    "client": "Frank",
+    "event": "Celtic vs Rangers",
+    "market": "Winner",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1216,
+    "amount": 71.35,
+    "odds": 2.53,
+    "client": "Frank",
+    "event": "Celtic vs Rangers",
+    "market": "Winner",
+    "selection": "Under 1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 217,
+    "amount": 28.33,
+    "odds": 3.84,
+    "client": "Grace",
+    "event": "PSG vs Marseille",
+    "market": "Over/Under",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1217,
+    "amount": 28.33,
+    "odds": 3.84,
+    "client": "Grace",
+    "event": "PSG vs Marseille",
+    "market": "Over/Under",
+    "selection": "TeamB",
+    "status": "WINNER"
+  },
+  {
+    "id": 218,
+    "amount": 61.04,
+    "odds": 3.56,
+    "client": "Laura",
+    "event": "Bayern vs Dortmund",
+    "market": "Winner",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1218,
+    "amount": 61.04,
+    "odds": 3.56,
+    "client": "Laura",
+    "event": "Bayern vs Dortmund",
+    "market": "Winner",
+    "selection": "Under 1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 219,
+    "amount": 390.48,
+    "odds": 2.14,
+    "client": "Rupert",
+    "event": "Arsenal vs Chelsea",
+    "market": "Over/Under",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1219,
+    "amount": 390.48,
+    "odds": 2.14,
+    "client": "Rupert",
+    "event": "Arsenal vs Chelsea",
+    "market": "Over/Under",
+    "selection": "Under 1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 220,
+    "amount": 109.35,
+    "odds": 3.73,
+    "client": "David",
+    "event": "Liverpool vs Man City",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1220,
+    "amount": 109.35,
+    "odds": 3.73,
+    "client": "David",
+    "event": "Liverpool vs Man City",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "VOID"
+  },
+  {
+    "id": 221,
+    "amount": 39.43,
+    "odds": 1.56,
+    "client": "Sybil",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1221,
+    "amount": 39.43,
+    "odds": 1.56,
+    "client": "Sybil",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "Over 2.5",
+    "status": "VOID"
+  },
+  {
+    "id": 222,
+    "amount": 172.79,
+    "odds": 1.68,
+    "client": "Grace",
+    "event": "Celtic vs Rangers",
+    "market": "Over/Under",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1222,
+    "amount": 172.79,
+    "odds": 1.68,
+    "client": "Grace",
+    "event": "Celtic vs Rangers",
+    "market": "Over/Under",
+    "selection": "Over 2.5",
+    "status": "VOID"
+  },
+  {
+    "id": 223,
+    "amount": 464.12,
+    "odds": 1.97,
+    "client": "Eve",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Correct Score",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1223,
+    "amount": 464.12,
+    "odds": 1.97,
+    "client": "Eve",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Correct Score",
+    "selection": "Under 1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 224,
+    "amount": 301.08,
+    "odds": 3.49,
+    "client": "Mallory",
+    "event": "PSG vs Marseille",
+    "market": "Correct Score",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1224,
+    "amount": 301.08,
+    "odds": 3.49,
+    "client": "Mallory",
+    "event": "PSG vs Marseille",
+    "market": "Correct Score",
+    "selection": "TeamB",
+    "status": "WINNER"
+  },
+  {
+    "id": 225,
+    "amount": 186.93,
+    "odds": 1.61,
+    "client": "Olivia",
+    "event": "Porto vs Benfica",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1225,
+    "amount": 186.93,
+    "odds": 1.61,
+    "client": "Olivia",
+    "event": "Porto vs Benfica",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 226,
+    "amount": 255.32,
+    "odds": 2.85,
+    "client": "Trent",
+    "event": "Bayern vs Dortmund",
+    "market": "Handicap",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1226,
+    "amount": 255.32,
+    "odds": 2.85,
+    "client": "Trent",
+    "event": "Bayern vs Dortmund",
+    "market": "Handicap",
+    "selection": "TeamA",
+    "status": "WINNER"
+  },
+  {
+    "id": 227,
+    "amount": 172.21,
+    "odds": 4.16,
+    "client": "Quentin",
+    "event": "Porto vs Benfica",
+    "market": "Winner",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1227,
+    "amount": 172.21,
+    "odds": 4.16,
+    "client": "Quentin",
+    "event": "Porto vs Benfica",
+    "market": "Winner",
+    "selection": "Over 2.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 228,
+    "amount": 144.55,
+    "odds": 1.9,
+    "client": "Mallory",
+    "event": "Ajax vs Feyenoord",
+    "market": "Handicap",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1228,
+    "amount": 144.55,
+    "odds": 1.9,
+    "client": "Mallory",
+    "event": "Ajax vs Feyenoord",
+    "market": "Handicap",
+    "selection": "TeamB",
+    "status": "WINNER"
+  },
+  {
+    "id": 229,
+    "amount": 243.36,
+    "odds": 4.89,
+    "client": "Kevin",
+    "event": "Bayern vs Dortmund",
+    "market": "Handicap",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1229,
+    "amount": 243.36,
+    "odds": 4.89,
+    "client": "Kevin",
+    "event": "Bayern vs Dortmund",
+    "market": "Handicap",
+    "selection": "+1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 230,
+    "amount": 232.68,
+    "odds": 1.82,
+    "client": "Niaj",
+    "event": "Roma vs Napoli",
+    "market": "Handicap",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1230,
+    "amount": 232.68,
+    "odds": 1.82,
+    "client": "Niaj",
+    "event": "Roma vs Napoli",
+    "market": "Handicap",
+    "selection": "-1.5",
+    "status": "VOID"
+  },
+  {
+    "id": 231,
+    "amount": 107.28,
+    "odds": 2.27,
+    "client": "Peggy",
+    "event": "PSG vs Marseille",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1231,
+    "amount": 107.28,
+    "odds": 2.27,
+    "client": "Peggy",
+    "event": "PSG vs Marseille",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 232,
+    "amount": 177.83,
+    "odds": 4.02,
+    "client": "Frank",
+    "event": "PSG vs Marseille",
+    "market": "Correct Score",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1232,
+    "amount": 177.83,
+    "odds": 4.02,
+    "client": "Frank",
+    "event": "PSG vs Marseille",
+    "market": "Correct Score",
+    "selection": "-1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 233,
+    "amount": 283.78,
+    "odds": 3.02,
+    "client": "Grace",
+    "event": "Celtic vs Rangers",
+    "market": "Correct Score",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1233,
+    "amount": 283.78,
+    "odds": 3.02,
+    "client": "Grace",
+    "event": "Celtic vs Rangers",
+    "market": "Correct Score",
+    "selection": "TeamB",
+    "status": "LOSER"
+  },
+  {
+    "id": 234,
+    "amount": 30.76,
+    "odds": 3.76,
+    "client": "Grace",
+    "event": "Porto vs Benfica",
+    "market": "Handicap",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1234,
+    "amount": 30.76,
+    "odds": 3.76,
+    "client": "Grace",
+    "event": "Porto vs Benfica",
+    "market": "Handicap",
+    "selection": "Under 1.5",
+    "status": "VOID"
+  },
+  {
+    "id": 235,
+    "amount": 26.28,
+    "odds": 3.83,
+    "client": "Grace",
+    "event": "Arsenal vs Chelsea",
+    "market": "Winner",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1235,
+    "amount": 26.28,
+    "odds": 3.83,
+    "client": "Grace",
+    "event": "Arsenal vs Chelsea",
+    "market": "Winner",
+    "selection": "2:1",
+    "status": "LOSER"
+  },
+  {
+    "id": 236,
+    "amount": 39.02,
+    "odds": 1.54,
+    "client": "Eve",
+    "event": "Ajax vs Feyenoord",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1236,
+    "amount": 39.02,
+    "odds": 1.54,
+    "client": "Eve",
+    "event": "Ajax vs Feyenoord",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 237,
+    "amount": 429.4,
+    "odds": 2.46,
+    "client": "Kevin",
+    "event": "Roma vs Napoli",
+    "market": "Winner",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1237,
+    "amount": 429.4,
+    "odds": 2.46,
+    "client": "Kevin",
+    "event": "Roma vs Napoli",
+    "market": "Winner",
+    "selection": "TeamA",
+    "status": "LOSER"
+  },
+  {
+    "id": 238,
+    "amount": 241.38,
+    "odds": 2.26,
+    "client": "David",
+    "event": "Juventus vs Milan",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1238,
+    "amount": 241.38,
+    "odds": 2.26,
+    "client": "David",
+    "event": "Juventus vs Milan",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 239,
+    "amount": 399.65,
+    "odds": 4.45,
+    "client": "Kevin",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1239,
+    "amount": 399.65,
+    "odds": 4.45,
+    "client": "Kevin",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "WINNER"
+  },
+  {
+    "id": 240,
+    "amount": 224.63,
+    "odds": 1.8,
+    "client": "Laura",
+    "event": "Celtic vs Rangers",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1240,
+    "amount": 224.63,
+    "odds": 1.8,
+    "client": "Laura",
+    "event": "Celtic vs Rangers",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 241,
+    "amount": 278.39,
+    "odds": 2.19,
+    "client": "Trent",
+    "event": "Celtic vs Rangers",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1241,
+    "amount": 278.39,
+    "odds": 2.19,
+    "client": "Trent",
+    "event": "Celtic vs Rangers",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "LOSER"
+  },
+  {
+    "id": 242,
+    "amount": 126.42,
+    "odds": 4.56,
+    "client": "Grace",
+    "event": "Juventus vs Milan",
+    "market": "Handicap",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1242,
+    "amount": 126.42,
+    "odds": 4.56,
+    "client": "Grace",
+    "event": "Juventus vs Milan",
+    "market": "Handicap",
+    "selection": "1:0",
+    "status": "WINNER"
+  },
+  {
+    "id": 243,
+    "amount": 30.06,
+    "odds": 3.39,
+    "client": "Quentin",
+    "event": "Roma vs Napoli",
+    "market": "Handicap",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1243,
+    "amount": 30.06,
+    "odds": 3.39,
+    "client": "Quentin",
+    "event": "Roma vs Napoli",
+    "market": "Handicap",
+    "selection": "+1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 244,
+    "amount": 93.22,
+    "odds": 2.57,
+    "client": "Judy",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Over/Under",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1244,
+    "amount": 93.22,
+    "odds": 2.57,
+    "client": "Judy",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Over/Under",
+    "selection": "TeamB",
+    "status": "WINNER"
+  },
+  {
+    "id": 245,
+    "amount": 253.75,
+    "odds": 2.87,
+    "client": "Olivia",
+    "event": "Bayern vs Dortmund",
+    "market": "Correct Score",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1245,
+    "amount": 253.75,
+    "odds": 2.87,
+    "client": "Olivia",
+    "event": "Bayern vs Dortmund",
+    "market": "Correct Score",
+    "selection": "1:0",
+    "status": "LOSER"
+  },
+  {
+    "id": 246,
+    "amount": 193.83,
+    "odds": 2.74,
+    "client": "David",
+    "event": "Arsenal vs Chelsea",
+    "market": "Over/Under",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1246,
+    "amount": 193.83,
+    "odds": 2.74,
+    "client": "David",
+    "event": "Arsenal vs Chelsea",
+    "market": "Over/Under",
+    "selection": "Under 1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 247,
+    "amount": 228.94,
+    "odds": 2.77,
+    "client": "Olivia",
+    "event": "Liverpool vs Man City",
+    "market": "Correct Score",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1247,
+    "amount": 228.94,
+    "odds": 2.77,
+    "client": "Olivia",
+    "event": "Liverpool vs Man City",
+    "market": "Correct Score",
+    "selection": "TeamB",
+    "status": "WINNER"
+  },
+  {
+    "id": 248,
+    "amount": 370.28,
+    "odds": 1.66,
+    "client": "Peggy",
+    "event": "Porto vs Benfica",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1248,
+    "amount": 370.28,
+    "odds": 1.66,
+    "client": "Peggy",
+    "event": "Porto vs Benfica",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 249,
+    "amount": 472.45,
+    "odds": 2.5,
+    "client": "Eve",
+    "event": "PSG vs Marseille",
+    "market": "Winner",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1249,
+    "amount": 472.45,
+    "odds": 2.5,
+    "client": "Eve",
+    "event": "PSG vs Marseille",
+    "market": "Winner",
+    "selection": "1:0",
+    "status": "WINNER"
+  },
+  {
+    "id": 250,
+    "amount": 68.38,
+    "odds": 2.44,
+    "client": "Trent",
+    "event": "Celtic vs Rangers",
+    "market": "Correct Score",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1250,
+    "amount": 68.38,
+    "odds": 2.44,
+    "client": "Trent",
+    "event": "Celtic vs Rangers",
+    "market": "Correct Score",
+    "selection": "TeamB",
+    "status": "LOSER"
+  },
+  {
+    "id": 251,
+    "amount": 317.97,
+    "odds": 1.94,
+    "client": "Charlie",
+    "event": "Roma vs Napoli",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1251,
+    "amount": 317.97,
+    "odds": 1.94,
+    "client": "Charlie",
+    "event": "Roma vs Napoli",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "VOID"
+  },
+  {
+    "id": 252,
+    "amount": 427.51,
+    "odds": 3.45,
+    "client": "Frank",
+    "event": "Bayern vs Dortmund",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1252,
+    "amount": 427.51,
+    "odds": 3.45,
+    "client": "Frank",
+    "event": "Bayern vs Dortmund",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "LOSER"
+  },
+  {
+    "id": 253,
+    "amount": 25.68,
+    "odds": 4.03,
+    "client": "Judy",
+    "event": "Liverpool vs Man City",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1253,
+    "amount": 25.68,
+    "odds": 4.03,
+    "client": "Judy",
+    "event": "Liverpool vs Man City",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 254,
+    "amount": 489.19,
+    "odds": 4.82,
+    "client": "Judy",
+    "event": "Roma vs Napoli",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1254,
+    "amount": 489.19,
+    "odds": 4.82,
+    "client": "Judy",
+    "event": "Roma vs Napoli",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 255,
+    "amount": 241.47,
+    "odds": 1.59,
+    "client": "Quentin",
+    "event": "Porto vs Benfica",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1255,
+    "amount": 241.47,
+    "odds": 1.59,
+    "client": "Quentin",
+    "event": "Porto vs Benfica",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "LOSER"
+  },
+  {
+    "id": 256,
+    "amount": 199.77,
+    "odds": 2.23,
+    "client": "Kevin",
+    "event": "Ajax vs Feyenoord",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1256,
+    "amount": 199.77,
+    "odds": 2.23,
+    "client": "Kevin",
+    "event": "Ajax vs Feyenoord",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 257,
+    "amount": 333.01,
+    "odds": 1.69,
+    "client": "Judy",
+    "event": "Bayern vs Dortmund",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1257,
+    "amount": 333.01,
+    "odds": 1.69,
+    "client": "Judy",
+    "event": "Bayern vs Dortmund",
+    "market": "Over/Under",
+    "selection": "TeamA",
+    "status": "LOSER"
+  },
+  {
+    "id": 258,
+    "amount": 217.68,
+    "odds": 1.6,
+    "client": "Grace",
+    "event": "Roma vs Napoli",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1258,
+    "amount": 217.68,
+    "odds": 1.6,
+    "client": "Grace",
+    "event": "Roma vs Napoli",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 259,
+    "amount": 237.16,
+    "odds": 1.92,
+    "client": "Judy",
+    "event": "Ajax vs Feyenoord",
+    "market": "Handicap",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1259,
+    "amount": 237.16,
+    "odds": 1.92,
+    "client": "Judy",
+    "event": "Ajax vs Feyenoord",
+    "market": "Handicap",
+    "selection": "TeamA",
+    "status": "WINNER"
+  },
+  {
+    "id": 260,
+    "amount": 485.76,
+    "odds": 3.75,
+    "client": "Olivia",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1260,
+    "amount": 485.76,
+    "odds": 3.75,
+    "client": "Olivia",
+    "event": "Juventus vs Milan",
+    "market": "Over/Under",
+    "selection": "+1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 261,
+    "amount": 82.1,
+    "odds": 4.91,
+    "client": "Judy",
+    "event": "Arsenal vs Chelsea",
+    "market": "Handicap",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1261,
+    "amount": 82.1,
+    "odds": 4.91,
+    "client": "Judy",
+    "event": "Arsenal vs Chelsea",
+    "market": "Handicap",
+    "selection": "+1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 262,
+    "amount": 321.52,
+    "odds": 2.89,
+    "client": "Peggy",
+    "event": "Arsenal vs Chelsea",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1262,
+    "amount": 321.52,
+    "odds": 2.89,
+    "client": "Peggy",
+    "event": "Arsenal vs Chelsea",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 263,
+    "amount": 220.89,
+    "odds": 3.92,
+    "client": "Eve",
+    "event": "Arsenal vs Chelsea",
+    "market": "Winner",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1263,
+    "amount": 220.89,
+    "odds": 3.92,
+    "client": "Eve",
+    "event": "Arsenal vs Chelsea",
+    "market": "Winner",
+    "selection": "2:1",
+    "status": "LOSER"
+  },
+  {
+    "id": 264,
+    "amount": 171.61,
+    "odds": 4.75,
+    "client": "Quentin",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1264,
+    "amount": 171.61,
+    "odds": 4.75,
+    "client": "Quentin",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Winner",
+    "selection": "2:1",
+    "status": "WINNER"
+  },
+  {
+    "id": 265,
+    "amount": 452.22,
+    "odds": 4.21,
+    "client": "Niaj",
+    "event": "Porto vs Benfica",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1265,
+    "amount": 452.22,
+    "odds": 4.21,
+    "client": "Niaj",
+    "event": "Porto vs Benfica",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 266,
+    "amount": 309.87,
+    "odds": 2.63,
+    "client": "Alice",
+    "event": "Celtic vs Rangers",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1266,
+    "amount": 309.87,
+    "odds": 2.63,
+    "client": "Alice",
+    "event": "Celtic vs Rangers",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "WINNER"
+  },
+  {
+    "id": 267,
+    "amount": 100.8,
+    "odds": 3.65,
+    "client": "Laura",
+    "event": "Liverpool vs Man City",
+    "market": "Winner",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1267,
+    "amount": 100.8,
+    "odds": 3.65,
+    "client": "Laura",
+    "event": "Liverpool vs Man City",
+    "market": "Winner",
+    "selection": "Over 2.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 268,
+    "amount": 306.22,
+    "odds": 3.67,
+    "client": "Sybil",
+    "event": "Porto vs Benfica",
+    "market": "Correct Score",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1268,
+    "amount": 306.22,
+    "odds": 3.67,
+    "client": "Sybil",
+    "event": "Porto vs Benfica",
+    "market": "Correct Score",
+    "selection": "1:0",
+    "status": "LOSER"
+  },
+  {
+    "id": 269,
+    "amount": 118.05,
+    "odds": 3.4,
+    "client": "Judy",
+    "event": "Bayern vs Dortmund",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1269,
+    "amount": 118.05,
+    "odds": 3.4,
+    "client": "Judy",
+    "event": "Bayern vs Dortmund",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 270,
+    "amount": 135.39,
+    "odds": 2.82,
+    "client": "Grace",
+    "event": "Juventus vs Milan",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1270,
+    "amount": 135.39,
+    "odds": 2.82,
+    "client": "Grace",
+    "event": "Juventus vs Milan",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 271,
+    "amount": 419.57,
+    "odds": 3.22,
+    "client": "Sybil",
+    "event": "Ajax vs Feyenoord",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1271,
+    "amount": 419.57,
+    "odds": 3.22,
+    "client": "Sybil",
+    "event": "Ajax vs Feyenoord",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 272,
+    "amount": 20.92,
+    "odds": 1.57,
+    "client": "Quentin",
+    "event": "Roma vs Napoli",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "OPEN"
+  },
+  {
+    "id": 1272,
+    "amount": 20.92,
+    "odds": 1.57,
+    "client": "Quentin",
+    "event": "Roma vs Napoli",
+    "market": "Winner",
+    "selection": "TeamB",
+    "status": "WINNER"
+  },
+  {
+    "id": 273,
+    "amount": 446.24,
+    "odds": 3.97,
+    "client": "Frank",
+    "event": "Roma vs Napoli",
+    "market": "Handicap",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1273,
+    "amount": 446.24,
+    "odds": 3.97,
+    "client": "Frank",
+    "event": "Roma vs Napoli",
+    "market": "Handicap",
+    "selection": "+1.5",
+    "status": "VOID"
+  },
+  {
+    "id": 274,
+    "amount": 92.25,
+    "odds": 3.33,
+    "client": "Judy",
+    "event": "Porto vs Benfica",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1274,
+    "amount": 92.25,
+    "odds": 3.33,
+    "client": "Judy",
+    "event": "Porto vs Benfica",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 275,
+    "amount": 381.21,
+    "odds": 3.34,
+    "client": "Bob",
+    "event": "Porto vs Benfica",
+    "market": "Over/Under",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1275,
+    "amount": 381.21,
+    "odds": 3.34,
+    "client": "Bob",
+    "event": "Porto vs Benfica",
+    "market": "Over/Under",
+    "selection": "Under 1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 276,
+    "amount": 17.74,
+    "odds": 4.7,
+    "client": "Peggy",
+    "event": "Roma vs Napoli",
+    "market": "Over/Under",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1276,
+    "amount": 17.74,
+    "odds": 4.7,
+    "client": "Peggy",
+    "event": "Roma vs Napoli",
+    "market": "Over/Under",
+    "selection": "Under 1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 277,
+    "amount": 48.14,
+    "odds": 3.41,
+    "client": "Hannah",
+    "event": "Celtic vs Rangers",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1277,
+    "amount": 48.14,
+    "odds": 3.41,
+    "client": "Hannah",
+    "event": "Celtic vs Rangers",
+    "market": "Over/Under",
+    "selection": "1:0",
+    "status": "LOSER"
+  },
+  {
+    "id": 278,
+    "amount": 206.07,
+    "odds": 4.73,
+    "client": "Peggy",
+    "event": "PSG vs Marseille",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1278,
+    "amount": 206.07,
+    "odds": 4.73,
+    "client": "Peggy",
+    "event": "PSG vs Marseille",
+    "market": "Correct Score",
+    "selection": "+1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 279,
+    "amount": 496.54,
+    "odds": 1.57,
+    "client": "Sybil",
+    "event": "Bayern vs Dortmund",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1279,
+    "amount": 496.54,
+    "odds": 1.57,
+    "client": "Sybil",
+    "event": "Bayern vs Dortmund",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "LOSER"
+  },
+  {
+    "id": 280,
+    "amount": 231.24,
+    "odds": 4.36,
+    "client": "Sybil",
+    "event": "Juventus vs Milan",
+    "market": "Correct Score",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1280,
+    "amount": 231.24,
+    "odds": 4.36,
+    "client": "Sybil",
+    "event": "Juventus vs Milan",
+    "market": "Correct Score",
+    "selection": "TeamA",
+    "status": "LOSER"
+  },
+  {
+    "id": 281,
+    "amount": 484.71,
+    "odds": 2.84,
+    "client": "Frank",
+    "event": "Bayern vs Dortmund",
+    "market": "Correct Score",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1281,
+    "amount": 484.71,
+    "odds": 2.84,
+    "client": "Frank",
+    "event": "Bayern vs Dortmund",
+    "market": "Correct Score",
+    "selection": "Under 1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 282,
+    "amount": 432.71,
+    "odds": 3.38,
+    "client": "Judy",
+    "event": "Porto vs Benfica",
+    "market": "Handicap",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1282,
+    "amount": 432.71,
+    "odds": 3.38,
+    "client": "Judy",
+    "event": "Porto vs Benfica",
+    "market": "Handicap",
+    "selection": "1:0",
+    "status": "WINNER"
+  },
+  {
+    "id": 283,
+    "amount": 116.29,
+    "odds": 3.55,
+    "client": "Judy",
+    "event": "Roma vs Napoli",
+    "market": "Handicap",
+    "selection": "+1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1283,
+    "amount": 116.29,
+    "odds": 3.55,
+    "client": "Judy",
+    "event": "Roma vs Napoli",
+    "market": "Handicap",
+    "selection": "+1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 284,
+    "amount": 176.6,
+    "odds": 2.59,
+    "client": "Bob",
+    "event": "Ajax vs Feyenoord",
+    "market": "Winner",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1284,
+    "amount": 176.6,
+    "odds": 2.59,
+    "client": "Bob",
+    "event": "Ajax vs Feyenoord",
+    "market": "Winner",
+    "selection": "Under 1.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 285,
+    "amount": 59.75,
+    "odds": 2.57,
+    "client": "Laura",
+    "event": "Juventus vs Milan",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1285,
+    "amount": 59.75,
+    "odds": 2.57,
+    "client": "Laura",
+    "event": "Juventus vs Milan",
+    "market": "Handicap",
+    "selection": "2:1",
+    "status": "LOSER"
+  },
+  {
+    "id": 286,
+    "amount": 285.8,
+    "odds": 2.54,
+    "client": "Ivan",
+    "event": "Liverpool vs Man City",
+    "market": "Correct Score",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1286,
+    "amount": 285.8,
+    "odds": 2.54,
+    "client": "Ivan",
+    "event": "Liverpool vs Man City",
+    "market": "Correct Score",
+    "selection": "Over 2.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 287,
+    "amount": 462.58,
+    "odds": 2.04,
+    "client": "Bob",
+    "event": "Bayern vs Dortmund",
+    "market": "Correct Score",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1287,
+    "amount": 462.58,
+    "odds": 2.04,
+    "client": "Bob",
+    "event": "Bayern vs Dortmund",
+    "market": "Correct Score",
+    "selection": "TeamA",
+    "status": "LOSER"
+  },
+  {
+    "id": 288,
+    "amount": 16.0,
+    "odds": 3.82,
+    "client": "David",
+    "event": "Porto vs Benfica",
+    "market": "Handicap",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1288,
+    "amount": 16.0,
+    "odds": 3.82,
+    "client": "David",
+    "event": "Porto vs Benfica",
+    "market": "Handicap",
+    "selection": "TeamA",
+    "status": "WINNER"
+  },
+  {
+    "id": 289,
+    "amount": 455.62,
+    "odds": 2.19,
+    "client": "Laura",
+    "event": "Celtic vs Rangers",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1289,
+    "amount": 455.62,
+    "odds": 2.19,
+    "client": "Laura",
+    "event": "Celtic vs Rangers",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 290,
+    "amount": 384.38,
+    "odds": 2.83,
+    "client": "Trent",
+    "event": "Juventus vs Milan",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1290,
+    "amount": 384.38,
+    "odds": 2.83,
+    "client": "Trent",
+    "event": "Juventus vs Milan",
+    "market": "Winner",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 291,
+    "amount": 316.76,
+    "odds": 3.54,
+    "client": "Rupert",
+    "event": "Porto vs Benfica",
+    "market": "Winner",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1291,
+    "amount": 316.76,
+    "odds": 3.54,
+    "client": "Rupert",
+    "event": "Porto vs Benfica",
+    "market": "Winner",
+    "selection": "Over 2.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 292,
+    "amount": 482.85,
+    "odds": 4.96,
+    "client": "Peggy",
+    "event": "Roma vs Napoli",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1292,
+    "amount": 482.85,
+    "odds": 4.96,
+    "client": "Peggy",
+    "event": "Roma vs Napoli",
+    "market": "Handicap",
+    "selection": "Over 2.5",
+    "status": "WINNER"
+  },
+  {
+    "id": 293,
+    "amount": 216.2,
+    "odds": 1.55,
+    "client": "Olivia",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Handicap",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1293,
+    "amount": 216.2,
+    "odds": 1.55,
+    "client": "Olivia",
+    "event": "Barcelona vs Real Madrid",
+    "market": "Handicap",
+    "selection": "Under 1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 294,
+    "amount": 160.97,
+    "odds": 4.77,
+    "client": "Frank",
+    "event": "Porto vs Benfica",
+    "market": "Winner",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1294,
+    "amount": 160.97,
+    "odds": 4.77,
+    "client": "Frank",
+    "event": "Porto vs Benfica",
+    "market": "Winner",
+    "selection": "2:1",
+    "status": "WINNER"
+  },
+  {
+    "id": 295,
+    "amount": 250.01,
+    "odds": 1.84,
+    "client": "Laura",
+    "event": "Roma vs Napoli",
+    "market": "Winner",
+    "selection": "Under 1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1295,
+    "amount": 250.01,
+    "odds": 1.84,
+    "client": "Laura",
+    "event": "Roma vs Napoli",
+    "market": "Winner",
+    "selection": "Under 1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 296,
+    "amount": 407.82,
+    "odds": 2.55,
+    "client": "Alice",
+    "event": "Celtic vs Rangers",
+    "market": "Handicap",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1296,
+    "amount": 407.82,
+    "odds": 2.55,
+    "client": "Alice",
+    "event": "Celtic vs Rangers",
+    "market": "Handicap",
+    "selection": "-1.5",
+    "status": "LOSER"
+  },
+  {
+    "id": 297,
+    "amount": 310.33,
+    "odds": 1.84,
+    "client": "Frank",
+    "event": "Juventus vs Milan",
+    "market": "Correct Score",
+    "selection": "2:1",
+    "status": "OPEN"
+  },
+  {
+    "id": 1297,
+    "amount": 310.33,
+    "odds": 1.84,
+    "client": "Frank",
+    "event": "Juventus vs Milan",
+    "market": "Correct Score",
+    "selection": "2:1",
+    "status": "LOSER"
+  },
+  {
+    "id": 298,
+    "amount": 368.95,
+    "odds": 4.72,
+    "client": "Sybil",
+    "event": "Bayern vs Dortmund",
+    "market": "Handicap",
+    "selection": "TeamA",
+    "status": "OPEN"
+  },
+  {
+    "id": 1298,
+    "amount": 368.95,
+    "odds": 4.72,
+    "client": "Sybil",
+    "event": "Bayern vs Dortmund",
+    "market": "Handicap",
+    "selection": "TeamA",
+    "status": "WINNER"
+  },
+  {
+    "id": 299,
+    "amount": 351.45,
+    "odds": 4.55,
+    "client": "Peggy",
+    "event": "PSG vs Marseille",
+    "market": "Handicap",
+    "selection": "1:0",
+    "status": "OPEN"
+  },
+  {
+    "id": 1299,
+    "amount": 351.45,
+    "odds": 4.55,
+    "client": "Peggy",
+    "event": "PSG vs Marseille",
+    "market": "Handicap",
+    "selection": "1:0",
+    "status": "LOSER"
+  },
+  {
+    "id": 300,
+    "amount": 432.08,
+    "odds": 4.77,
+    "client": "Peggy",
+    "event": "Liverpool vs Man City",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "OPEN"
+  },
+  {
+    "id": 1300,
+    "amount": 432.08,
+    "odds": 4.77,
+    "client": "Peggy",
+    "event": "Liverpool vs Man City",
+    "market": "Over/Under",
+    "selection": "-1.5",
+    "status": "LOSER"
+  }
+]

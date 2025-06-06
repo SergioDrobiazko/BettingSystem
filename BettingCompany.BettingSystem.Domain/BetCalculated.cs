@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,6 +31,7 @@ namespace BettingCompany.BettingSystem.Domain
         public BetOutcome BetOutcome { get; private set; }
 
         public bool IsMarkedForReview { get; private set; }
+        public ObjectId Id { get; set; }
 
         public decimal GetProfit()
         {

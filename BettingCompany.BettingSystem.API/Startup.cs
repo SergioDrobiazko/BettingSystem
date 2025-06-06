@@ -32,6 +32,8 @@ namespace BettingCompany.BettingSystem
             services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
             services.AddSingleton<IBetRepository, BetRepository>();
 
+            services.AddScoped<IBetSummaryService, BetSummaryService>();
+
             services.Configure<MongoSettings>(
                 Configuration.GetSection("MongoDb"));
 

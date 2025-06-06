@@ -18,6 +18,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2AAD74B4-22D0-48F4-AE9B-B08CA562214D}"
 	ProjectSection(SolutionItems) = preProject
 		100 bets.json = 100 bets.json
+		300 bets.json = 300 bets.json
 	EndProjectSection
 EndProject
 Global
