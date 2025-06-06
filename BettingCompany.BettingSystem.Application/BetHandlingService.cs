@@ -1,6 +1,7 @@
 ﻿using BettingCompany.BettingSystem.Domain;
 using BettingCompany.BettingSystem.Repository;
 using System.Collections.Concurrent;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace BettingCompany.BettingSystem.Application
@@ -113,7 +114,10 @@ namespace BettingCompany.BettingSystem.Application
 
             var betsCalculated = _workersDirector.GetBetsCalculatedSnapshot();
 
-            _betRepository.Save(betsCalculated);
+            if (betsCalculated.Any())
+            {
+                _betRepository.Save(betsCalculated);
+            }
 
             // todo: save unhandled bets
         }

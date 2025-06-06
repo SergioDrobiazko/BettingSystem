@@ -34,6 +34,8 @@ namespace BettingCompany.BettingSystem
 
             services.AddScoped<IBetSummaryService, BetSummaryService>();
 
+            services.AddScoped<IShutdownSystemService, ShutdownSystemService>();
+
             services.Configure<MongoSettings>(
                 Configuration.GetSection("MongoDb"));
 

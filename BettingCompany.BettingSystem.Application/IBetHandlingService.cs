@@ -1,6 +1,4 @@
 ﻿using BettingCompany.BettingSystem.Domain;
-using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace BettingCompany.BettingSystem.Application
@@ -8,6 +6,9 @@ namespace BettingCompany.BettingSystem.Application
     public interface IBetHandlingService
     {
         void Handle(Bet bet);
+
+        void ShutDown();
+
         Task WhenAllHandled();
     }
 }
