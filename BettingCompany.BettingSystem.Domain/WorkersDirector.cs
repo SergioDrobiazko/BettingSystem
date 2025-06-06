@@ -49,12 +49,20 @@ namespace BettingCompany.BettingSystem.Domain
             var betCalculatedTask = freeWorker.CalculateBetAsync(betTransition, cancellationToken)
                 .ContinueWith((betCalculated) =>
                 {
-                    cancellationToken.ThrowIfCancellationRequested();
+                    if (betCalculated.IsFaulted)
+                    {
+                        Console.WriteLine("Task failed: " + betCalculated.Exception);
+                        return;
+                    }
+
+                    if (betCalculated.IsCanceled)
+                    {
+                        Console.WriteLine("Task was canceled.");
+                        return;
+                    }
 
                     betsCalculated.Enqueue(betCalculated.Result);
-
                     BetCalculated?.Invoke(this, new BetCalculatedEventArgs { });
-
                     availableWorkers.Add(freeWorker);
                 }, cancellationToken);
 

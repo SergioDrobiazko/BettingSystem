@@ -1,23 +1,15 @@
-﻿using BettingCompany.BettingSystem.Domain;
-using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BettingCompany.BettingSystem.Application
+﻿namespace BettingCompany.BettingSystem.Application
 {
     public class PersistancePolicy : IPersistancePolicy
     {
         public int GetNumberOfElementsToSave()
         {
-            return 100;
+            return 20;
         }
 
-        public bool ShouldPersist(int betsCalculated)
+        public bool ShouldPersist(int betsCalculated, int betsSaved)
         {
-            return betsCalculated == 100;
+            return betsCalculated - betsSaved >= 20; 
         }
     }
 }

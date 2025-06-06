@@ -32,6 +32,7 @@ namespace BettingCompany.BettingSystem.Application
 
         private int incomingBets = 0;
         private int betsHandled = 0;
+        private int betsSaved = 0;
 
         private readonly object betsCalculatedCounterLock = new object();
         private readonly object incomingBetsLock = new object();
@@ -72,11 +73,11 @@ namespace BettingCompany.BettingSystem.Application
                 }
             }
 
-            if (_persistancePolicy.ShouldPersist(betsHandled))
+            //if (_persistancePolicy.ShouldPersist(betsHandled, betsSaved))
             {
                 lock (StorageLock.Lock)
                 {
-                    int elementsToSave = _persistancePolicy.GetNumberOfElementsToSave();
+                    int elementsToSave = 1;
 
                     var betsToSave = new BetCalculated[elementsToSave];
 
@@ -86,6 +87,7 @@ namespace BettingCompany.BettingSystem.Application
                         betsToSave[i] = betCalculated;
                     }
                     _betRepository.Save(betsToSave);
+                    betsSaved += elementsToSave;
                 }
             }
         }
@@ -119,15 +121,21 @@ namespace BettingCompany.BettingSystem.Application
         {
             isShuttingDown = true;
 
-            var betsCalculated = _workersDirector.GetBetsCalculatedSnapshot();
-
-            _betRepository.Save(betsCalculated);
-
             _workersDirector.ShutDown();
 
             _betAgregator.ShutDown();
 
+            var betsCalculated = _workersDirector.GetBetsCalculatedSnapshot();
+
+            _betRepository.Save(betsCalculated);
+
+            
             // todo: save unhandled bets
+        }
+
+        public BetCalculated[] GetBets()
+        {
+            return betsCalculated.ToArray();
         }
     }
 }

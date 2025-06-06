@@ -6,6 +6,6 @@ namespace BettingCompany.BettingSystem.Application
     public interface IPersistancePolicy
     {
         int GetNumberOfElementsToSave();
-        bool ShouldPersist(int betsCalculated);
+        bool ShouldPersist(int betsCalculated, int betsSaved);
     }
 }
