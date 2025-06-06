@@ -7,7 +7,6 @@ namespace BettingCompany.BettingSystem.Application
 {
     public interface IBetHandlingService
     {
-        BetCalculated[] GetBets();
         void Handle(Bet bet);
         Task WhenAllHandled();
     }

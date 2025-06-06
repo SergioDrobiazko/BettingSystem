@@ -1,22 +1,10 @@
 ﻿using BettingCompany.BettingSystem.Domain;
 using BettingCompany.BettingSystem.Repository;
-using System;
 using System.Collections.Concurrent;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace BettingCompany.BettingSystem.Application
 {
-    public class BetsChunkCalculated : EventArgs
-    {
-        public ConcurrentQueue<BetCalculated> betsCalculated;
-
-        public BetsChunkCalculated(ConcurrentQueue<BetCalculated> betsCalculated)
-        {
-            this.betsCalculated = betsCalculated;
-        }
-    }
-
     public class BetHandlingService : IBetHandlingService
     {
         private bool isShuttingDown = false;
@@ -128,11 +116,6 @@ namespace BettingCompany.BettingSystem.Application
             _betRepository.Save(betsCalculated);
 
             // todo: save unhandled bets
-        }
-
-        public BetCalculated[] GetBets()
-        {
-            return betsCalculated.ToArray();
         }
     }
 }
