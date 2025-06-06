@@ -29,7 +29,7 @@ namespace BettingCompany.BettingSystem.Domain
         public string Selection { get; set; }
         public BetStatus Status { get; set; }
 
-        public DateTime ArrivedUTC { get; set; }
+        public DateTime ArrivedUTC { get; private set; }
 
         public void SetDateArrived(DateTime arrivedUTC)
         {
