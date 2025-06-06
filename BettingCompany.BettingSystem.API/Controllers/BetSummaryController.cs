@@ -1,12 +1,7 @@
 ﻿using BettingCompany.BettingSystem.Application;
 using BettingCompany.BettingSystem.Domain;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace BettingCompany.BettingSystem.API.Controllers
 {
@@ -17,6 +12,12 @@ namespace BettingCompany.BettingSystem.API.Controllers
         private readonly ILogger<BetSummaryController> _logger;
 
         private readonly IBetSummaryService _betSummaryService;
+
+        public BetSummaryController(IBetSummaryService betSummaryService, ILogger<BetSummaryController> logger)
+        {
+            _betSummaryService = betSummaryService;
+            _logger = logger;
+        }
 
         [HttpGet]
         public BetSummary GetSummary()
