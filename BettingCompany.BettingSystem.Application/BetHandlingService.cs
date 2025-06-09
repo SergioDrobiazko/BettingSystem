@@ -1,6 +1,7 @@
 ﻿using BettingCompany.BettingSystem.Domain;
 using BettingCompany.BettingSystem.Repository;
 using System.Collections.Concurrent;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -81,22 +82,25 @@ namespace BettingCompany.BettingSystem.Application
 
         private ConcurrentQueue<Bet> unhandledBets = new();
 
-        public void Handle(Bet bet)
+        public async Task HandleAsync(Bet bet)
         {
-            lock (incomingBetsLock)
+            await Task.Run(() =>
             {
-                incomingBets++;
-            }
+                lock (incomingBetsLock)
+                {
+                    incomingBets++;
+                }
 
-            if (isShuttingDown)
-            {
-                unhandledBets.Enqueue(bet);
+                if (isShuttingDown)
+                {
+                    unhandledBets.Enqueue(bet);
 
-                return;
-            }
+                    return;
+                }
 
-            bet.SetDateArrived(_dateTimeProvider.GetUTCNow());
-            _betAgregator.AddBet(bet);
+                bet.SetDateArrived(_dateTimeProvider.GetUTCNow());
+                _betAgregator.AddBet(bet);
+            });
         }
 
         public async Task WhenAllHandled()
@@ -112,12 +116,8 @@ namespace BettingCompany.BettingSystem.Application
 
             _betAgregator.ShutDown();
 
-            var betsCalculated = _workersDirector.GetBetsCalculatedSnapshot();
 
-            if (betsCalculated.Any())
-            {
-                _betRepository.Save(betsCalculated);
-            }
+            _betRepository.Save(betsCalculated.ToArray());
 
             // todo: save unhandled bets
         }

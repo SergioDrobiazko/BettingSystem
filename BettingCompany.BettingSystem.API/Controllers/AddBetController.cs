@@ -2,6 +2,7 @@
 using BettingCompany.BettingSystem.Domain;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System.Threading.Tasks;
 
 namespace BettingCompany.BettingSystem.Controllers
 {
@@ -20,9 +21,9 @@ namespace BettingCompany.BettingSystem.Controllers
         }
 
         [HttpPost]
-        public void AddBet([FromBody]Bet bet)
+        public async Task AddBet([FromBody]Bet bet)
         {
-            _betHandlingService.Handle(bet);
+            await _betHandlingService.HandleAsync(bet);
         }
     }
 }

@@ -5,7 +5,7 @@ namespace BettingCompany.BettingSystem.Application
 {
     public interface IBetHandlingService
     {
-        void Handle(Bet bet);
+        Task HandleAsync(Bet bet);
 
         void ShutDown();
 

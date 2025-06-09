@@ -23,11 +23,11 @@ namespace BettingCompany.BettingSystem.API.Controllers
         }
 
         [HttpPost]
-        public void AddBets(IEnumerable<Bet> bets)
+        public async Task AddBets(IEnumerable<Bet> bets)
         {
             foreach(var bet in bets)
             {
-                _betHandlingService.Handle(bet);
+                await _betHandlingService.HandleAsync(bet);
             }
         }
     }
