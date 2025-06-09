@@ -1,9 +1,5 @@
 ﻿using MongoDB.Bson;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BettingCompany.BettingSystem.Domain
 {
@@ -39,7 +35,7 @@ namespace BettingCompany.BettingSystem.Domain
 
             if(status == BetOutcomeStatus.Won)
             {
-                return BetOutcome.Amount;
+                return BetOutcome.Amount - (decimal)BetTransition.InitialBet.Amount;
             }
 
             if(status == BetOutcomeStatus.Lost)

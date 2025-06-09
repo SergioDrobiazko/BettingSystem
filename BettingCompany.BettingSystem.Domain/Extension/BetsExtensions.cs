@@ -11,7 +11,7 @@ namespace BettingCompany.BettingSystem.Domain.Extension
                 .GroupBy(x => x.BetTransition.InitialBet.Client);
 
             var usersProfits = groupsByUser
-                .Select(x => new ClientProfit(x.Key, x.Sum(user => user.BetOutcome.Amount)))
+                .Select(x => new ClientProfit(x.Key, x.Sum(user => user.GetProfit())))
                 .OrderBy(x => x.Profit);
 
             var topFiveWinners = usersProfits.TakeLast(5).ToArray();
