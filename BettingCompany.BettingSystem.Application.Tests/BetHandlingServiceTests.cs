@@ -244,7 +244,7 @@ namespace BettingCompany.BettingSystem.Application.Tests
 
             foreach (var testBet in testBets)
             {
-                betHandlingService.Handle(testBet);
+                await betHandlingService.HandleAsync(testBet);
             }
 
             await betHandlingService.WhenAllHandled();
@@ -500,7 +500,7 @@ namespace BettingCompany.BettingSystem.Application.Tests
 
             foreach (var testBet in testBets)
             {
-                betHandlingService.Handle(testBet);
+                await betHandlingService.HandleAsync(testBet);
             }
 
             await Task.Delay(50);
