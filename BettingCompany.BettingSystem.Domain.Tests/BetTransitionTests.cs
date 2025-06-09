@@ -38,5 +38,25 @@ namespace BettingCompany.BettingSystem.Domain.Tests
 
             Assert.True(transition.IsValidStatusTransition());
         }
+
+        [Fact]
+        public void IsValidStatusTransition_FromVoidToOpen_IsNotValid()
+        {
+            var transition = new BetTransition(
+                new Bet(id: 1, amount: 420, odds: 4.08, client: "David", @event: "David vs Eve", market: "Correct Score", selection: "3:2", status: BetStatus.VOID),
+                new Bet(id: 1, amount: 420, odds: 4.08, client: "David", @event: "David vs Eve", market: "Correct Score", selection: "3:2", status: BetStatus.OPEN));
+
+            Assert.False(transition.IsValidStatusTransition());
+        }
+
+        [Fact]
+        public void IsValidStatusTransition_FromWinnerToOpen_IsNotValid()
+        {
+            var transition = new BetTransition(
+                new Bet(id: 1, amount: 420, odds: 4.08, client: "David", @event: "David vs Eve", market: "Correct Score", selection: "3:2", status: BetStatus.WINNER),
+                new Bet(id: 1, amount: 420, odds: 4.08, client: "David", @event: "David vs Eve", market: "Correct Score", selection: "3:2", status: BetStatus.OPEN));
+
+            Assert.False(transition.IsValidStatusTransition());
+        }
     }
 }
