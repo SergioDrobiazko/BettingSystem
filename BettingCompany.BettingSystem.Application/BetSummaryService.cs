@@ -61,8 +61,8 @@ namespace BettingCompany.BettingSystem.Application
         {
             return topFiveWinners1
                 .Union(topFiveWinners2)
-                .OrderBy(x => x.Profit)
-                .TakeLast(5)
+                .OrderByDescending(x => x.Profit)
+                .Take(5)
                 .ToArray();
         }
     }
