@@ -116,8 +116,12 @@ namespace BettingCompany.BettingSystem.Application
 
             _betAgregator.ShutDown();
 
+            var betsToSave = betsCalculated.ToArray();
 
-            _betRepository.Save(betsCalculated.ToArray());
+            if (betsToSave.Any())
+            {
+                _betRepository.Save(betsCalculated.ToArray());
+            }
 
             // todo: save unhandled bets
         }
