@@ -60,7 +60,7 @@ namespace BettingCompany.BettingSystem.Domain.Tests
         }
 
         [Fact]
-        public void CalculateBetOutcome()
+        public void CalculateBetOutcome_DavidWins_CorrectAmountAndStatus()
         {
             var transition = new BetTransition(
                 new Bet(id: 1, amount: 420, odds: 4.08, client: "David", @event: "David vs Eve", market: "Correct Score", selection: "3:2", status: BetStatus.OPEN),
