@@ -58,5 +58,18 @@ namespace BettingCompany.BettingSystem.Domain.Tests
 
             Assert.False(transition.IsValidStatusTransition());
         }
+
+        [Fact]
+        public void CalculateBetOutcome()
+        {
+            var transition = new BetTransition(
+                new Bet(id: 1, amount: 420, odds: 4.08, client: "David", @event: "David vs Eve", market: "Correct Score", selection: "3:2", status: BetStatus.OPEN),
+                new Bet(id: 1, amount: 420, odds: 4.08, client: "David", @event: "David vs Eve", market: "Correct Score", selection: "3:2", status: BetStatus.WINNER));
+
+            var outcome = transition.CalculateBetOutcome();
+
+            Assert.Equal(1713.6m, outcome.Amount);
+            Assert.Equal(outcome.Status, BetOutcomeStatus.Won);
+        }
     }
 }
