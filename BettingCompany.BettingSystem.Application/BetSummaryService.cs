@@ -9,12 +9,12 @@ namespace BettingCompany.BettingSystem.Application
     public class BetSummaryService : IBetSummaryService
     {
         private readonly IBetRepository _betRepository;
-        private readonly IWorkersDirector _workersDirector;
+        private readonly IBetHandlingService _betHandlingService;
 
-        public BetSummaryService(IBetRepository betRepository, IWorkersDirector workersDirector)
+        public BetSummaryService(IBetRepository betRepository, IBetHandlingService betHandlingService)
         {
             _betRepository = betRepository;
-            _workersDirector = workersDirector;
+            _betHandlingService = betHandlingService;
         }
 
         public BetSummary GetSummary()
@@ -26,7 +26,7 @@ namespace BettingCompany.BettingSystem.Application
             {
                 betSummaryFromStorage = _betRepository.GetSummary();
 
-                betsInMemory = _workersDirector.GetBetsCalculatedSnapshot();
+                betsInMemory = _betHandlingService.GetBetsSnapshot();
             }
 
             BetSummary betSummary = CalculateBetSummary(betSummaryFromStorage, betsInMemory);

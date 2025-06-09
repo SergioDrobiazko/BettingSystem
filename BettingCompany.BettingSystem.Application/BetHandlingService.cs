@@ -82,6 +82,11 @@ namespace BettingCompany.BettingSystem.Application
 
         private ConcurrentQueue<Bet> unhandledBets = new();
 
+        public BetCalculated[] GetBetsSnapshot()
+        {
+            return betsCalculated.ToArray();
+        }
+
         public async Task HandleAsync(Bet bet)
         {
             await Task.Run(() =>
