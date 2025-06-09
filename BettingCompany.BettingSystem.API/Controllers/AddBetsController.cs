@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -23,12 +24,20 @@ namespace BettingCompany.BettingSystem.API.Controllers
         }
 
         [HttpPost]
-        public async Task AddBets(IEnumerable<Bet> bets)
+        public async Task<double> AddBets(IEnumerable<Bet> bets)
         {
+            Stopwatch s = new Stopwatch();
+
+            s.Start();
+
             foreach(var bet in bets)
             {
                 await _betHandlingService.HandleAsync(bet);
             }
+
+            s.Stop();
+
+            return s.Elapsed.TotalMilliseconds;
         }
     }
 }
