@@ -20,9 +20,19 @@ namespace BettingCompany.BettingSystem.Domain.Extension
             var totalProfitOrLoss = usersProfits.Sum(x => x.Profit);
 
             var totalBetsProcessed = bets.Count();
-            var totalAmount = bets.Sum(x => x.GetProfit());
+            var totalAmount = bets.Sum(x => (decimal)x.BetTransition.InitialBet.Amount);
 
             return new BetSummary(totalBetsProcessed, totalAmount, totalProfitOrLoss, topFiveWinners, topFiveLosers);
+        }
+
+        public static BetSummary GetSummary(this IEnumerable<BetTransition> bets)
+        {
+            var betsCalculated = bets
+                .Select(bet => new BetCalculated(bet, bet.CalculateBetOutcome()));
+
+            var summary = betsCalculated
+                .GetSummary();
+            return summary;
         }
     }
 }
