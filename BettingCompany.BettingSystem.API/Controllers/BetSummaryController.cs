@@ -1,4 +1,4 @@
-﻿using BettingCompany.BettingSystem.Application;
+﻿using BettingCompany.BettingSystem.Application.Contract;
 using BettingCompany.BettingSystem.Domain;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;

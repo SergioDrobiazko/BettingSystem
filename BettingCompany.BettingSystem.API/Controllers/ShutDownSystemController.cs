@@ -1,4 +1,5 @@
 ﻿using BettingCompany.BettingSystem.Application;
+using BettingCompany.BettingSystem.Application.Contract;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
 using System.Threading.Tasks;

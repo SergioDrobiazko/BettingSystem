@@ -1,4 +1,6 @@
-﻿namespace BettingCompany.BettingSystem.Application
+﻿using BettingCompany.BettingSystem.Application.Contract;
+
+namespace BettingCompany.BettingSystem.Application
 {
     public class PersistancePolicy : IPersistancePolicy
     {

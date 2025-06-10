@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BettingCompany.BettingSystem.Application.Contract\BettingCompany.BettingSystem.Application.Contract.csproj" />
     <ProjectReference Include="..\BettingCompany.BettingSystem.Application\BettingCompany.BettingSystem.Application.csproj" />
     <ProjectReference Include="..\BettingCompany.BettingSystem.Domain\BettingCompany.BettingSystem.Domain.csproj" />
   </ItemGroup>
