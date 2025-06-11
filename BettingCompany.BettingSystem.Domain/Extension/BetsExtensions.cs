@@ -7,7 +7,9 @@ namespace BettingCompany.BettingSystem.Domain.Extension
     {
         public static BetSummary GetSummary(this IEnumerable<BetCalculated> bets)
         {
-            var groupsByUser = bets
+            var validBets = bets.Where(bet => bet.IsMarkedForReview == false);
+
+            var groupsByUser = validBets
                 .GroupBy(x => x.BetTransition.InitialBet.Client);
 
             var usersProfits = groupsByUser
@@ -19,8 +21,8 @@ namespace BettingCompany.BettingSystem.Domain.Extension
 
             var totalProfitOrLoss = usersProfits.Sum(x => x.Profit);
 
-            var totalBetsProcessed = bets.Count();
-            var totalAmount = bets.Sum(x => (decimal)x.BetTransition.InitialBet.Amount);
+            var totalBetsProcessed = validBets.Count();
+            var totalAmount = validBets.Sum(x => (decimal)x.BetTransition.InitialBet.Amount);
 
             return new BetSummary(totalBetsProcessed, totalAmount, totalProfitOrLoss, topFiveWinners, topFiveLosers);
         }
@@ -28,6 +30,7 @@ namespace BettingCompany.BettingSystem.Domain.Extension
         public static BetSummary GetSummary(this IEnumerable<BetTransition> bets)
         {
             var betsCalculated = bets
+                .Where(bet => bet.IsValidStatusTransition())
                 .Select(bet => new BetCalculated(bet, bet.CalculateBetOutcome()));
 
             var summary = betsCalculated
