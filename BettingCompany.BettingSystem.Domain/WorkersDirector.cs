@@ -62,7 +62,7 @@ namespace BettingCompany.BettingSystem.Domain
                     }
 
                     betsCalculated.Enqueue(betCalculated.Result);
-                    BetCalculated?.Invoke(this, new BetCalculatedEventArgs { });
+                    BetCalculated?.Invoke(this, new BetCalculatedEventArgs { BetId = betCalculated.Result.BetTransition.InitialBet.Id });
                     availableWorkers.Add(freeWorker);
                 }, cancellationToken);
 

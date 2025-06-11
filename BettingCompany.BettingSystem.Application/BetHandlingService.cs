@@ -1,8 +1,8 @@
 ﻿using BettingCompany.BettingSystem.Application.Contract;
 using BettingCompany.BettingSystem.Domain;
 using BettingCompany.BettingSystem.Repository;
+using Microsoft.Extensions.Logging;
 using System.Collections.Concurrent;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -19,6 +19,8 @@ namespace BettingCompany.BettingSystem.Application
 
         private readonly IBetRepository _betRepository;
 
+        private readonly ILogger<BetHandlingService> _logger;
+
         private ConcurrentQueue<BetCalculated> betsCalculated = new();
 
         private int incomingBets = 0;
@@ -33,7 +35,8 @@ namespace BettingCompany.BettingSystem.Application
             IWorkersDirector workersDirector,
             IPersistancePolicy persistancePolicy,
             IDateTimeProvider dateTimeProvider,
-            IBetRepository betRepository)
+            IBetRepository betRepository, 
+            ILogger<BetHandlingService> logger)
         {
             _betAgregator = betAgregator;
             _betAgregator.BetTransitionFormed += OnBetTransitionFormed;
@@ -43,6 +46,7 @@ namespace BettingCompany.BettingSystem.Application
             _persistancePolicy = persistancePolicy;
             _dateTimeProvider = dateTimeProvider;
             _betRepository = betRepository;
+            _logger = logger;
         }
 
         private void OnBetTransitionFormed(object sender, BetTransitionFormedEventArgs e)
@@ -52,6 +56,8 @@ namespace BettingCompany.BettingSystem.Application
 
         private void OnBetCalculated(object sender, BetCalculatedEventArgs e)
         {
+            _logger.LogDebug($"Bet calculated. Bet id = {e.BetId}");
+
             var calculatedBet = _workersDirector.FetchCalculatedBet();
             if (calculatedBet != null)
             {
@@ -66,6 +72,8 @@ namespace BettingCompany.BettingSystem.Application
             {
                 if (_persistancePolicy.ShouldPersist(betsHandled, betsSaved))
                 {
+                    _logger.LogDebug($"Saving bets..");
+
                     int elementsToSave = _persistancePolicy.GetNumberOfElementsToSave();
 
                     var betsToSave = new BetCalculated[elementsToSave];
@@ -77,6 +85,8 @@ namespace BettingCompany.BettingSystem.Application
                     }
                     _betRepository.Save(betsToSave);
                     betsSaved += elementsToSave;
+
+                    _logger.LogDebug($"Saved {elementsToSave} bets");
                 }
             }
         }
@@ -116,6 +126,8 @@ namespace BettingCompany.BettingSystem.Application
 
         public void ShutDown()
         {
+            _logger.LogDebug($"{nameof(BetHandlingService)} is shutting down");
+
             isShuttingDown = true;
 
             _workersDirector.ShutDown();
@@ -127,6 +139,8 @@ namespace BettingCompany.BettingSystem.Application
             if (betsToSave.Any())
             {
                 _betRepository.Save(betsCalculated.ToArray());
+
+                _logger.LogDebug($"Saved {betsCalculated.Count} calculated bets");
             }
 
             // todo: save unhandled bets
