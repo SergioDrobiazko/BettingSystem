@@ -11,7 +11,6 @@ namespace BettingCompany.BettingSystem.Domain
     {
         public async Task<BetCalculated> CalculateBetAsync(BetTransition betTransition, CancellationToken cancellationToken)
         {
-            await Task.Delay(new Random().Next(1000, 60000));
             return await Task.Run(() => CalculateBet(betTransition, cancellationToken), cancellationToken);
         }
 
