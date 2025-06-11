@@ -1,5 +1,6 @@
 ﻿using BettingCompany.BettingSystem.Domain;
 using BettingCompany.BettingSystem.Repository;
+using Microsoft.Extensions.Logging;
 using Moq;
 using System;
 using System.Collections.Generic;
@@ -25,15 +26,18 @@ namespace BettingCompany.BettingSystem.Application.Tests
                 .Callback<IList<BetCalculated>>(b =>
                 {
                     savedBets.AddRange(b);
-                    
+
                 });
+
+            var mockLogger = new Mock<ILogger<BetHandlingService>>();
 
             var betHandlingService = new BetHandlingService(
                 new BetAgregator(),
                 new WorkersDirector(maxWorkers: 50, new WorkersFactory()),
                 new PersistancePolicy(),
                 new DateTimeProvider(), // todo: mock date time provider
-                mockRepository.Object);
+                mockRepository.Object,
+                mockLogger.Object);
 
 
             var testBets = new List<Bet>
@@ -277,20 +281,26 @@ namespace BettingCompany.BettingSystem.Application.Tests
                         Random r = new Random();
                         await Task.Delay(r.Next(10, 100), ct);
                         ct.ThrowIfCancellationRequested();
-                        return new BetCalculated(betTransition: null, betOutcome: BetOutcome.Won(250));
+                        return new BetCalculated(betTransition: new BetTransition(
+                            new Bet(id: 1, amount: 420, odds: 4.08, client: "David", @event: "David vs Eve", market: "Correct Score", selection: "3:2", status: BetStatus.OPEN),
+                            new Bet(id: 1, amount: 420, odds: 4.08, client: "David", @event: "David vs Eve", market: "Correct Score", selection: "3:2", status: BetStatus.WINNER)),
+                                betOutcome: BetOutcome.Won(250));
                     });
 
             Mock<IWorkersFactory> mockWokersFactory = new Mock<IWorkersFactory>();
 
             mockWokersFactory.Setup(x => x.CreateWorker())
-                .Returns(mockWorker.Object);
+                    .Returns(mockWorker.Object);
+
+            var mockLogger = new Mock<ILogger<BetHandlingService>>();
 
             var betHandlingService = new BetHandlingService(
                 new BetAgregator(),
                 new WorkersDirector(maxWorkers: 10, mockWokersFactory.Object),
                 new PersistancePolicy(),
                 new DateTimeProvider(), // todo: mock date time provider
-                mockRepository.Object);
+                mockRepository.Object,
+                mockLogger.Object);
 
             var testBets = new List<Bet>
 {

@@ -24,7 +24,7 @@ namespace BettingCompany.BettingSystem.API.Controllers
         public void Shutdown()
         {
             _shutdownSystemService.Shutdown();
-            //_lifetime.StopApplication();
+            _lifetime.StopApplication();
         }
     }
 }
