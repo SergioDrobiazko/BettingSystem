@@ -1,4 +1,5 @@
-﻿using BettingCompany.BettingSystem.Domain;
+﻿using BettingCompany.BettingSystem.Application.Contract;
+using BettingCompany.BettingSystem.Domain;
 using BettingCompany.BettingSystem.Domain.Extension;
 using BettingCompany.BettingSystem.Repository;
 using System;

@@ -1,7 +1,7 @@
 ﻿using BettingCompany.BettingSystem.Domain;
 using System.Threading.Tasks;
 
-namespace BettingCompany.BettingSystem.Application
+namespace BettingCompany.BettingSystem.Application.Contract
 {
     public interface IBetHandlingService
     {

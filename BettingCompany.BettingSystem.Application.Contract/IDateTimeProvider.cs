@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BettingCompany.BettingSystem.Application
+namespace BettingCompany.BettingSystem.Application.Contract
 {
     public interface IDateTimeProvider
     {

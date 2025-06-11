@@ -1,5 +1,6 @@
 using BettingCompany.BettingSystem.API;
 using BettingCompany.BettingSystem.Application;
+using BettingCompany.BettingSystem.Application.Contract;
 using BettingCompany.BettingSystem.Domain;
 using BettingCompany.BettingSystem.Repository;
 using Microsoft.AspNetCore.Builder;

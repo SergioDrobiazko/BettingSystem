@@ -6,10 +6,13 @@
 
   <ItemGroup>
     <PackageReference Include="MongoDB.Driver" Version="3.4.0" />
+    <PackageReference Include="Serilog" Version="4.3.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BettingCompany.BettingSystem.Application.Contract\BettingCompany.BettingSystem.Application.Contract.csproj" />
     <ProjectReference Include="..\BettingCompany.BettingSystem.Application\BettingCompany.BettingSystem.Application.csproj" />
     <ProjectReference Include="..\BettingCompany.BettingSystem.Domain\BettingCompany.BettingSystem.Domain.csproj" />
   </ItemGroup>
