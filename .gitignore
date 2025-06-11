@@ -89,3 +89,4 @@ Desktop.ini
 # Linux
 *.swp
 *~
+/BettingCompany.BettingSystem.API/Logs/logs.txt
