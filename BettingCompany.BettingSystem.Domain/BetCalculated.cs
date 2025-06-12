@@ -22,9 +22,9 @@ namespace BettingCompany.BettingSystem.Domain
             IsMarkedForReview = isMarkedForReview;
         }
 
-        public BetTransition BetTransition { get; set; }
+        public BetTransition BetTransition { get; }
 
-        public BetOutcome BetOutcome { get; private set; }
+        public BetOutcome BetOutcome { get; }
 
         public bool IsMarkedForReview { get; private set; }
         public ObjectId Id { get; set; }
@@ -33,22 +33,13 @@ namespace BettingCompany.BettingSystem.Domain
         {
             var status = BetOutcome.Status;
 
-            if(status == BetOutcomeStatus.Won)
+            return status switch
             {
-                return BetOutcome.Amount - (decimal)BetTransition.InitialBet.Amount;
-            }
-
-            if(status == BetOutcomeStatus.Lost)
-            {
-                return -BetOutcome.Amount;
-            }
-
-            if(status == BetOutcomeStatus.Void)
-            {
-                return 0;
-            }
-
-            throw new ArgumentException();
+                BetOutcomeStatus.Won => BetOutcome.Amount - (decimal)BetTransition.InitialBet.Amount,
+                BetOutcomeStatus.Lost => -BetOutcome.Amount,
+                BetOutcomeStatus.Void => 0,
+                _ => throw new ArgumentException()
+            };
         }
     }
 }

@@ -20,7 +20,7 @@ namespace BettingCompany.BettingSystem.Application
 
         public BetSummary GetSummary()
         {
-            BetSummary betSummaryFromStorage = default;
+            BetSummary betSummaryFromStorage;
             BetCalculated[] betsInMemory;
 
             lock (StorageLock.Lock)

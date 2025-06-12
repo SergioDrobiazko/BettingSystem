@@ -21,14 +21,14 @@ namespace BettingCompany.BettingSystem.Application
 
         private readonly ILogger<BetHandlingService> _logger;
 
-        private ConcurrentQueue<BetCalculated> betsCalculated = new();
+        private readonly ConcurrentQueue<BetCalculated> betsCalculated = new();
 
         private int incomingBets = 0;
         private int betsHandled = 0;
         private int betsSaved = 0;
 
-        private readonly object betsCalculatedCounterLock = new object();
-        private readonly object incomingBetsLock = new object();
+        private readonly object betsCalculatedCounterLock = new();
+        private readonly object incomingBetsLock = new();
 
         public BetHandlingService(
             IBetAgregator betAgregator,
@@ -70,28 +70,26 @@ namespace BettingCompany.BettingSystem.Application
 
             lock (StorageLock.Lock)
             {
-                if (_persistancePolicy.ShouldPersist(betsHandled, betsSaved))
+                if (!_persistancePolicy.ShouldPersist(betsHandled, betsSaved)) return;
+                _logger.LogDebug($"Saving bets..");
+
+                int elementsToSave = _persistancePolicy.GetNumberOfElementsToSave();
+
+                var betsToSave = new BetCalculated[elementsToSave];
+
+                for (int i = 0; i < elementsToSave; ++i)
                 {
-                    _logger.LogDebug($"Saving bets..");
-
-                    int elementsToSave = _persistancePolicy.GetNumberOfElementsToSave();
-
-                    var betsToSave = new BetCalculated[elementsToSave];
-
-                    for (int i = 0; i < elementsToSave; ++i)
-                    {
-                        betsCalculated.TryDequeue(out var betCalculated);
-                        betsToSave[i] = betCalculated;
-                    }
-                    _betRepository.Save(betsToSave);
-                    betsSaved += elementsToSave;
-
-                    _logger.LogDebug($"Saved {elementsToSave} bets");
+                    betsCalculated.TryDequeue(out var betCalculated);
+                    betsToSave[i] = betCalculated;
                 }
+                _betRepository.Save(betsToSave);
+                betsSaved += elementsToSave;
+
+                _logger.LogDebug($"Saved {elementsToSave} bets");
             }
         }
 
-        private ConcurrentQueue<Bet> unhandledBets = new();
+        private readonly ConcurrentQueue<Bet> unhandledBets = new();
 
         public BetCalculated[] GetBetsSnapshot()
         {
@@ -136,12 +134,10 @@ namespace BettingCompany.BettingSystem.Application
 
             var betsToSave = betsCalculated.ToArray();
 
-            if (betsToSave.Any())
-            {
-                _betRepository.Save(betsCalculated.ToArray());
+            if (!betsToSave.Any()) return;
+            _betRepository.Save(betsCalculated.ToArray());
 
-                _logger.LogDebug($"Saved {betsCalculated.Count} calculated bets");
-            }
+            _logger.LogDebug($"Saved {betsCalculated.Count} calculated bets");
 
             // todo: save unhandled bets
         }

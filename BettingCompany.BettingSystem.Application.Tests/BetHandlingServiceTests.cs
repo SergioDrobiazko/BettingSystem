@@ -4,8 +4,6 @@ using Microsoft.Extensions.Logging;
 using Moq;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
@@ -244,8 +242,6 @@ namespace BettingCompany.BettingSystem.Application.Tests
     new Bet(100, 109, 2.06, "Charlie", "Eve vs Bob", "Handicap", "0", BetStatus.VOID),
 };
 
-            var tasks = new List<Task>();
-
             foreach (var testBet in testBets)
             {
                 await betHandlingService.HandleAsync(testBet);
@@ -287,16 +283,16 @@ namespace BettingCompany.BettingSystem.Application.Tests
                                 betOutcome: BetOutcome.Won(250));
                     });
 
-            Mock<IWorkersFactory> mockWokersFactory = new Mock<IWorkersFactory>();
+            Mock<IWorkersFactory> mockWorkersFactory = new Mock<IWorkersFactory>();
 
-            mockWokersFactory.Setup(x => x.CreateWorker())
+            mockWorkersFactory.Setup(x => x.CreateWorker())
                     .Returns(mockWorker.Object);
 
             var mockLogger = new Mock<ILogger<BetHandlingService>>();
 
             var betHandlingService = new BetHandlingService(
                 new BetAgregator(),
-                new WorkersDirector(maxWorkers: 10, mockWokersFactory.Object),
+                new WorkersDirector(maxWorkers: 10, mockWorkersFactory.Object),
                 new PersistancePolicy(),
                 new DateTimeProvider(), // todo: mock date time provider
                 mockRepository.Object,
@@ -505,8 +501,6 @@ namespace BettingCompany.BettingSystem.Application.Tests
     new Bet(100, 109, 2.06, "Charlie", "Eve vs Bob", "Handicap", "0", BetStatus.OPEN),
     new Bet(100, 109, 2.06, "Charlie", "Eve vs Bob", "Handicap", "0", BetStatus.VOID),
 };
-
-            var tasks = new List<Task>();
 
             foreach (var testBet in testBets)
             {

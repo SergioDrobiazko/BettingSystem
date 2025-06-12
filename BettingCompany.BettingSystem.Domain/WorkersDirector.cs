@@ -17,22 +17,22 @@ namespace BettingCompany.BettingSystem.Domain
             }
         }
 
-        private BlockingCollection<IWorker> availableWorkers = new(new ConcurrentQueue<IWorker>());
+        private readonly BlockingCollection<IWorker> availableWorkers = new(new ConcurrentQueue<IWorker>());
 
-        private ConcurrentQueue<BetCalculated> betsCalculated = new();
+        private readonly ConcurrentQueue<BetCalculated> betsCalculated = new();
 
-        private ConcurrentQueue<Task> betsCalculationTasks = new();
+        private readonly ConcurrentQueue<Task> betsCalculationTasks = new();
 
         public event EventHandler<BetCalculatedEventArgs> BetCalculated;
 
-        private readonly CancellationTokenSource Cts = new();
+        private readonly CancellationTokenSource cts = new();
 
-        public void CancelOperations()
+        private void CancelOperations()
         {
-            Cts.Cancel();
+            cts.Cancel();
         }
 
-        private ConcurrentQueue<BetTransition> unhandledTransitions = new();
+        private readonly ConcurrentQueue<BetTransition> unhandledTransitions = new();
 
         public void DelegateBetCalculation(BetTransition betTransition)
         {
@@ -44,7 +44,7 @@ namespace BettingCompany.BettingSystem.Domain
 
             IWorker freeWorker = GetFreeWorker();
 
-            var cancellationToken = Cts.Token;
+            var cancellationToken = cts.Token;
 
             var betCalculatedTask = freeWorker.CalculateBetAsync(betTransition, cancellationToken)
                 .ContinueWith((betCalculated) =>
