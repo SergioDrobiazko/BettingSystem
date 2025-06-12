@@ -1,10 +1,12 @@
 ﻿using BettingCompany.BettingSystem.Application.Contract;
 using BettingCompany.BettingSystem.Domain;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace BettingCompany.BettingSystem.API.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class BetSummaryController : ControllerBase
