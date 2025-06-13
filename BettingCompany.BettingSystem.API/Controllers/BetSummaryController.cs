@@ -1,5 +1,6 @@
 ﻿using BettingCompany.BettingSystem.Application.Contract;
 using BettingCompany.BettingSystem.Domain;
+using MethodTimer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -22,6 +23,7 @@ namespace BettingCompany.BettingSystem.API.Controllers
         }
 
         [HttpGet]
+        [Time]
         public BetSummary GetSummary()
         {
             var summary = _betSummaryService.GetSummary();

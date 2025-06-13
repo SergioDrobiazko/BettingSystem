@@ -4,7 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Threading.Tasks;
+using MethodTimer;
 
 namespace BettingCompany.BettingSystem.API.Controllers
 {
@@ -16,26 +18,22 @@ namespace BettingCompany.BettingSystem.API.Controllers
 
         private readonly IBetHandlingService _betHandlingService;
 
-        public AddBetsController(IBetHandlingService betHandlingService)
+        public AddBetsController(IBetHandlingService betHandlingService, ILogger<AddBetsController> logger)
         {
             _betHandlingService = betHandlingService;
+            _logger = logger;
         }
 
         [HttpPost]
-        public async Task<double> AddBets(IEnumerable<Bet> bets)
+        [Time]
+        public async Task AddBets(IEnumerable<Bet> bets)
         {
-            var s = new Stopwatch();
-
-            s.Start();
-
             foreach(var bet in bets)
             {
                 await _betHandlingService.HandleAsync(bet);
             }
 
-            s.Stop();
-
-            return s.Elapsed.TotalMilliseconds;
+            _logger.LogDebug($"Added bunch of bets"); 
         }
     }
 }
