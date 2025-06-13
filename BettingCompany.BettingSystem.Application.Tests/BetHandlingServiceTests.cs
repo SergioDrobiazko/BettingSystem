@@ -13,7 +13,7 @@ namespace BettingCompany.BettingSystem.Application.Tests
     public class BetHandlingServiceTests
     {
         [Fact]
-        public async Task HandleAsync_HandleOneHundreadIncomingBets_CorrectResults()
+        public async Task HandleAsync_HandleOneHundredIncomingBets_CorrectResults()
         {
             var mockRepository = new Mock<IBetRepository>();
 
@@ -24,7 +24,6 @@ namespace BettingCompany.BettingSystem.Application.Tests
                 .Callback<IList<BetCalculated>>(b =>
                 {
                     savedBets.AddRange(b);
-
                 });
 
             var mockLogger = new Mock<ILogger<BetHandlingService>>();
@@ -255,7 +254,7 @@ namespace BettingCompany.BettingSystem.Application.Tests
         }
 
         [Fact]
-        public async Task HandleAsync_HandleOneHundreadIncomingBetsThenShutdown_NoExceptions()
+        public async Task HandleAsync_HandleOneHundredIncomingBetsThenShutdown_NoExceptions()
         {
             var mockRepository = new Mock<IBetRepository>();
 
