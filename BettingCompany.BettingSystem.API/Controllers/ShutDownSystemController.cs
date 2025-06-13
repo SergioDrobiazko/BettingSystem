@@ -1,11 +1,11 @@
-﻿using BettingCompany.BettingSystem.Application;
-using BettingCompany.BettingSystem.Application.Contract;
+﻿using BettingCompany.BettingSystem.Application.Contract;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BettingCompany.BettingSystem.API.Controllers
 {
+    [Authorize(Roles = "Admin")]
     [Route("api/[controller]")]
     [ApiController]
     public class ShutDownSystemController : ControllerBase

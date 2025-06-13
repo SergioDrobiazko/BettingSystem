@@ -1,11 +1,10 @@
-﻿using BettingCompany.BettingSystem.Application;
+﻿using System.Threading.Tasks;
 using BettingCompany.BettingSystem.Application.Contract;
 using BettingCompany.BettingSystem.Domain;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System.Threading.Tasks;
 
-namespace BettingCompany.BettingSystem.Controllers
+namespace BettingCompany.BettingSystem.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BettingCompany.BettingSystem.Domain
 {
@@ -29,11 +25,11 @@ namespace BettingCompany.BettingSystem.Domain
         public string Selection { get; set; }
         public BetStatus Status { get; set; }
 
-        public DateTime ArrivedUTC { get; private set; }
+        public DateTime ArrivedUtc { get; private set; }
 
-        public void SetDateArrived(DateTime arrivedUTC)
+        public void SetDateArrived(DateTime arrivedUtc)
         {
-            ArrivedUTC = arrivedUTC;
+            ArrivedUtc = arrivedUtc;
         }
     }
 }

@@ -2,7 +2,6 @@
 using BettingCompany.BettingSystem.Domain.Extension;
 using MongoDB.Driver;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace BettingCompany.BettingSystem.Repository
 {

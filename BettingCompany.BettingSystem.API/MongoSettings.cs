@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace BettingCompany.BettingSystem.API
+﻿namespace BettingCompany.BettingSystem.API
 {
     public class MongoSettings
     {

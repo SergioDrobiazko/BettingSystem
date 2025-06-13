@@ -11,12 +11,12 @@
             TopFiveLosers = topFiveLosers;
         }
 
-        public int TotalProcessed { get; init; }
-        public decimal TotalAmount { get; init; }
+        public int TotalProcessed { get; }
+        public decimal TotalAmount { get; }
 
-        public decimal TotalProfitOrLoss { get; init; }
+        public decimal TotalProfitOrLoss { get; }
 
-        public ClientProfit[] TopFiveWinners { get; init; }
-        public ClientProfit[] TopFiveLosers { get; init; }
+        public ClientProfit[] TopFiveWinners { get; }
+        public ClientProfit[] TopFiveLosers { get; }
     }
 }

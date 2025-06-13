@@ -7,18 +7,13 @@ using System.Threading.Tasks;
 
 namespace BettingCompany.BettingSystem.Domain
 {
-    public class BetTransitionFormedEventArgs : EventArgs 
-    {
-        public BetTransition BetTransition { get; init; }
-    }
-
     public class BetAgregator : IBetAgregator
     {
         private bool isShuttingDown = false;
 
-        private ConcurrentDictionary<int, Bet> registeredBets = new ();
+        private readonly ConcurrentDictionary<int, Bet> registeredBets = new ();
 
-        private ConcurrentQueue<BetTransition> betTransitions = new ();
+        private readonly ConcurrentQueue<BetTransition> betTransitions = new ();
 
         public event EventHandler<BetTransitionFormedEventArgs> BetTransitionFormed;
 
@@ -37,7 +32,7 @@ namespace BettingCompany.BettingSystem.Domain
                 betTransitions.Enqueue(betTransition);
                 betTransitions.TryDequeue(out BetTransition firstBetTransition);
                 registeredBets.TryRemove(bet.Id, out _);
-                BetTransitionFormed.Invoke(this, new BetTransitionFormedEventArgs { BetTransition = firstBetTransition });
+                BetTransitionFormed?.Invoke(this, new BetTransitionFormedEventArgs { BetTransition = firstBetTransition });
             }
             else
             {

@@ -3,7 +3,7 @@ using Microsoft.Extensions.Hosting;
 using Serilog;
 using Serilog.Events;
 
-namespace BettingCompany.BettingSystem
+namespace BettingCompany.BettingSystem.API
 {
     public class Program
     {

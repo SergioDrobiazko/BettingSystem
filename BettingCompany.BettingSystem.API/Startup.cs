@@ -1,4 +1,5 @@
-using BettingCompany.BettingSystem.API;
+using System;
+using System.Text;
 using BettingCompany.BettingSystem.Application;
 using BettingCompany.BettingSystem.Application.Contract;
 using BettingCompany.BettingSystem.Domain;
@@ -13,10 +14,8 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using MongoDB.Driver;
-using System;
-using System.Text;
 
-namespace BettingCompany.BettingSystem
+namespace BettingCompany.BettingSystem.API
 {
     public class Startup
     {

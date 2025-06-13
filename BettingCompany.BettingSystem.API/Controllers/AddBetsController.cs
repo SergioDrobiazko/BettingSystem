@@ -1,12 +1,9 @@
-﻿using BettingCompany.BettingSystem.Application;
-using BettingCompany.BettingSystem.Application.Contract;
+﻿using BettingCompany.BettingSystem.Application.Contract;
 using BettingCompany.BettingSystem.Domain;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace BettingCompany.BettingSystem.API.Controllers
@@ -27,7 +24,7 @@ namespace BettingCompany.BettingSystem.API.Controllers
         [HttpPost]
         public async Task<double> AddBets(IEnumerable<Bet> bets)
         {
-            Stopwatch s = new Stopwatch();
+            var s = new Stopwatch();
 
             s.Start();
 

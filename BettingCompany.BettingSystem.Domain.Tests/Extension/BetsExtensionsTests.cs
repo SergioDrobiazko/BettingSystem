@@ -1,8 +1,8 @@
-﻿using BettingCompany.BettingSystem.Domain.Extension;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using BettingCompany.BettingSystem.Domain.Extension;
 using Xunit;
 
-namespace BettingCompany.BettingSystem.Domain.Tests
+namespace BettingCompany.BettingSystem.Domain.Tests.Extension
 {
     public class BetsExtensionsTests
     {

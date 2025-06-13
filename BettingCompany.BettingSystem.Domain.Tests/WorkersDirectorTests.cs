@@ -17,9 +17,9 @@ namespace BettingCompany.BettingSystem.Domain.Tests
 
             var betTransition = new BetTransition(betArrivedFirst, betArrivedSecond);
 
-            BetCalculated calculatedBet = default;
+            BetCalculated calculatedBet;
 
-            workersDirector.BetCalculated += (object sender, BetCalculatedEventArgs e) =>
+            workersDirector.BetCalculated += (object _, BetCalculatedEventArgs _) =>
             {
                 calculatedBet = workersDirector.FetchCalculatedBet();
 
@@ -33,7 +33,7 @@ namespace BettingCompany.BettingSystem.Domain.Tests
         [Fact]
         public async Task DelegateWork_ThenCancel()
         {
-            Mock<IWorker> mockWorker = new Mock<IWorker>();
+            var mockWorker = new Mock<IWorker>();
 
             mockWorker.Setup(x => x.CalculateBetAsync(It.IsAny<BetTransition>(), It.IsAny<CancellationToken>()))
                 .Returns(
@@ -43,12 +43,12 @@ namespace BettingCompany.BettingSystem.Domain.Tests
                         return new BetCalculated(betTransition: null, betOutcome: BetOutcome.Won(250));
                     });
 
-            Mock<IWorkersFactory> mockWokersFactory = new Mock<IWorkersFactory>();
+            var mockWorkersFactory = new Mock<IWorkersFactory>();
 
-            mockWokersFactory.Setup(x => x.CreateWorker())
+            mockWorkersFactory.Setup(x => x.CreateWorker())
                 .Returns(mockWorker.Object);
 
-            var workersDirector = new WorkersDirector(100, mockWokersFactory.Object);
+            var workersDirector = new WorkersDirector(100, mockWorkersFactory.Object);
 
             var betArrivedFirst = new Bet(1, 100, 2.5, "Bob", "Lenox Luis vs Vitaly Klichko", "", "Klichko Wins", BetStatus.OPEN);
             var betArrivedSecond = new Bet(1, 100, 2.5, "Bob", "Lenox Luis vs Vitaly Klichko", "", "Klichko Wins", BetStatus.WINNER);

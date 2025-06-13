@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BettingCompany.BettingSystem.Domain
+﻿namespace BettingCompany.BettingSystem.Domain
 {
     public class BetTransition
     {
@@ -14,9 +8,9 @@ namespace BettingCompany.BettingSystem.Domain
             SecondaryBet = secondaryBet;
         }
 
-        public Bet InitialBet { get; private set; }
+        public Bet InitialBet { get; }
 
-        public Bet SecondaryBet { get; private set; }
+        public Bet SecondaryBet { get; }
 
         public bool IsValidStatusTransition()
         {
