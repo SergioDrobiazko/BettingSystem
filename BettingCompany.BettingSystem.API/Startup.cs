@@ -1,5 +1,6 @@
 using System;
 using System.Text;
+using BettingCompany.BettingSystem.API.Configuration;
 using BettingCompany.BettingSystem.Application;
 using BettingCompany.BettingSystem.Application.Contract;
 using BettingCompany.BettingSystem.Domain;
@@ -29,6 +30,8 @@ namespace BettingCompany.BettingSystem.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<BetHandling>(Configuration.GetSection("BetHandling"));
+            
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -49,10 +52,11 @@ namespace BettingCompany.BettingSystem.API
                         Encoding.UTF8.GetBytes("mysupersecretkey_for_dev_only_12345"))
                 };
             });
-
+            
             services.AddSingleton<IBetHandlingService, BetHandlingService>();
             services.AddSingleton<IBetAgregator, BetAgregator>();
-            services.AddSingleton<IWorkersDirector, WorkersDirector>(x => new WorkersDirector(100, new WorkersFactory()));
+            services.AddSingleton<IWorkersDirector, WorkersDirector>(x => 
+                new WorkersDirector(x.GetRequiredService<IOptions<BetHandling>>().Value.MaxWorkers, new WorkersFactory()));
             services.AddSingleton<IPersistancePolicy, PersistancePolicy>();
             services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
             services.AddSingleton<IBetRepository, BetRepository>();
