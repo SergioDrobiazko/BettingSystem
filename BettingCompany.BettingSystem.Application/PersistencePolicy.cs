@@ -4,14 +4,16 @@ namespace BettingCompany.BettingSystem.Application
 {
     public class PersistencePolicy : IPersistencePolicy
     {
+        private const int ElementsToSave = 20;
+        
         public int GetNumberOfElementsToSave()
         {
-            return 20;
+            return ElementsToSave;
         }
 
         public bool ShouldPersist(int betsCalculated, int betsSaved)
         {
-            return betsCalculated - betsSaved >= 20; 
+            return betsCalculated - betsSaved >= ElementsToSave; 
         }
     }
 }
