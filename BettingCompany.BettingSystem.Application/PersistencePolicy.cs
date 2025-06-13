@@ -2,7 +2,7 @@
 
 namespace BettingCompany.BettingSystem.Application
 {
-    public class PersistancePolicy : IPersistancePolicy
+    public class PersistencePolicy : IPersistencePolicy
     {
         public int GetNumberOfElementsToSave()
         {

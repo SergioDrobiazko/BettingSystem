@@ -14,7 +14,7 @@ namespace BettingCompany.BettingSystem.Application
 
         private readonly IBetAgregator _betAgregator;
         private readonly IWorkersDirector _workersDirector;
-        private readonly IPersistancePolicy _persistancePolicy;
+        private readonly IPersistencePolicy persistencePolicy;
         private readonly IDateTimeProvider _dateTimeProvider;
 
         private readonly IBetRepository _betRepository;
@@ -33,7 +33,7 @@ namespace BettingCompany.BettingSystem.Application
         public BetHandlingService(
             IBetAgregator betAgregator,
             IWorkersDirector workersDirector,
-            IPersistancePolicy persistancePolicy,
+            IPersistencePolicy persistencePolicy,
             IDateTimeProvider dateTimeProvider,
             IBetRepository betRepository, 
             ILogger<BetHandlingService> logger)
@@ -43,7 +43,7 @@ namespace BettingCompany.BettingSystem.Application
 
             _workersDirector = workersDirector;
             _workersDirector.BetCalculated += OnBetCalculated;
-            _persistancePolicy = persistancePolicy;
+            this.persistencePolicy = persistencePolicy;
             _dateTimeProvider = dateTimeProvider;
             _betRepository = betRepository;
             _logger = logger;
@@ -70,10 +70,10 @@ namespace BettingCompany.BettingSystem.Application
 
             lock (StorageLock.Lock)
             {
-                if (!_persistancePolicy.ShouldPersist(betsHandled, betsSaved)) return;
+                if (!persistencePolicy.ShouldPersist(betsHandled, betsSaved)) return;
                 _logger.LogDebug($"Saving bets..");
 
-                int elementsToSave = _persistancePolicy.GetNumberOfElementsToSave();
+                int elementsToSave = persistencePolicy.GetNumberOfElementsToSave();
 
                 var betsToSave = new BetCalculated[elementsToSave];
 

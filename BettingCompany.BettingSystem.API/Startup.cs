@@ -57,7 +57,7 @@ namespace BettingCompany.BettingSystem.API
             services.AddSingleton<IBetAgregator, BetAgregator>();
             services.AddSingleton<IWorkersDirector, WorkersDirector>(x => 
                 new WorkersDirector(x.GetRequiredService<IOptions<BetHandling>>().Value.MaxWorkers, new WorkersFactory()));
-            services.AddSingleton<IPersistancePolicy, PersistancePolicy>();
+            services.AddSingleton<IPersistencePolicy, PersistencePolicy>();
             services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
             services.AddSingleton<IBetRepository, BetRepository>();
 

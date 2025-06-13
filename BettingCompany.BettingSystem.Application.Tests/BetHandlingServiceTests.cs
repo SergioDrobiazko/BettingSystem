@@ -31,7 +31,7 @@ namespace BettingCompany.BettingSystem.Application.Tests
             var betHandlingService = new BetHandlingService(
                 new BetAgregator(),
                 new WorkersDirector(maxWorkers: 50, new WorkersFactory()),
-                new PersistancePolicy(),
+                new PersistencePolicy(),
                 new DateTimeProvider(), // todo: mock date time provider
                 mockRepository.Object,
                 mockLogger.Object);
@@ -292,7 +292,7 @@ namespace BettingCompany.BettingSystem.Application.Tests
             var betHandlingService = new BetHandlingService(
                 new BetAgregator(),
                 new WorkersDirector(maxWorkers: 10, mockWorkersFactory.Object),
-                new PersistancePolicy(),
+                new PersistencePolicy(),
                 new DateTimeProvider(), // todo: mock date time provider
                 mockRepository.Object,
                 mockLogger.Object);
