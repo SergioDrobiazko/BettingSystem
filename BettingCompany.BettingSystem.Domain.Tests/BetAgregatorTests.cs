@@ -10,7 +10,7 @@ namespace BettingCompany.BettingSystem.Domain.Tests
             var betArrivedFirst = new Bet(1, 100, 2.5, "Bob", "Lenox Luis vs Vitaly Klichko", "", "Klichko Wins", BetStatus.OPEN);
             var betArrivedSecond = new Bet(1, 100, 2.5, "Bob", "Lenox Luis vs Vitaly Klichko", "", "Klichko Wins", BetStatus.WINNER);
 
-            var betAgregator = new BetAgregator();
+            var betAgregator = new BetAggregator();
 
             BetTransition betTransition = default;
 

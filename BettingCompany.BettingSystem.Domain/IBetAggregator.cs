@@ -2,7 +2,7 @@
 
 namespace BettingCompany.BettingSystem.Domain
 {
-    public interface IBetAgregator
+    public interface IBetAggregator
     {
         void AddBet(Bet bet);
 

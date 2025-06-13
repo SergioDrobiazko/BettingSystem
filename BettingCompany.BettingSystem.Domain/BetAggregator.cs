@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BettingCompany.BettingSystem.Domain
 {
-    public class BetAgregator : IBetAgregator
+    public class BetAggregator : IBetAggregator
     {
         private bool isShuttingDown = false;
 

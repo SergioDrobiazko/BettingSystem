@@ -12,7 +12,7 @@ namespace BettingCompany.BettingSystem.Application
     {
         private bool isShuttingDown = false;
 
-        private readonly IBetAgregator _betAgregator;
+        private readonly IBetAggregator _betAggregator;
         private readonly IWorkersDirector _workersDirector;
         private readonly IPersistencePolicy persistencePolicy;
         private readonly IDateTimeProvider _dateTimeProvider;
@@ -31,15 +31,15 @@ namespace BettingCompany.BettingSystem.Application
         private readonly object incomingBetsLock = new();
 
         public BetHandlingService(
-            IBetAgregator betAgregator,
+            IBetAggregator betAggregator,
             IWorkersDirector workersDirector,
             IPersistencePolicy persistencePolicy,
             IDateTimeProvider dateTimeProvider,
             IBetRepository betRepository, 
             ILogger<BetHandlingService> logger)
         {
-            _betAgregator = betAgregator;
-            _betAgregator.BetTransitionFormed += OnBetTransitionFormed;
+            _betAggregator = betAggregator;
+            _betAggregator.BetTransitionFormed += OnBetTransitionFormed;
 
             _workersDirector = workersDirector;
             _workersDirector.BetCalculated += OnBetCalculated;
@@ -113,7 +113,7 @@ namespace BettingCompany.BettingSystem.Application
                 }
 
                 bet.SetDateArrived(_dateTimeProvider.GetUTCNow());
-                _betAgregator.AddBet(bet);
+                _betAggregator.AddBet(bet);
             });
         }
 
@@ -130,7 +130,7 @@ namespace BettingCompany.BettingSystem.Application
 
             _workersDirector.ShutDown();
 
-            _betAgregator.ShutDown();
+            _betAggregator.ShutDown();
 
             var betsToSave = betsCalculated.ToArray();
 
