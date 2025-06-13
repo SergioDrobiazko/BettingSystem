@@ -19,7 +19,7 @@ namespace BettingCompany.BettingSystem
                 .WriteTo.Logger(lc => lc
                     .Filter.ByIncludingOnly(le => le.Level == LogEventLevel.Debug)
                     .WriteTo.File("Logs/debug-only.log"))
-                .WriteTo.File("Logs/logs.txt", LogEventLevel.Information)
+                .WriteTo.File("Logs/logs.txt", LogEventLevel.Verbose)
                 .CreateLogger();
 
             return Host.CreateDefaultBuilder(args)
